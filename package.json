@@ -44,7 +44,7 @@
     "autoprefixer": "^10.4.8",
     "gh-pages": "^4.0.0",
     "postcss": "^8.4.16",
-    "tail,windcss": "^3.1.8"
+    "tailwindcss": "^3.1.8"
   },
   "engines": {
     "node": "15.x"
