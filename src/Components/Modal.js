@@ -1,5 +1,6 @@
+
 import React from "react";
-import ReactPlayer from "react-player";
+
 
 function Modal({ showModal, setShowModal, img, video, text }) {
   return (
@@ -16,7 +17,8 @@ function Modal({ showModal, setShowModal, img, video, text }) {
             <div className="p-32 mt-14  text-five text-Bhaijaan2 ">{text}</div>
 
             <div className="relative">
-              <ReactPlayer
+             
+              {/* <ReactPlayer
                 url={video}
                 light={true}
                 volume={6}
@@ -27,7 +29,7 @@ function Modal({ showModal, setShowModal, img, video, text }) {
                 muted={true}
                 controls={false}
                 onReady={() => console.log("onReady callbCK")}
-              />
+              /> */}
             </div>
           </div>
         </div>
