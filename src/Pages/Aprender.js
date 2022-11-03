@@ -737,7 +737,7 @@ function Aprender() {
           <p className="font-semibold text-five mx-44 mb-4">
             The Corner Shop (revisited)
           </p>
-          <p className="text-2xl mx-48">
+          <p className="text-2xl mx-44">
             Remember the corner shop I spoke about before? How I couldn’t
             remember any words related to that context? Well, I hoped to avoid
             those issues with the new mobile app called...
