@@ -3,16 +3,16 @@ import { Link } from "react-router-dom";
 
 function ContactAbout() {
   return (
-    <div className="bg-aprenderGray h-screen text-primary">
+    <div className=" h-screen text-primary font-Nunito">
       <Link
         to="/"
-        className="bg-transparent absolute  right-12 top-10  z-50 font-Rubik"
+        className=" absolute  right-12 top-10  z-50 font-Nunito rounded bg-primary text-white px-3 py-1 hover:bg-secondary"
       >
         Home
       </Link>
 
       <div className="p-32 text-six leading-relaxed text-primary">
-        Sarah Kane is UX designer with many hobbies. She enjoys deep
+        Sarah Kane is product designer with many hobbies. She enjoys deep
         conversations, pottery, history, coding (including this website),
         photography and travel. She lives in Seattle...in the Rainier Valley.
         <div className="mt-24 text-four">
@@ -26,7 +26,7 @@ function ContactAbout() {
               href="https://www.linkedin.com/in/sarah-e-kane"
               target="_blank"
               rel="noreferrer"
-              className="underline decoration-solid"
+              className="underline decoration-solid text-primary hover:text-secondary"
             >
               www.linkedin.com/in/sarah-e-kane
             </a>{" "}

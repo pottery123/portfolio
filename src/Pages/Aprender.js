@@ -30,31 +30,36 @@ function Aprender() {
     <div className="relative">
       <Link
         to="/"
-        className="bg-transparent absolute  left-12 top-10  z-50 font-Rubik"
+        className="rounded bg-white text-aprenderPink px-3 py-1 hover:bg-aprenderPinkLight hover:text-white absolute  left-12 top-10  z-50 font-Nunito"
       >
         Home
       </Link>
-      <div className="bg-transparent absolute flex right-12 top-10 bg-aprenderPink z-50 font-Rubik">
+      <div className=" absolute flex right-12 top-10 bg-aprenderPink z-50 font-Rubik">
         {" "}
-        <Link to='/contact-about' className=" flex gap-10">
+        <Link to="/contact-about" className=" flex gap-10">
           {" "}
-          <div>Contact</div> <div>About</div>{" "}
+          <div className="rounded bg-white text-aprenderPink px-3 py-1 hover:bg-aprenderPinkLight hover:text-white">
+            Contact
+          </div>{" "}
+          <div className="rounded bg-white text-aprenderPink hover:bg-aprenderPinkLight px-4 py-1 hover:text-white">
+            About
+          </div>{" "}
         </Link>
       </div>
 
       <div className="flex justify-around bg-aprenderPink pb-16 w-full">
         <img
-          className="pt-16"
-          width={550}
-          height={550}
+          className="pt-32"
+          width={500}
+          height={500}
           src={"/images/aprender-screens.svg"}
           alt="Aprender Screens"
         ></img>
-        <div className="text-eight font-Bhaijaan2 font-semibold pt-48 text-white">
-          Aprender
+        <div className="text-eight font-Bhaijaan2 font-semibold pt-52 text-white pl-10">
+         <div className="pt-18">Aprender</div> 
           <p className="text-four font-normal tracking-wide">
-            <span className="font-bold">Role:</span> UX/UI Designer, UX
-            Researcher
+            <span className="font-bold">Role:</span> UX/UI Designer, Interaction
+            Designer, UX Researcher
           </p>
           <p className="text-four font-normal tracking-wide">
             <span className="font-bold">Key skills:</span> Figma, Design
@@ -84,9 +89,9 @@ function Aprender() {
 
             window.scrollTo({ top: 600, left: 0, behavior: "smooth" });
           }}
-          className="font-Bhaijaan2 text-lg p-8"
+          className="font-Bhaijaan2 text-lg p-8 hover:text-aprenderPink"
         >
-          <div>The </div> <div>Problem</div>
+          <div>The </div> <div> Problem</div>
           {underlineProblem ? (
             <div className=" h-1 bg-aprenderPink" />
           ) : (
@@ -113,7 +118,7 @@ function Aprender() {
 
             window.scrollTo({ top: 600, left: 0, behavior: "smooth" });
           }}
-          className="font-Bhaijaan2 text-lg p-8"
+          className="font-Bhaijaan2 text-lg p-8 hover:text-aprenderPink"
         >
           <div>User</div> <div>Research</div>
           {underlineResearch ? (
@@ -142,7 +147,7 @@ function Aprender() {
             setUnderlineTakeaway(false);
             window.scrollTo({ top: 600, left: 0, behavior: "smooth" });
           }}
-          className="font-Bhaijaan2 text-lg p-8"
+          className="font-Bhaijaan2 text-lg p-8 hover:text-aprenderPink"
         >
           <div>Design </div> <div>Decisions</div>
           {underlineDesign ? (
@@ -171,7 +176,7 @@ function Aprender() {
             setUnderlineTakeaway(false);
             window.scrollTo({ top: 600, left: 0, behavior: "smooth" });
           }}
-          className="font-Bhaijaan2 text-lg p-8"
+          className="font-Bhaijaan2 text-lg p-8 hover:text-aprenderPink"
         >
           <div>Wireframing</div> <div>Prototyping</div>
           {underlineWireframing ? (
@@ -200,7 +205,7 @@ function Aprender() {
             setUnderlineTakeaway(false);
             window.scrollTo({ top: 600, left: 0, behavior: "smooth" });
           }}
-          className="font-Bhaijaan2 text-lg p-8"
+          className="font-Bhaijaan2 text-lg p-8 hover:text-aprenderPink"
         >
           <div>Usability </div> <div>Testing</div>
           {underlineTesting ? (
@@ -228,7 +233,7 @@ function Aprender() {
             setUnderlineTakeaway(false);
             window.scrollTo({ top: 600, left: 0, behavior: "smooth" });
           }}
-          className="font-Bhaijaan2 text-lg p-8"
+          className="font-Bhaijaan2 text-lg p-8 hover:text-aprenderPink"
         >
           <div>Highfedility</div> <div>Mockups</div>
           {underlineMockups ? (
@@ -256,7 +261,7 @@ function Aprender() {
             setUnderlineTakeaway(true);
             window.scrollTo({ top: 600, left: 0, behavior: "smooth" });
           }}
-          className="font-Bhaijaan2 text-lg p-5"
+          className="font-Bhaijaan2 text-lg p-5 hover:text-aprenderPink"
         >
           <div>Takeaways/</div> <div>Next </div>
           {underlineTakeaway ? (
@@ -277,11 +282,11 @@ function Aprender() {
                   <p className="text-2xl leading-relaxed">
                     I grew up in a very diverse zip code in Seattle. I was
                     surrounded by languages and people from all over the world.
-                    One day, I decided purchase a something at a corner shop
-                    near where I lived. Feeling confident I decided to practice
-                    my Spanish with some of the employees at that shop. But when
-                    I got there I couldn’t recall any Spanish words or phrases
-                    related to the situation I was even though I had been
+                    One day, I decided purchase something at a corner shop near
+                    where I lived. Feeling confident I decided to practice my
+                    Spanish with some of the employees at that shop. But when I
+                    got there I couldn’t recall any Spanish words or phrases
+                    related to the situation I was in, even though I had been
                     studying Spanish for years. Which led me to wonder...
                   </p>
                 </div>
@@ -728,20 +733,19 @@ function Aprender() {
       ) : null}
 
       {mockupsSection ? (
-        <div className="font-Bhaijaan2 mx-44 my-32">
-          <div className="">
-            <p className="font-semibold text-five mb-4">
-              The Corner Shop (revisited)
-            </p>
-            <p className="text-2xl">
-              Remember the corner shop I spoke about before? How I couldn’t
-              remember any words related to that context? Well, I hoped to avoid
-              those issues with the new mobile app called...
-            </p>
-            <p className="font-Bhaijaan2 text-nine font-medium text-aprenderPink text-center my-40">
-              Aprender
-            </p>
-          </div>
+        <div className="font-Bhaijaan2 my-32">
+          <p className="font-semibold text-five mx-44 mb-4">
+            The Corner Shop (revisited)
+          </p>
+          <p className="text-2xl mx-48">
+            Remember the corner shop I spoke about before? How I couldn’t
+            remember any words related to that context? Well, I hoped to avoid
+            those issues with the new mobile app called...
+          </p>
+          <p className="font-Bhaijaan2 text-nine font-medium text-aprenderPink text-center my-40">
+            Aprender
+          </p>
+
           <AprenderFinalMockups />
         </div>
       ) : null}
@@ -798,4 +802,3 @@ function Aprender() {
 }
 
 export default Aprender;
-

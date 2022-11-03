@@ -21,16 +21,19 @@ module.exports = {
         'Inter': "'Inter', san-serif",
         'Montserrat': "'Montserrat', sans-serif",
         'Rubik': "'Rubik', sans-serif",
+        'Nunito': "'Nunito',  sans-serif"
         
       },
       colors: {
         'somoBlue': '#212153',
         'stateFairWhite':'#E9E2DB',
         'aprenderPink': '#D45769',
+        'aprenderPinkLight': '#e18996',
         'theme':'#FDF5DF',
         'third': '#8CBDB9',
         'secondary': '#E09E50',
         'primary': '#2D3E4E',
+        'primaryLight':"#3f576e",
         'aprenderBlue': '#308695',
         'aprenderGray':'#D4CFC9',
         'aprenderGold':'#E69D45',

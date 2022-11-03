@@ -9,13 +9,13 @@ function Home() {
   }, []);
 
   return (
-    <div className="font-Montserrat mb-4 mt-10 text-primary font-semibold">
+    <div className="font-Nunito mb-4 mt-10 text-primary font-semibold">
       <div className="bg-transparent absolute flex right-12 top-10  z-50 ">
         {" "}
         <div className=" flex gap-10">
           {" "}
-          <Link to="/contact-about">Contact</Link>{" "}
-          <Link to="/contact-about">About</Link>{" "}
+          <Link className="rounded bg-primary text-white px-2 py-1 hover:bg-secondary" to="/contact-about">Contact</Link>{" "}
+          <Link className="rounded bg-primary text-white px-3 py-1 hover:bg-secondary"   to="/contact-about">About</Link>{" "}
         </div>
       </div>
       <div class="">
@@ -36,10 +36,10 @@ function Home() {
 
       <div className="justify-around flex">
         <div className=" mt-20">
-          <div className="text-eight font-medium ">Aprender</div>
+          <div className="text-eight font-semibold ">Aprender</div>
           <div className="flex gap-2 text-lg text-gray-500">
             <div className="text-lg">Role:</div>
-            <div className="text-lg">UX/UI Desigher, UX Researcher</div>
+            <div className="text-lg">Role: UX/UI Designer, UX Researcher</div>
           </div>
           <p className=" mt-5 text-lg w-96">
             Yes. Another language learning app to add to the millions that are
@@ -100,7 +100,7 @@ function Home() {
             <div className="text-lg">Role:</div>
             <div className="text-lg">UX/UI Designer, UX Researcher</div>
           </div>
-          <p className="text-secondary mt-5 text-lg">Comming Soon...</p>
+          <p className="text-secondary mt-5 text-lg">Coming Soon...</p>
           <p className=" mt-10 text-lg w-96 hidden">
             Yet another redsign...{" "}
             <span className="text-secondary text-lg">
@@ -119,7 +119,7 @@ function Home() {
             <div className="text-four">Role:</div>
             <div className="text-four">UX/UI Designer, UX Researcher</div>
           </div>
-          <p className="text-secondary mt-5 text-lg">Comming Soon...</p>
+          <p className="text-secondary mt-5 text-lg">Coming Soon...</p>
           <div className="flex gap-2 text-xs">
             <div className=" mt-5 w-96 text-white"></div>
           </div>

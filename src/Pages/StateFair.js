@@ -4,15 +4,15 @@ import React from "react";
 function StateFair() {
   return (
    
+    <div className="">
+    <div className="z-30 absolute text-white text-seven justify-center flex h-screen ">
+      <div className='ml-90'> Under Construction</div>
      
-      <video className=" h-screen blur-sm relative text-white text-seven  flex justify-center h-screen" loop autoPlay muted>
-        <source  src="/images/construction.mov"></source>
-         <div className="z-30 text-black absolute "> 
-         </div>
-        Under Construction
-       
- 
-      </video>
+    </div>
+    <video className="blur-sm relative" loop autoPlay muted>
+      <source src="/images/construction.mov"></source>
+    </video>
+  </div>
   
   );
 }
