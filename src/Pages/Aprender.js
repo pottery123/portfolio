@@ -235,7 +235,7 @@ function Aprender() {
           }}
           className="font-Bhaijaan2 text-lg p-8 hover:text-aprenderPink"
         >
-          <div>Highfedility</div> <div>Mockups</div>
+          <div>High-Fidelity </div> <div>Mockups</div>
           {underlineMockups ? (
             <div className="h-1  bg-aprenderPink" />
           ) : (
@@ -263,7 +263,7 @@ function Aprender() {
           }}
           className="font-Bhaijaan2 text-lg p-5 hover:text-aprenderPink"
         >
-          <div>Takeaways/</div> <div>Next </div>
+          <div>Takeaways/</div> <div>Next Steps </div>
           {underlineTakeaway ? (
             <div className="h-1  bg-aprenderPink" />
           ) : (
