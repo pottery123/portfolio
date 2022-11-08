@@ -87,7 +87,7 @@ function Aprender() {
             setUnderlineMockups(false);
             setUnderlineTakeaway(false);
 
-            window.scrollTo({ top: 600, left: 0, behavior: "smooth" });
+            window.scrollTo({ top: 700, left: 0, behavior: "smooth" });
           }}
           className="font-Bhaijaan2 text-lg p-8 hover:text-aprenderPink"
         >
@@ -116,7 +116,7 @@ function Aprender() {
             setUnderlineMockups(false);
             setUnderlineTakeaway(false);
 
-            window.scrollTo({ top: 600, left: 0, behavior: "smooth" });
+            window.scrollTo({ top: 700, left: 0, behavior: "smooth" });
           }}
           className="font-Bhaijaan2 text-lg p-8 hover:text-aprenderPink"
         >
@@ -145,7 +145,7 @@ function Aprender() {
             setUnderlineTesting(false);
             setUnderlineMockups(false);
             setUnderlineTakeaway(false);
-            window.scrollTo({ top: 600, left: 0, behavior: "smooth" });
+            window.scrollTo({ top: 700, left: 0, behavior: "smooth" });
           }}
           className="font-Bhaijaan2 text-lg p-8 hover:text-aprenderPink"
         >
@@ -174,7 +174,7 @@ function Aprender() {
             setUnderlineTesting(false);
             setUnderlineMockups(false);
             setUnderlineTakeaway(false);
-            window.scrollTo({ top: 600, left: 0, behavior: "smooth" });
+            window.scrollTo({ top: 700, left: 0, behavior: "smooth" });
           }}
           className="font-Bhaijaan2 text-lg p-8 hover:text-aprenderPink"
         >
@@ -203,7 +203,7 @@ function Aprender() {
             setUnderlineTesting(true);
             setUnderlineMockups(false);
             setUnderlineTakeaway(false);
-            window.scrollTo({ top: 600, left: 0, behavior: "smooth" });
+            window.scrollTo({ top: 700, left: 0, behavior: "smooth" });
           }}
           className="font-Bhaijaan2 text-lg p-8 hover:text-aprenderPink"
         >
@@ -231,7 +231,7 @@ function Aprender() {
             setUnderlineTesting(false);
             setUnderlineMockups(true);
             setUnderlineTakeaway(false);
-            window.scrollTo({ top: 600, left: 0, behavior: "smooth" });
+            window.scrollTo({ top: 700, left: 0, behavior: "smooth" });
           }}
           className="font-Bhaijaan2 text-lg p-8 hover:text-aprenderPink"
         >
@@ -259,7 +259,7 @@ function Aprender() {
             setUnderlineTesting(false);
             setUnderlineMockups(false);
             setUnderlineTakeaway(true);
-            window.scrollTo({ top: 600, left: 0, behavior: "smooth" });
+            window.scrollTo({ top: 700, left: 0, behavior: "smooth" });
           }}
           className="font-Bhaijaan2 text-lg p-5 hover:text-aprenderPink"
         >
@@ -286,8 +286,7 @@ function Aprender() {
                     where I lived. Feeling confident I decided to practice my
                     Spanish with some of the employees at that shop. But when I
                     got there I couldn’t recall any Spanish words or phrases
-                    related to the situation I was in, even though I had been
-                    studying Spanish for years. Which led me to wonder...
+                    related to the context I was in. Which led me to wonder...
                   </p>
                 </div>
               </div>
@@ -497,10 +496,10 @@ function Aprender() {
                   src={"/images/quote.svg"}
                   alt="user feedback"
                 ></img>
-                <div className="text-center">
+                <div className="">
                   “too much emphasis on vocabulary I did not need...I’ve better
                   results from finding or making targeted word lists and
-                  thenworking on pronunciation and vocabulary.”
+                  then working on pronunciation and vocabulary.”
                 </div>
               </div>
 
@@ -527,7 +526,7 @@ function Aprender() {
                   src={"/images/quote.svg"}
                   alt="user feedback"
                 ></img>
-                <div className=" text-center">
+                <div className="">
                   “I haven’t tried out my skills in a functional context yet.”
                 </div>
               </div>
@@ -555,7 +554,7 @@ function Aprender() {
                   src={"/images/quote.svg"}
                   alt="user feedback"
                 ></img>
-                “It focused on everyting at onece, and not just one subject.”
+                “It focused on everything at  once, and not just one subject.”
               </div>
 
               <div>
@@ -566,7 +565,7 @@ function Aprender() {
                   src={"/images/user-feedback-check.svg"}
                   alt="user feedback"
                 ></img>
-                Contnet should focus on one subject of their choosing.
+                Content should focus on one subject of their choosing.
               </div>
             </div>
             <div className="grid grid-cols-2 gap-24">
@@ -617,7 +616,7 @@ function Aprender() {
                   alt="user feedback"
                 ></img>
                 Users should not have to complete the ‘course’ or ‘lesson’ to
-                learn useful and practical vocabulary
+                learn useful and practical vocabulary.
               </div>
             </div>
             <div className="grid grid-cols-2 gap-24">
@@ -629,7 +628,7 @@ function Aprender() {
                   src={"/images/quote.svg"}
                   alt="user feedback"
                 ></img>
-                <div>“Hard to remember what I learned and apply it”</div>
+                <div>“Hard to remember what I learned and apply it.”</div>
               </div>
               <div>
                 <img
@@ -641,7 +640,7 @@ function Aprender() {
                 ></img>
                 <div>
                   Content must be able to provide words that users can apply to
-                  their every day life immideatly.
+                  their everyday life immediately.
                 </div>
               </div>
             </div>
@@ -652,13 +651,12 @@ function Aprender() {
               <p className="font-semibold text-five mb-4">User Story Mapping</p>
               <div className="flex justify-evenly">
                 <p className="text-2xl leading-relaxed">
-                  After I finished collecting the data and the research analysis
-                  I created a fictional character that represents a typical
-                  participant, their needs and frustrations.
+                The MVP for the app Aprender consisted of one major aspect that would solve for the problems users were having when using language learning apps. 
+                I broke down the interactions into simple user stories. Each story addressed a problem users expressed having with other language learning apps.
                 </p>
               </div>
             </div>
-            <div className="flex justify-start bg-slate-200 mt-20">
+            <div className="flex justify-start bg-slate-200 mt-20 p-20">
               <img
                 width={800}
                 height={700}
@@ -673,12 +671,12 @@ function Aprender() {
       {wireframingSection ? (
         <div className="mx-44 my-32">
           <div className="font-Bhaijaan2">
-            <p className="font-semibold text-five mb-4">Quick Wireframes</p>
+            <p className="font-semibold text-five mb-4">Quick Sketches</p>
             <div className="flex justify-evenly">
               <p className="text-2xl leading-relaxed">
                 After the content was solidified it was time to create a UI that
                 would address each user story that correlated with solving a
-                specific problem. I started with wireframes to make sure I had
+                specific problem. I started with sketches to make sure I had
                 all the elements in place before building out the high fidelity
                 mockups.
               </p>
@@ -698,18 +696,15 @@ function Aprender() {
           <p className="font-semibold text-five mb-4">Usability Testing</p>
           <div className="flex justify-evenly">
             <p className="text-2xl leading-relaxed">
-              Testing the sketches with actual users early on in the process
-              helped me to eliminate things that were confusing to the user, and
-              add things that helped the user get the task done. Because of this
-              the final mockups differed little from the original wireframes,
-              which saved me a lot of time.
+            Usability Testing
+Testing the sketches with actual users early on in the process helped me to eliminate things that were confusing to the user, and add things that helped the user get the task done. 
+Because of this the final mockups differed little from the original sketches, which saved me a lot of time.
+
             </p>
           </div>
           <p className="p-10 bg-slate-200 mt-24">
             <div className="font-bold">SUS Score</div>
-            The SUS score for these wireframes was 6.5 out of 7. Because I
-            tested early and made changes to the sketches, all the interactions
-            in the final mock ups were very similar to the wireframes.
+            The SUS score for these wireframes was 6.5 out of 7. Because I tested early and made changes to the sketches, all the interactions in the final mockups were very similar to the sketches.
             <p className="mt-10">
               <div className="font-bold">User Issues Addressed </div>
 
@@ -738,9 +733,9 @@ function Aprender() {
             The Corner Shop (revisited)
           </p>
           <p className="text-2xl mx-44">
-            Remember the corner shop I spoke about before? How I couldn’t
-            remember any words related to that context? Well, I hoped to avoid
-            those issues with the new mobile app called...
+          
+Remember the corner shop I spoke about before, and how I was unable to recall any words or phrases related to that context? Well, I hoped to avoid those issues with the new mobile app I named...
+
           </p>
           <p className="font-Bhaijaan2 text-nine font-medium text-aprenderPink text-center my-40">
             Aprender
@@ -761,22 +756,19 @@ function Aprender() {
                 The importance of early usability testing
               </div>
               <div className="">
-                Through this process I learned the importance of gathering
-                information from the user to help solve their needs and early
-                usability testing. Because I tested the wireframes early I was
-                able to quickly discover user issues and immediately address
-                them before implementing them in the final mockups. This saved
-                me a lot of time.
+              The importance of early usability testing
+               Through this process I learned the importance of gathering information from the user to help solve their needs and early usability testing. Because I tested the sketches early I was able to quickly discover user issues and immediately address them before implementing them in the final mockups. This saved me a lot of time.
+	  
+
               </div>
             </div>
             <p className="bg-slate-200  p-10 ">
               <div className="font-bold mb-5">
                 Add features based on user research
               </div>
-              <p>• Add common and useful phrases for each locations</p>
+              <p>•  Add common and useful phrases for each locations.</p>
               <p>
-                • Add scenarios/scripts people are most likely to need in each
-                location when interacting with people
+                • Add scenarios/scripts that people are most likely to need in each location when interacting with people.
               </p>
             </p>
             <p className=" bg-slate-200  p-10 ">
@@ -786,12 +778,14 @@ function Aprender() {
                 • Add success metrics for each task that would provide more
                 qualitative data{" "}
               </p>
-              <p>• UI enhancements from v1 </p>
-              <p>• Usability test the final mock ups</p>
+              <p>• UI enhancements from v1.</p>
+              <p>• Usability test the final mockups.</p>
               <p>
-                • Conduct a qualitative test to measure if Aprender helped users
-                remember useful information compared to other language learning
+              • Conduct qualitative tests to measure if Aprender helped users
+                remember useful information in comparison to other language learning
                 apps.{" "}
+
+
               </p>
             </p>
           </div>

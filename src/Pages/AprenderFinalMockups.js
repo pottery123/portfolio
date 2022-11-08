@@ -19,11 +19,9 @@ function AprenderFinalMockups() {
 
   const description1 = (
     <div className=" font-Bhaijaan2 max-w-lg ">
-      Sarah lives in the Rainier Vallely, in one of the most diverse zip codes
-      in the United States. There is a new corner shop that has opened up a few
-      blocks away from where she lives. Sarah wants to try out her Spanish in a
-      way to better connect with her new neighbors. Before she leaves Sarah
-      opens up the app Aprender.{" "}
+      Sarah lives in the Rainier Vallely, one of the most diverse zip codes in the United States. 
+      There is a new corner shop that has opened up a few blocks away from where she lives. Sarah wants to try out her Spanish in a way to better connect with her new neighbors. 
+      Before she departs Sarah opens up the app Aprender.
     </div>
   );
 
@@ -45,7 +43,7 @@ function AprenderFinalMockups() {
   const description4 = (
     <div className=" font-Bhaijaan2 max-w-lg">
       {" "}
-      and save them in her saved cards tab to refer back to them.
+      and save them in her saved cards tab to review them later.
     </div>
   );
 
