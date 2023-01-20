@@ -13,7 +13,7 @@ function Modal({ showModal, setShowModal, img, video, text }) {
           </button>
           <div className="flex justify-around">
             <div className="text-Bhaijaan2 mt-52 text-2xl">{text}</div>
-              <video className="mt-10" width='260'  muted autoPlay loop>
+              <video className="mt-10" width='260' muted autoPlay loop>
                 <source src={video} type="video/mp4" />
               </video>
           </div>

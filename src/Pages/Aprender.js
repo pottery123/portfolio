@@ -30,7 +30,7 @@ function Aprender() {
     <div className="relative">
       <Link
         to="/"
-        className="rounded bg-white text-aprenderPink px-3 py-1 hover:bg-aprenderPinkLight hover:text-white absolute  left-12 top-10  z-50 font-Nunito"
+        className="rounded bg-aprenderPinkLight text-white px-3 py-1 hover:bg-white hover:text-aprenderPink absolute  left-12 top-10  z-50 font-Nunito"
       >
         Home
       </Link>
@@ -38,10 +38,10 @@ function Aprender() {
         {" "}
         <Link to="/contact-about" className=" flex gap-10">
           {" "}
-          <div className="rounded bg-white text-aprenderPink px-3 py-1 hover:bg-aprenderPinkLight hover:text-white">
+          <div className="rounded bg-aprenderPinkLight text-white px-3 py-1 hover:bg-white hover:text-aprenderPink">
             Contact
           </div>{" "}
-          <div className="rounded bg-white text-aprenderPink hover:bg-aprenderPinkLight px-4 py-1 hover:text-white">
+          <div className="rounded bg-aprenderPinkLight text-white px-4 py-1 hover:bg-white hover:text-aprenderPink">
             About
           </div>{" "}
         </Link>
@@ -63,7 +63,7 @@ function Aprender() {
           </p>
           <p className="text-four font-normal tracking-wide">
             <span className="font-bold">Key skills:</span> Figma, Design
-            Thinking, Prototyping, Wireframing, CSS/HTML, Javascript
+            Thinking, Prototyping, Wireframing, CSS/HTML, JavaScript
           </p>
         </div>
       </div>
