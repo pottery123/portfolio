@@ -23,7 +23,6 @@ function StateFair() {
     const [showAppScreen1, setAppScreen1] = useState(true);
     const [showAppScreen2, setAppScreen2] = useState(false);
     const [showAppScreen3, setAppScreen3] = useState(false);
-    const [showAppScreen4, setAppScreen4] = useState(false);
     const [showAppScreen5, setAppScreen5] = useState(false);
     const [showAppScreen6, setAppScreen6] = useState(false);
     const [showAppScreen7, setAppScreen7] = useState(false);
@@ -70,22 +69,17 @@ function StateFair() {
               setAppScreen1(false);
               setAppScreen2(true);
               setAppScreen3(false);
-              setAppScreen4(false);
+          
             } else if (showAppScreen2) {
               setAppScreen1(false);
               setAppScreen2(false);
               setAppScreen3(true);
-              setAppScreen4(false);
+       
             } else if (showAppScreen3) {
-              setAppScreen1(false);
-              setAppScreen2(false);
-              setAppScreen3(false);
-              setAppScreen4(true);
-            } else if (showAppScreen4) {
               setAppScreen1(true);
               setAppScreen2(false);
               setAppScreen3(false);
-              setAppScreen4(false);
+        
             }
           }}
         >
@@ -488,7 +482,7 @@ function StateFair() {
                         <div className="rounded-full w-3 h-3  bg-stateFairYellow"></div>
                         <div className="rounded-full w-3 h-3  bg-slate-200"></div>
                         <div className="rounded-full w-3 h-3  bg-slate-200"></div>
-                        <div className="rounded-full w-3 h-3  bg-slate-200"></div>
+                       
                       </div>
                     </div>
                   </div>
@@ -529,7 +523,7 @@ function StateFair() {
                         <div className="rounded-full w-3 h-3 bg-slate-200"></div>
                         <div className="rounded-full w-3 h-3  bg-stateFairYellow  "></div>
                         <div className="rounded-full w-3 h-3  bg-slate-200"></div>
-                        <div className="rounded-full w-3 h-3  bg-slate-200"></div>
+                        
                       </div>
                     </div>
                   </div>
@@ -615,105 +609,10 @@ function StateFair() {
                         <div className="rounded-full w-3 h-3 bg-slate-200"></div>
                         <div className="rounded-full w-3 h-3 bg-slate-200"></div>
                         <div className="rounded-full w-3 h-3  bg-stateFairYellow"></div>
-                        <div className="rounded-full w-3 h-3  bg-slate-200"></div>
+                       
                       </div>
                     </div>
                   </div>
-                )}
-                {showAppScreen4 && (
-                  <div>
-                    {showAppArrow9 && (
-                      <img
-                        src={"/images/red-arrow.svg"}
-                        style={{
-                          position: "absolute",
-                          zIndex: 10,
-                          top: 100,
-                          width: 29.54,
-                          height: 29.84,
-                        }}
-                        alt="state fair arrow"
-                      ></img>
-                    )}
-
-                    {showAppArrow10 && (
-                      <img
-                        src={"/images/red-arrow.svg"}
-                        style={{
-                          position: "absolute",
-                          zIndex: 10,
-                          top: 200,
-                          width: 29.54,
-                          height: 29.84,
-                        }}
-                        alt="state fair arrow"
-                      ></img>
-                    )}
-                    {showAppArrow11 && (
-                      <img
-                        src={"/images/red-arrow.svg"}
-                        style={{
-                          position: "absolute",
-                          zIndex: 10,
-                          top: 300,
-                          width: 29.54,
-                          height: 29.84,
-                        }}
-                        alt="state fair arrow"
-                      ></img>
-                    )}
-                    <div>
-                      <div style={{ height: 505.656 }}>
-                        <video
-                          muted
-                          autoPlay
-                          loop
-                          className=""
-                          alt="Aprender Screens"
-                          style={{ width: 250, height: 505.656 }}
-                          onClick={() => {}}
-                        >
-                          <source
-                            src={"images/state-fair-screen-video-3.mov"}
-                            type="video/mp4"
-                          />
-                        </video>
-                      </div>
-                    </div>
-                    <div className="flex m-auto gap-10 mt-4 justify-center">
-                      <div className="rounded-full w-3 h-3 bg-slate-200"></div>
-                      <div className="rounded-full w-3 h-3 bg-slate-200"></div>
-                      <div className="rounded-full w-3 h-3  bg-slate-200"></div>
-                      <div className="rounded-full w-3 h-3  bg-stateFairYellow"></div>
-                    </div>
-                  </div>
-                )}
-                {showAppScreen5 && (
-                  <img
-                    className=""
-                    src={"/images/app-screen-5.svg"}
-                    alt="Aprender Screens"
-                    style={{ width: 250 }}
-                    onClick={() => {}}
-                  ></img>
-                )}
-                {showAppScreen6 && (
-                  <img
-                    className=""
-                    src={"/images/app-screen-6.svg"}
-                    alt="Aprender Screens"
-                    style={{ width: 250 }}
-                    onClick={() => {}}
-                  ></img>
-                )}
-                {showAppScreen7 && (
-                  <img
-                    className=""
-                    src={"/images/app-screen-7.svg"}
-                    alt="Aprender Screens"
-                    style={{ width: 250 }}
-                    onClick={() => {}}
-                  ></img>
                 )}
               </div>
               {showAppScreen1 && (
@@ -902,70 +801,11 @@ function StateFair() {
                       When seats have been selected the Add to Cart button is
                       activated by turning a deep red color.
                     </div>
-                  </div>
-
-                  
-                  
+                  </div> 
                 </div>
               )}
 
-              {showAppScreen4 && (
-                <div style={{ height: 568 }} className="w-2/5">
-                  <div
-                    onMouseOut={() => {
-                      setAppArrow9(false);
-                    }}
-                    onMouseOver={() => {
-                      setAppArrow9(true);
-                    }}
-                    className="mb-8"
-                  >
-                    <div className="font-bold mb-2 hover:text-stateFairRed">
-                      Consistency and Standards
-                    </div>
-                    <div>
-                      The expand and retract buttons are gone. Users can use
-                      their fingers if to increase the screen size.
-                    </div>
-                  </div>
-                  <div
-                    onMouseOut={() => {
-                      setAppArrow10(false);
-                    }}
-                    onMouseOver={() => {
-                      setAppArrow10(true);
-                    }}
-                    className="mb-8"
-                  >
-                    <div className="font-bold mb-2 hover:text-stateFairRed mt-3">
-                      Visibility of System Status
-                    </div>
-                    <div>
-                      The new design allows the user to easily see when a seat
-                      is selected with a red check mark.
-                    </div>
-                  </div>
-                  <div
-                    onMouseOut={() => {
-                      setAppArrow11(false);
-                    }}
-                    onMouseOver={() => {
-                      setAppArrow11(true);
-                    }}
-                    className="mb-8"
-                  >
-                    <div className="font-bold mb-2 hover:text-stateFairRed ">
-                      Error Prevention
-                    </div>
-                    <div>
-                      The image size of the seats can cause the user to choose
-                      the wrong seat. In the new design the rows are expanded
-                      when the user presses on them which helps users to select
-                      the seat they want without making a mistake.
-                    </div>
-                  </div>
-                </div>
-              )}
+              
             </div>
             <NextButton />
           </div>
