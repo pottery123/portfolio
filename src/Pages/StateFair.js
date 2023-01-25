@@ -23,9 +23,6 @@ function StateFair() {
     const [showAppScreen1, setAppScreen1] = useState(true);
     const [showAppScreen2, setAppScreen2] = useState(false);
     const [showAppScreen3, setAppScreen3] = useState(false);
-    const [showAppScreen5, setAppScreen5] = useState(false);
-    const [showAppScreen6, setAppScreen6] = useState(false);
-    const [showAppScreen7, setAppScreen7] = useState(false);
     const [showAppArrow1, setAppArrow1] = useState(false);
     const [showAppArrow2, setAppArrow2] = useState(false);
     const [showAppArrow3, setAppArrow3] = useState(false);
@@ -34,7 +31,6 @@ function StateFair() {
     const [showAppArrow6, setAppArrow6] = useState(false);
     const [showAppArrow7, setAppArrow7] = useState(false);
     const [showAppArrow8, setAppArrow8] = useState(false);
-    const [showAppArrow9, setAppArrow9] = useState(false);
     const [showAppArrow10, setAppArrow10] = useState(false);
     const [showAppArrow11, setAppArrow11] = useState(false);
 
@@ -63,7 +59,7 @@ function StateFair() {
     function NextButton() {
       return (
         <div
-          className="text-center font-Quicksand text-sm text-white bg-stateFairBurgandy px-2 py-2  rounded-full m-auto w-24 -mt-10 hover:bg-stateFairBurgandyDark"
+          className="text-center font-Quicksand text-sm text-white bg-stateFairBurgandy px-2 py-2  rounded-full m-auto w-24  hover:bg-stateFairBurgandyDark"
           onClick={() => {
             if (showAppScreen1) {
               setAppScreen1(false);
@@ -616,7 +612,7 @@ function StateFair() {
                 )}
               </div>
               {showAppScreen1 && (
-                <div style={{ height: 568 }} className=" w-2/5">
+                <div style={{ height: 568 }} className=" w-96">
                   <div
                     onMouseOut={() => {
                       setAppArrow1(false);
@@ -706,7 +702,7 @@ function StateFair() {
               )}
 
               {showAppScreen2 && (
-                <div style={{ height: 568 }} className="w-2/5">
+                <div style={{ height: 568 }} className="w-96">
                   <div
                     onMouseOut={() => {
                       setAppArrow6(false);
@@ -729,7 +725,7 @@ function StateFair() {
               )}
 
               {showAppScreen3 && (
-                <div style={{ height: 568 }} className="w-2/5">
+                <div style={{ height: 568 }} className="w-96">
                   <div
                     onMouseOut={() => {
                       setAppArrow7(false);
@@ -872,7 +868,7 @@ function StateFair() {
               setShowFinalMockups(false);
               setShowNextSteps(false);
             }}
-            className="rounded-r-2xl bg-stateFairRed w-24 h-24 hover:bg-stateFairRedDark scale-105 hover:scale-110"
+            className={` duration-300 ease-out hover:ease-in hover:duration-300 rounded-r-2xl bg-stateFairRed w-24 h-24 hover:bg-stateFairRedDark scale-105 hover:scale-125 ${showHeuristicEvaluation === true ? 'scale-125 bg-stateFairRedDark ': ''}`}
           >
             <img
               className="mt-4 mx-8"
@@ -893,7 +889,7 @@ function StateFair() {
               setShowFinalMockups(false);
               setShowNextSteps(false);
             }}
-            className="rounded-r-2xl bg-stateFairBlue w-24 h-24 scale-105 hover:bg-stateFairBlueDark hover:scale-110 "
+            className={` duration-200 ease-out hover:ease-in hover:duration-200 rounded-r-2xl bg-stateFairBlue w-24 h-24 scale-105 hover:bg-stateFairBlueDark hover:scale-125 ${showBenchmarking === true ? 'scale-125 bg-stateFairBlueDark': ''}`}
           >
             <img
               className="mt-5 mx-8"
@@ -912,7 +908,7 @@ function StateFair() {
               setShowFinalMockups(false);
               setShowNextSteps(false);
             }}
-            className="rounded-r-2xl bg-stateFairOrange hover:bg-stateFairOrangeDark w-24 h-24 scale-105 hover:scale-110"
+            className={` duration-200 ease-out hover:ease-in hover:duration-200 rounded-r-2xl bg-stateFairOrange hover:bg-stateFairOrangeDark w-24 h-24 scale-105 hover:scale-125 ${showDesignAndTest === true ? 'scale-125 bg-stateFairOrangeDark': ''}`}
           >
             <img
               className="mt-6 mx-8"
@@ -933,7 +929,7 @@ function StateFair() {
               setShowHeuristicEvaluation(false);
               setShowNextSteps(false);
             }}
-            className="rounded-r-2xl bg-stateFairBurgandy w-24 h-24 scale-105 hover:scale-110 hover:bg-stateFairBurgandyDark hover:scale-110"
+            className={` duration-300 ease-out hover:ease-in hover:duration-300 rounded-r-2xl bg-stateFairBurgandy w-24 h-24 scale-105 hover:scale-110 hover:bg-stateFairBurgandyDark hover:scale-125 ${showFinalMockups === true ? 'scale-125 bg-stateFairBurgandyDark': ''}`}
           >
             <img
               className="mt-6 mx-8"
@@ -954,7 +950,7 @@ function StateFair() {
               setShowBenchmarking(false);
               setShowHeuristicEvaluation(false);
             }}
-            className="rounded-r-2xl bg-stateFairYellow w-24 h-24 scale-105 hover:bg-stateFairYellowDark hover:scale-110"
+            className={`duration-300 ease-out hover:ease-in hover:duration-300 rounded-r-2xl bg-stateFairYellow w-24 h-24 scale-105 hover:bg-stateFairYellowDark hover:scale-125 ${showNextSteps=== true ? 'scale-125 bg-stateFairYellowDark': ''}`}
           >
             <img
               className="mt-6 mx-8"
@@ -988,8 +984,8 @@ function StateFair() {
           , UX Researcher, Font-End Developer
         </div>
       </div>
-      <div className=" flex z-10">
-        <div className=" absolute z-20 left-40 top-3/4">
+      <div className=" flex z-10 ">
+        <div className=" absolute z-20 left-40  ml-auto mr-auto w-auto ">
           <Body />
         </div>
         <img

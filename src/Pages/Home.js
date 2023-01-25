@@ -1,6 +1,26 @@
 import React from "react";
+import axios from 'axios';
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+
+
+setInterval(function() {
+  axios.get("http://sekane-projec.herokuapp.com")
+  .then(function (response) {
+    // handle success
+    console.log("it's working");
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+  })
+  .finally(function () {
+    // always executed
+  });
+}, 300000); // every 5 minutes (300000) http://sekane-projec.herokuapp.com
+
+
+
 
 function Home() {
   useEffect(() => {
