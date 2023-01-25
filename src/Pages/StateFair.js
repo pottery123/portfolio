@@ -65,17 +65,14 @@ function StateFair() {
               setAppScreen1(false);
               setAppScreen2(true);
               setAppScreen3(false);
-          
             } else if (showAppScreen2) {
               setAppScreen1(false);
               setAppScreen2(false);
               setAppScreen3(true);
-       
             } else if (showAppScreen3) {
               setAppScreen1(true);
               setAppScreen2(false);
               setAppScreen3(false);
-        
             }
           }}
         >
@@ -478,7 +475,6 @@ function StateFair() {
                         <div className="rounded-full w-3 h-3  bg-stateFairYellow"></div>
                         <div className="rounded-full w-3 h-3  bg-slate-200"></div>
                         <div className="rounded-full w-3 h-3  bg-slate-200"></div>
-                       
                       </div>
                     </div>
                   </div>
@@ -519,7 +515,6 @@ function StateFair() {
                         <div className="rounded-full w-3 h-3 bg-slate-200"></div>
                         <div className="rounded-full w-3 h-3  bg-stateFairYellow  "></div>
                         <div className="rounded-full w-3 h-3  bg-slate-200"></div>
-                        
                       </div>
                     </div>
                   </div>
@@ -538,7 +533,6 @@ function StateFair() {
                           width: 29.54,
                           height: 29.84,
                           rotate: "90deg",
-                         
                         }}
                         alt="state fair arrow"
                       ></img>
@@ -559,7 +553,6 @@ function StateFair() {
                       ></img>
                     )}
 
-                    
                     {showAppArrow11 && (
                       <img
                         src={"/images/red-arrow.svg"}
@@ -605,7 +598,6 @@ function StateFair() {
                         <div className="rounded-full w-3 h-3 bg-slate-200"></div>
                         <div className="rounded-full w-3 h-3 bg-slate-200"></div>
                         <div className="rounded-full w-3 h-3  bg-stateFairYellow"></div>
-                       
                       </div>
                     </div>
                   </div>
@@ -797,11 +789,9 @@ function StateFair() {
                       When seats have been selected the Add to Cart button is
                       activated by turning a deep red color.
                     </div>
-                  </div> 
+                  </div>
                 </div>
               )}
-
-              
             </div>
             <NextButton />
           </div>
@@ -859,7 +849,7 @@ function StateFair() {
   function Tabs() {
     return (
       <div>
-        <div className="  grid grid-rows-5 gap-4 sticky top-0 font-Quicksand">
+        <div className="grid grid-rows-5 gap-4 sticky top-0 font-Quicksand">
           <div
             onClick={() => {
               setShowHeuristicEvaluation(true);
@@ -868,7 +858,11 @@ function StateFair() {
               setShowFinalMockups(false);
               setShowNextSteps(false);
             }}
-            className={` duration-300 ease-out hover:ease-in hover:duration-300 rounded-r-2xl bg-stateFairRed w-24 h-24 hover:bg-stateFairRedDark scale-105 hover:scale-125 ${showHeuristicEvaluation === true ? 'scale-125 bg-stateFairRedDark ': ''}`}
+            className={`duration-300 ease-out hover:ease-in hover:duration-300 rounded-r-2xl bg-stateFairRed w-24 h-24 hover:bg-stateFairRedDark scale-105 hover:w-28 hover:pl-3 ${
+              showHeuristicEvaluation === true
+                ? "w-28 pl-3 bg-stateFairRedDark"
+                : "" 
+            }`}
           >
             <img
               className="mt-4 mx-8"
@@ -889,7 +883,9 @@ function StateFair() {
               setShowFinalMockups(false);
               setShowNextSteps(false);
             }}
-            className={` duration-200 ease-out hover:ease-in hover:duration-200 rounded-r-2xl bg-stateFairBlue w-24 h-24 scale-105 hover:bg-stateFairBlueDark hover:scale-125 ${showBenchmarking === true ? 'scale-125 bg-stateFairBlueDark': ''}`}
+            className={` duration-200 ease-out hover:ease-in hover:duration-200 rounded-r-2xl bg-stateFairBlue w-24 h-24 scale-105 hover:bg-stateFairBlueDark hover:w-28 hover:pl-3  ${
+              showBenchmarking === true ? "w-28  pl-3 bg-stateFairBlueDark" : ""
+            }`}
           >
             <img
               className="mt-5 mx-8"
@@ -908,7 +904,11 @@ function StateFair() {
               setShowFinalMockups(false);
               setShowNextSteps(false);
             }}
-            className={` duration-200 ease-out hover:ease-in hover:duration-200 rounded-r-2xl bg-stateFairOrange hover:bg-stateFairOrangeDark w-24 h-24 scale-105 hover:scale-125 ${showDesignAndTest === true ? 'scale-125 bg-stateFairOrangeDark': ''}`}
+            className={` duration-200 ease-out hover:ease-in hover:duration-200 rounded-r-2xl bg-stateFairOrange hover:bg-stateFairOrangeDark w-24 h-24 scale-105 hover:w-28  hover:pl-3  ${
+              showDesignAndTest === true
+                ? "w-28  pl-3  bg-stateFairOrangeDark"
+                : ""
+            }`}
           >
             <img
               className="mt-6 mx-8"
@@ -929,7 +929,11 @@ function StateFair() {
               setShowHeuristicEvaluation(false);
               setShowNextSteps(false);
             }}
-            className={` duration-300 ease-out hover:ease-in hover:duration-300 rounded-r-2xl bg-stateFairBurgandy w-24 h-24 scale-105 hover:scale-110 hover:bg-stateFairBurgandyDark hover:scale-125 ${showFinalMockups === true ? 'scale-125 bg-stateFairBurgandyDark': ''}`}
+            className={` duration-300 ease-out hover:ease-in hover:duration-300 rounded-r-2xl bg-stateFairBurgandy w-24 h-24 scale-105 hover:bg-stateFairBurgandyDark hover:w-28  hover:pl-2  ${
+              showFinalMockups === true
+                ? "w-28 pl-2  bg-stateFairBurgandyDark"
+                : ""
+            }`}
           >
             <img
               className="mt-6 mx-8"
@@ -950,7 +954,9 @@ function StateFair() {
               setShowBenchmarking(false);
               setShowHeuristicEvaluation(false);
             }}
-            className={`duration-300 ease-out hover:ease-in hover:duration-300 rounded-r-2xl bg-stateFairYellow w-24 h-24 scale-105 hover:bg-stateFairYellowDark hover:scale-125 ${showNextSteps=== true ? 'scale-125 bg-stateFairYellowDark': ''}`}
+            className={`duration-300 ease-out hover:ease-in hover:duration-300 rounded-r-2xl bg-stateFairYellow w-24 h-24 scale-105 hover:bg-stateFairYellowDark hover:w-28 hover:pl-3   ${
+              showNextSteps === true ? "w-28 pl-3  bg-stateFairYellowDark" : ""
+            }`}
           >
             <img
               className="mt-6 mx-8"
