@@ -857,6 +857,8 @@ function StateFair() {
               setShowDesignAndTest(false);
               setShowFinalMockups(false);
               setShowNextSteps(false);
+              window.scrollTo({ top: 450, left: 0, behavior: "smooth" });
+              
             }}
             className={`duration-300 ease-out hover:ease-in hover:duration-300 rounded-r-2xl bg-stateFairRed w-24 h-24 hover:bg-stateFairRedDark scale-105 hover:w-28 hover:pl-3 ${
               showHeuristicEvaluation === true
@@ -882,6 +884,7 @@ function StateFair() {
               setShowDesignAndTest(false);
               setShowFinalMockups(false);
               setShowNextSteps(false);
+              window.scrollTo({ top: 450, left: 0, behavior: "smooth" });
             }}
             className={` duration-200 ease-out hover:ease-in hover:duration-200 rounded-r-2xl bg-stateFairBlue w-24 h-24 scale-105 hover:bg-stateFairBlueDark hover:w-28 hover:pl-3  ${
               showBenchmarking === true ? "w-28  pl-3 bg-stateFairBlueDark" : ""
@@ -903,6 +906,7 @@ function StateFair() {
               setShowHeuristicEvaluation(false);
               setShowFinalMockups(false);
               setShowNextSteps(false);
+              window.scrollTo({ top: 450, left: 0, behavior: "smooth" });
             }}
             className={` duration-200 ease-out hover:ease-in hover:duration-200 rounded-r-2xl bg-stateFairOrange hover:bg-stateFairOrangeDark w-24 h-24 scale-105 hover:w-28  hover:pl-3  ${
               showDesignAndTest === true
@@ -928,6 +932,7 @@ function StateFair() {
               setShowBenchmarking(false);
               setShowHeuristicEvaluation(false);
               setShowNextSteps(false);
+              window.scrollTo({ top: 450, left: 0, behavior: "smooth" });
             }}
             className={` duration-300 ease-out hover:ease-in hover:duration-300 rounded-r-2xl bg-stateFairBurgandy w-24 h-24 scale-105 hover:bg-stateFairBurgandyDark hover:w-28  hover:pl-2  ${
               showFinalMockups === true
@@ -953,6 +958,7 @@ function StateFair() {
               setShowDesignAndTest(false);
               setShowBenchmarking(false);
               setShowHeuristicEvaluation(false);
+              window.scrollTo({ top: 450, left: 0, behavior: "smooth" });
             }}
             className={`duration-300 ease-out hover:ease-in hover:duration-300 rounded-r-2xl bg-stateFairYellow w-24 h-24 scale-105 hover:bg-stateFairYellowDark hover:w-28 hover:pl-3   ${
               showNextSteps === true ? "w-28 pl-3  bg-stateFairYellowDark" : ""

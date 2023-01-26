@@ -120,11 +120,11 @@ function Home() {
             <div className="text-lg">Role:</div>
             <div className="text-lg">UX/UI Designer, UX Researcher</div>
           </div>
-          <p className="text-secondary mt-5 text-lg">Coming Soon...</p>
-          <p className=" mt-10 text-lg w-96 hidden">
-            Yet another redsign...{" "}
+          
+          <p className=" mt-5 text-lg w-96">
+          Yet another redesign...{" "}
             <span className="text-secondary text-lg">
-              But I tried to make it interesting, so bare with me.
+            But I tried to make it interesting, so bear with me.
             </span>
           </p>
           <div className="flex gap-2 text-xs">
