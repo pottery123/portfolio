@@ -91,9 +91,9 @@ function StateFair() {
             </div>
             <div className="font-Quicksand absolute mt-3 leading-7">
               The project started off with a usability heuristic evaluation of
-              the ticket purchasing process in the Washington State Fair app. I
-              used <a className="underline" href="https://www.nngroup.com/articles/ten-usability-heuristics/">Jakob Nielsen's 10 general principles for interaction design.</a>
-               Through this process I was able to identify some major usability
+              the ticket purchasing process in the Washington State Fair mobile app. I
+              used <a className="underline" href="https://www.nngroup.com/articles/ten-usability-heuristics/"> Jakob Nielsen's 10 general principles for interaction design.</a>
+                Through this process I was able to identify some major usability
               issues users were having when they tried to purchase tickets for
               concerts and shows.
             </div>
@@ -280,7 +280,7 @@ function StateFair() {
               >
                 {" "}
                 <div className="font-bold"> First Usability Test Results: </div>
-                <div className="mt-5"> • Over all SUS score of 3.3 of 7 </div>
+                <div className="mt-5"> • Over all SUS score of 3.3 of 7. </div>
                 <div className="mt-3">
                   {" "}
                   • Only 40% of users were able to select assessable and
@@ -294,7 +294,7 @@ function StateFair() {
                 <div className="font-bold">Success Metrics: </div>
                 <div className="mt-5">
                   {" "}
-                  • Higher SUS score than the original design
+                  • Higher SUS score than the original design.
                 </div>
                 <div className="mt-3">
                   • Majority of users will be able to select accessible and not
@@ -320,7 +320,7 @@ function StateFair() {
                 <span className="text-stateFairRed">
                   stopped this process when the design met the
                 </span>
-                success metrics.
+               <span> success metrics. </span>
               </div>
             </div>
             <div className="mt-20 ml-10 mb-3">
@@ -984,7 +984,7 @@ function StateFair() {
           people visit the Washington State Fair (pre-covid) every year. Many of
           the attendees use the Washington State Fair mobile app to purchase
           tickets for concerts and shows. This projects uncovers usability
-          issues in the app that users struggle with when purchasing tickets.
+          issues in the Washington State Fair mobile app that users struggle with when purchasing tickets.
         </div>
         <div className=" ml-20 mr-20 mt-10 mb-10">
           <span className="font-Quicksand font-bold">Role:</span> UX/UI Designer
