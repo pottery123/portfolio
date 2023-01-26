@@ -56,6 +56,12 @@ function StateFair() {
       showModal6,
     ]);
 
+   
+      useEffect(() => {
+        // 👇️ scroll to top on page load
+        window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+      }, []);
+
     function NextButton() {
       return (
         <div
