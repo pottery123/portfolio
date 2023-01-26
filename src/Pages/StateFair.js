@@ -119,8 +119,7 @@ function StateFair() {
               </div>
               <div className="w-36">
                 <div className="mb-10 leading-7">
-                  This is the second screen that shows after users have chosen
-                  the secton map to select seats.
+                   Second screen.
                 </div>
                 <ModalStateFair
                   showModal={showModal3}
@@ -137,7 +136,7 @@ function StateFair() {
               </div>
               <div className="w-32">
                 <div className="mb-10 leading-7">
-                  Third screen. Section selection screen.
+                  Third screen.
                 </div>
                 <ModalStateFair
                   showModal={showModal5}
@@ -192,7 +191,7 @@ function StateFair() {
                         NOT clearly displayed
                       </span>
                     </div>
-                    <div className="w-96 pt-5 animate-wave3 leading-7 ">
+                    <div className="w-96 pt-5 animate-wave3 leading-8 ">
                       {" "}
                       •{" "}
                       <span className="text-stateFairRed">
@@ -249,7 +248,7 @@ function StateFair() {
               <div>
                 <div className="w-32">
                   <div className="mb-10 leading-7">
-                    Forth Screen. Seat selection.
+                    Forth Screen.
                   </div>
                   <ModalStateFair
                     showModal={showModal6}
