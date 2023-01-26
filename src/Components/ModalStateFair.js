@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import _, { keys } from "underscore";
+
 
 function ModalStateFair({ showModal, setShowModal, img = [], object }) {
   const [index, setIndex] = useState(0);
@@ -48,7 +48,7 @@ function ModalStateFair({ showModal, setShowModal, img = [], object }) {
                       )}
                       {index === 1 && (
                         <div className=" flex justify-center mt-5 gap-5">
-                          <div className="rounded-full w-3 h-3  bg-stateFairBlue"></div>
+                          <div className="rounded-full w-3 h-3  bg-slate-200"></div>
                           <div className="rounded-full w-3 h-3  bg-stateFairBlue"></div>
                         </div>
                       )}
@@ -65,15 +65,15 @@ function ModalStateFair({ showModal, setShowModal, img = [], object }) {
                       )}
                       {index === 1 && (
                         <div className="flex justify-center mt-5 gap-5">
-                          <div className="rounded-full w-3 h-3  bg-stateFairBlue"></div>
+                          <div className="rounded-full w-3 h-3  bg-slate-200"></div>
                           <div className="rounded-full w-3 h-3  bg-stateFairBlue"></div>
                           <div className="rounded-full w-3 h-3  bg-slate-200"></div>
                         </div>
                       )}
                       {index === 2 && (
                         <div className="flex justify-center mt-5 gap-5">
-                          <div className="rounded-full w-3 h-3  bg-stateFairBlue"></div>
-                          <div className="rounded-full w-3 h-3  bg-stateFairBlue"></div>
+                          <div className="rounded-full w-3 h-3  bg-slate-200"></div>
+                          <div className="rounded-full w-3 h-3  bg-slate-200"></div>
                           <div className="rounded-full w-3 h-3  bg-stateFairBlue"></div>
                         </div>
                       )}
@@ -95,7 +95,7 @@ function ModalStateFair({ showModal, setShowModal, img = [], object }) {
                     <div>
                        {index === 1 && (
                         <div className="flex justify-center mt-5 gap-5">
-                          <div className="rounded-full w-3 h-3  bg-stateFairBlue"></div>
+                          <div className="rounded-full w-3 h-3  bg-slate-200"></div>
                           <div className="rounded-full w-3 h-3  bg-stateFairBlue"></div>
                           <div className="rounded-full w-3 h-3  bg-slate-200"></div>
                           <div className="rounded-full w-3 h-3  bg-slate-200"></div>
@@ -107,8 +107,8 @@ function ModalStateFair({ showModal, setShowModal, img = [], object }) {
                     <div>
                        {index === 2 && (
                         <div className="flex justify-center mt-5 gap-5">
-                          <div className="rounded-full w-3 h-3  bg-stateFairBlue"></div>
-                          <div className="rounded-full w-3 h-3  bg-stateFairBlue"></div>
+                          <div className="rounded-full w-3 h-3  bg-slate-200"></div>
+                          <div className="rounded-full w-3 h-3  bg-slate-200"></div>
                           <div className="rounded-full w-3 h-3  bg-stateFairBlue"></div>
                           <div className="rounded-full w-3 h-3  bg-slate-200"></div>
                         </div>
@@ -119,9 +119,9 @@ function ModalStateFair({ showModal, setShowModal, img = [], object }) {
                     <div>
                        {index === 3 && (
                         <div className="flex justify-center mt-5 gap-5">
-                          <div className="rounded-full w-3 h-3  bg-stateFairBlue"></div>
-                          <div className="rounded-full w-3 h-3  bg-stateFairBlue"></div>
-                          <div className="rounded-full w-3 h-3  bg-stateFairBlue"></div>
+                          <div className="rounded-full w-3 h-3  bg-slate-200"></div>
+                          <div className="rounded-full w-3 h-3  bg-slate-200"></div>
+                          <div className="rounded-full w-3 h-3  bg-slate-200"></div>
                           <div className="rounded-full w-3 h-3  bg-stateFairBlue"></div>
                         </div>
                       )}

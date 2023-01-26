@@ -87,14 +87,15 @@ function StateFair() {
         {showHeuristicEvaluation && (
           <div className=" mt-28">
             <div className="text-lg font-black font-Quicksand">
-              Heuristic Evaluation
+              Usability Heuristic Evaluation
             </div>
             <div className="font-Quicksand absolute mt-3 leading-7">
               The project started off with a usability heuristic evaluation of
               the ticket purchasing process in the Washington State Fair app. I
-              used Jakob Nielsen's 10 general principles for interaction design.
-              Through this process I was able to identify some major usability
-              issues when purchasing tickets for available seats .
+              used <a className="underline" href="https://www.nngroup.com/articles/ten-usability-heuristics/">Jakob Nielsen's 10 general principles for interaction design.</a>
+               Through this process I was able to identify some major usability
+              issues users were having when they tried to purchase tickets for
+              concerts and shows.
             </div>
             <div className="grid grid-cols-4 gap-24 text-sm mt-36 font-Quicksand">
               <div className="w-36">
@@ -861,7 +862,7 @@ function StateFair() {
             className={`duration-300 ease-out hover:ease-in hover:duration-300 rounded-r-2xl bg-stateFairRed w-24 h-24 hover:bg-stateFairRedDark scale-105 hover:w-28 hover:pl-3 ${
               showHeuristicEvaluation === true
                 ? "w-28 pl-3 bg-stateFairRedDark"
-                : "" 
+                : ""
             }`}
           >
             <img
