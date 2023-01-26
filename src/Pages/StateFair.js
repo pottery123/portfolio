@@ -1,8 +1,15 @@
-import { React, useState, useEffect } from "react";
+import { React, useState, useEffect, useRef } from "react";
 import ModalStateFair from "../Components/ModalStateFair";
 import { TextObject } from "../Components/StateFairText";
 
+
 function StateFair() {
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
+
+
   const [showHeuristicEvaluation, setShowHeuristicEvaluation] = useState(true);
   const [showOverView, setShowOverView] = useState(false);
   const [showBenchmarking, setShowBenchmarking] = useState(false);
@@ -55,13 +62,9 @@ function StateFair() {
       showModal5,
       showModal6,
     ]);
+    
 
-   
-      useEffect(() => {
-        // 👇️ scroll to top on page load
-        window.scrollTo({ top: 0, left: 0, behavior: "auto" });
-      }, []);
-
+    
     function NextButton() {
       return (
         <div
@@ -97,9 +100,16 @@ function StateFair() {
             </div>
             <div className="font-Quicksand absolute mt-3 leading-7">
               The project started off with a usability heuristic evaluation of
-              the ticket purchasing process in the Washington State Fair mobile app. I
-              used <a className="underline" href="https://www.nngroup.com/articles/ten-usability-heuristics/"> Jakob Nielsen's 10 general principles for interaction design.</a>
-                Through this process I was able to identify some major usability
+              the ticket purchasing process in the Washington State Fair mobile
+              app. I used{" "}
+              <a
+                className="underline"
+                href="https://www.nngroup.com/articles/ten-usability-heuristics/"
+              >
+                {" "}
+                Jakob Nielsen's 10 general principles for interaction design.
+              </a>
+              Through this process I was able to identify some major usability
               issues users were having when they tried to purchase tickets for
               concerts and shows.
             </div>
@@ -124,9 +134,7 @@ function StateFair() {
                 ></ModalStateFair>
               </div>
               <div className="w-36">
-                <div className="mb-10 leading-7">
-                   Second screen.
-                </div>
+                <div className="mb-10 leading-7">Second screen.</div>
                 <ModalStateFair
                   showModal={showModal3}
                   setShowModal={setShowModal3}
@@ -141,9 +149,7 @@ function StateFair() {
                 ></ModalStateFair>
               </div>
               <div className="w-32">
-                <div className="mb-10 leading-7">
-                  Third screen.
-                </div>
+                <div className="mb-10 leading-7">Third screen.</div>
                 <ModalStateFair
                   showModal={showModal5}
                   setShowModal={setShowModal5}
@@ -253,9 +259,7 @@ function StateFair() {
               </div>
               <div>
                 <div className="w-32">
-                  <div className="mb-10 leading-7">
-                    Forth Screen.
-                  </div>
+                  <div className="mb-10 leading-7">Forth Screen.</div>
                   <ModalStateFair
                     showModal={showModal6}
                     setShowModal={setShowModal6}
@@ -325,7 +329,7 @@ function StateFair() {
                 <span className="text-stateFairRed">
                   stopped this process when the design met the
                 </span>
-               <span> success metrics. </span>
+                <span> success metrics. </span>
               </div>
             </div>
             <div className="mt-20 ml-10 mb-3">
@@ -804,7 +808,7 @@ function StateFair() {
         )}
         {showNextSteps && (
           <div className="font-Quicksand">
-            <div className="mt-28 leading-8 font-black">Takeaways</div>
+            <div className="mt-28 leading-8 font-black text-lg">Takeaways</div>
             <div style={{ width: 700 }} className="mt-2 leading-7">
               <div>
                 • The{" "}
@@ -838,7 +842,7 @@ function StateFair() {
               </div>
             </div>
 
-            <div className="font-black mt-10 leading-9">Next Steps</div>
+            <div className="font-black mt-10 leading-9 text-lg">Next Steps</div>
             <div>
               •{" "}
               <span className="text-stateFairRed">
@@ -863,7 +867,7 @@ function StateFair() {
               setShowDesignAndTest(false);
               setShowFinalMockups(false);
               setShowNextSteps(false);
-              window.scrollTo({ top: 450, left: 0, behavior: "smooth" });
+              window.scrollTo({ top: 400, left: 0, behavior: "smooth" });
               
             }}
             className={`duration-300 ease-out hover:ease-in hover:duration-300 rounded-r-2xl bg-stateFairRed w-24 h-24 hover:bg-stateFairRedDark scale-105 hover:w-28 hover:pl-3 ${
@@ -890,7 +894,8 @@ function StateFair() {
               setShowDesignAndTest(false);
               setShowFinalMockups(false);
               setShowNextSteps(false);
-              window.scrollTo({ top: 450, left: 0, behavior: "smooth" });
+              window.scrollTo({ top: 400, left: 0, behavior: "smooth" });
+              
             }}
             className={` duration-200 ease-out hover:ease-in hover:duration-200 rounded-r-2xl bg-stateFairBlue w-24 h-24 scale-105 hover:bg-stateFairBlueDark hover:w-28 hover:pl-3  ${
               showBenchmarking === true ? "w-28  pl-3 bg-stateFairBlueDark" : ""
@@ -912,7 +917,8 @@ function StateFair() {
               setShowHeuristicEvaluation(false);
               setShowFinalMockups(false);
               setShowNextSteps(false);
-              window.scrollTo({ top: 450, left: 0, behavior: "smooth" });
+              window.scrollTo({ top: 400, left: 0, behavior: "smooth" });
+              
             }}
             className={` duration-200 ease-out hover:ease-in hover:duration-200 rounded-r-2xl bg-stateFairOrange hover:bg-stateFairOrangeDark w-24 h-24 scale-105 hover:w-28  hover:pl-3  ${
               showDesignAndTest === true
@@ -938,7 +944,8 @@ function StateFair() {
               setShowBenchmarking(false);
               setShowHeuristicEvaluation(false);
               setShowNextSteps(false);
-              window.scrollTo({ top: 450, left: 0, behavior: "smooth" });
+              window.scrollTo({ top: 400, left: 0, behavior: "smooth" });
+            
             }}
             className={` duration-300 ease-out hover:ease-in hover:duration-300 rounded-r-2xl bg-stateFairBurgandy w-24 h-24 scale-105 hover:bg-stateFairBurgandyDark hover:w-28  hover:pl-2  ${
               showFinalMockups === true
@@ -964,7 +971,8 @@ function StateFair() {
               setShowDesignAndTest(false);
               setShowBenchmarking(false);
               setShowHeuristicEvaluation(false);
-              window.scrollTo({ top: 450, left: 0, behavior: "smooth" });
+              window.scrollTo({ top: 400, left: 0, behavior: "smooth" });
+              
             }}
             className={`duration-300 ease-out hover:ease-in hover:duration-300 rounded-r-2xl bg-stateFairYellow w-24 h-24 scale-105 hover:bg-stateFairYellowDark hover:w-28 hover:pl-3   ${
               showNextSteps === true ? "w-28 pl-3  bg-stateFairYellowDark" : ""
@@ -995,7 +1003,8 @@ function StateFair() {
           people visit the Washington State Fair (pre-covid) every year. Many of
           the attendees use the Washington State Fair mobile app to purchase
           tickets for concerts and shows. This projects uncovers usability
-          issues in the Washington State Fair mobile app that users struggle with when purchasing tickets.
+          issues in the Washington State Fair mobile app that users struggle
+          with when purchasing tickets.
         </div>
         <div className=" ml-20 mr-20 mt-10 mb-10">
           <span className="font-Quicksand font-bold">Role:</span> UX/UI Designer
