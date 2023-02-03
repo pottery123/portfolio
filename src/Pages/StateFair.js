@@ -710,7 +710,7 @@ function StateFair() {
                       setAppArrow6(true);
                     }}
                   >
-                    <div className="font-bold mb-2 w-2/5 hover:text-stateFairRed">
+                    <div className="font-bold mb-1 w-2/5 hover:text-stateFairRed">
                       Error Prevention
                     </div>
                     <div>
@@ -734,7 +734,7 @@ function StateFair() {
                     }}
                     className="mb-8"
                   >
-                    <div className="font-bold mb-2 hover:text-stateFairRed ">
+                    <div className="font-bold mb-1 hover:text-stateFairRed ">
                       Recognition rather than recall
                     </div>
                     <div>
