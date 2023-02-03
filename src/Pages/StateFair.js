@@ -621,7 +621,7 @@ function StateFair() {
                     }}
                     className="mb-6"
                   >
-                    <div className="font-bold  underline-offset-4 hover:text-stateFairRed">
+                    <div className="font-bold mb-1  underline-offset-4 hover:text-stateFairRed">
                       User control and freedom
                     </div>
                     <div>
@@ -670,7 +670,7 @@ function StateFair() {
                     }}
                     className="mb-6"
                   >
-                    <div className="font-bold mb-2 mt-8 hover:text-stateFairRed">
+                    <div className="font-bold mb-1 mt-8 hover:text-stateFairRed">
                       Match Between System and the Real World
                     </div>
                     <div>
@@ -688,7 +688,7 @@ function StateFair() {
                     }}
                     className="mt-8"
                   >
-                    <div className="font-bold mb-2 hover:text-stateFairRed">
+                    <div className="font-bold -mt-2 mb-2 hover:text-stateFairRed">
                       Aesthetic and Minimalist design
                     </div>
                     <div>
