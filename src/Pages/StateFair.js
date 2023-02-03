@@ -1,14 +1,13 @@
 import { React, useState, useEffect, useRef } from "react";
 import ModalStateFair from "../Components/ModalStateFair";
 import { TextObject } from "../Components/StateFairText";
-
+import { Link } from "react-router-dom";
 
 function StateFair() {
   useEffect(() => {
     // 👇️ scroll to top on page load
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);
-
 
   const [showHeuristicEvaluation, setShowHeuristicEvaluation] = useState(true);
   const [showOverView, setShowOverView] = useState(false);
@@ -62,9 +61,7 @@ function StateFair() {
       showModal5,
       showModal6,
     ]);
-    
 
-    
     function NextButton() {
       return (
         <div
@@ -98,7 +95,7 @@ function StateFair() {
             <div className="text-lg font-black font-Quicksand">
               Usability Heuristic Evaluation
             </div>
-            <div className="font-Quicksand absolute mt-3 leading-7">
+            <div className="font-Quicksand absolute mt-7 leading-7">
               The project started off with a usability heuristic evaluation of
               the ticket purchasing process in the Washington State Fair mobile
               app. I used{" "}
@@ -115,7 +112,7 @@ function StateFair() {
             </div>
             <div className="grid grid-cols-4 gap-24 text-sm mt-36 font-Quicksand">
               <div className="w-36">
-                <div className="mb-10 leading-7">
+                <div className="mb-10 leading-7 mt-3">
                   This is the first screen users see after choosing the concert
                   they want to attend.
                 </div>
@@ -134,7 +131,7 @@ function StateFair() {
                 ></ModalStateFair>
               </div>
               <div className="w-36">
-                <div className="mb-10 leading-7">Second screen.</div>
+                <div className="mb-10 leading-7 mt-3">Second screen.</div>
                 <ModalStateFair
                   showModal={showModal3}
                   setShowModal={setShowModal3}
@@ -149,7 +146,7 @@ function StateFair() {
                 ></ModalStateFair>
               </div>
               <div className="w-32">
-                <div className="mb-10 leading-7">Third screen.</div>
+                <div className="mb-10 leading-7 mt-3">Third screen.</div>
                 <ModalStateFair
                   showModal={showModal5}
                   setShowModal={setShowModal5}
@@ -163,7 +160,7 @@ function StateFair() {
                   arrow={["/images/arrow.svg"]}
                   object={TextObject.screen5object}
                 ></ModalStateFair>
-                <div className=" text-lg mt-11 w-96 font-Quicksand">
+                <div className=" text-lg mt-14 w-96 font-Quicksand">
                   This is long. For the highlights{" "}
                   {!showOverView ? (
                     <div
@@ -190,7 +187,7 @@ function StateFair() {
                     <div className=" font-bold w-96 animate-wave2 mt-7 ">
                       Heuristic Evaluation Highlights
                     </div>
-                    <div className="w-96 pt-5 animate-wave2 leading-7 mt-3">
+                    <div className="w-96 pt-3 animate-wave2 leading-7 mt-3">
                       {" "}
                       • <span className="text-stateFairRed">
                         Prices
@@ -216,7 +213,7 @@ function StateFair() {
                       </span>
                       <span> marked on the section map.</span>
                     </div>
-                    <div className="w-96 pt-5 animate-wave4 leading-10">
+                    <div className="w-96 pt-3 animate-wave4 leading-10">
                       {" "}
                       • The design
                       <span className="text-stateFairRed">
@@ -234,7 +231,7 @@ function StateFair() {
                       the seats and sections maps were{" "}
                       <span className="text-stateFairRed">TOO small.</span>
                     </div>
-                    <div className="w-96 pt-5 animate-wave5 leading-9">
+                    <div className="w-96 pt-3 animate-wave5 leading-9">
                       •{" "}
                       <span className="text-stateFairRed">
                         Accessible seats
@@ -246,7 +243,7 @@ function StateFair() {
                       </span>{" "}
                       on the seat map.{" "}
                     </div>
-                    <div className="w-96 pt-5 animate-wave6 leading-7">
+                    <div className="w-96 pt-3 animate-wave6 leading-7">
                       •{" "}
                       <span className="text-stateFairRed">
                         TOO many options
@@ -259,7 +256,7 @@ function StateFair() {
               </div>
               <div>
                 <div className="w-32">
-                  <div className="mb-10 leading-7">Forth Screen.</div>
+                  <div className="mb-10 leading-7 mt-3">Forth Screen.</div>
                   <ModalStateFair
                     showModal={showModal6}
                     setShowModal={setShowModal6}
@@ -277,7 +274,7 @@ function StateFair() {
         {showBenchmarking && (
           <div className=" font-Quicksand mt-28">
             <div className="text-lg font-black">Benchmarking</div>
-            <div className=" absolute mt-3 leading-7">
+            <div className=" absolute mt-3 leading-7  mt-7">
               I conducted a usability test on the ticket buying process using
               the System Usability Scale (SUS) framework. I used these results
               to establish success metrics for future designs.
@@ -316,7 +313,7 @@ function StateFair() {
         {showDesignAndTest && (
           <div className="font-Quicksand mt-28 leading-8">
             <div className="text-lg font-black">Design & Test</div>
-            <div style={{ width: 800 }} className="mt-3 leading-7">
+            <div style={{ width: 800 }} className="mt-7 leading-7">
               <div className="">
                 I{" "}
                 <span className="text-stateFairRed">
@@ -402,7 +399,7 @@ function StateFair() {
             <div className="text-lg font-bold mt-28 leading-8">
               Final Mockups
             </div>
-            <div className="mt-20 ml-20 flex gap-28 mt-44">
+            <div className="ml-20 flex gap-28 mt-20">
               <div className="overflow-hidden">
                 {showAppScreen1 && (
                   <div>
@@ -809,7 +806,7 @@ function StateFair() {
         {showNextSteps && (
           <div className="font-Quicksand">
             <div className="mt-28 leading-8 font-black text-lg">Takeaways</div>
-            <div style={{ width: 700 }} className="mt-2 leading-7">
+            <div style={{ width: 700 }} className="mt-7 leading-7">
               <div>
                 • The{" "}
                 <span className="text-stateFairRed">value of heuristics</span>{" "}
@@ -868,7 +865,6 @@ function StateFair() {
               setShowFinalMockups(false);
               setShowNextSteps(false);
               window.scrollTo({ top: 400, left: 0, behavior: "smooth" });
-              
             }}
             className={`duration-300 ease-out hover:ease-in hover:duration-300 rounded-r-2xl bg-stateFairRed w-24 h-24 hover:bg-stateFairRedDark scale-105 hover:w-28 hover:pl-3 ${
               showHeuristicEvaluation === true
@@ -895,7 +891,6 @@ function StateFair() {
               setShowFinalMockups(false);
               setShowNextSteps(false);
               window.scrollTo({ top: 400, left: 0, behavior: "smooth" });
-              
             }}
             className={` duration-200 ease-out hover:ease-in hover:duration-200 rounded-r-2xl bg-stateFairBlue w-24 h-24 scale-105 hover:bg-stateFairBlueDark hover:w-28 hover:pl-3  ${
               showBenchmarking === true ? "w-28  pl-3 bg-stateFairBlueDark" : ""
@@ -918,7 +913,6 @@ function StateFair() {
               setShowFinalMockups(false);
               setShowNextSteps(false);
               window.scrollTo({ top: 400, left: 0, behavior: "smooth" });
-              
             }}
             className={` duration-200 ease-out hover:ease-in hover:duration-200 rounded-r-2xl bg-stateFairOrange hover:bg-stateFairOrangeDark w-24 h-24 scale-105 hover:w-28  hover:pl-3  ${
               showDesignAndTest === true
@@ -945,7 +939,6 @@ function StateFair() {
               setShowHeuristicEvaluation(false);
               setShowNextSteps(false);
               window.scrollTo({ top: 400, left: 0, behavior: "smooth" });
-            
             }}
             className={` duration-300 ease-out hover:ease-in hover:duration-300 rounded-r-2xl bg-stateFairBurgandy w-24 h-24 scale-105 hover:bg-stateFairBurgandyDark hover:w-28  hover:pl-2  ${
               showFinalMockups === true
@@ -972,7 +965,6 @@ function StateFair() {
               setShowBenchmarking(false);
               setShowHeuristicEvaluation(false);
               window.scrollTo({ top: 400, left: 0, behavior: "smooth" });
-              
             }}
             className={`duration-300 ease-out hover:ease-in hover:duration-300 rounded-r-2xl bg-stateFairYellow w-24 h-24 scale-105 hover:bg-stateFairYellowDark hover:w-28 hover:pl-3   ${
               showNextSteps === true ? "w-28 pl-3  bg-stateFairYellowDark" : ""
@@ -994,7 +986,25 @@ function StateFair() {
 
   return (
     <div className="h-screen">
-      <div className="p-10">
+      <Link
+        to="/"
+        className=" border-2 border-stateFairBurgandy bg-stateFairBurgandy rounded text-white px-4 py-1 hover:bg-white  hover:text-stateFairBurgandy hover:border-2 hover:border-stateFairBurgandy absolute  left-12 top-10  z-50 font-Nunito"
+      >
+        Home
+      </Link>
+      <div className=" absolute flex right-12 top-10 z-50 font-Rubik">
+        {" "}
+        <Link to="/contact-about" className=" flex gap-10">
+          {" "}
+          <div className="rounded border-2 border-stateFairBurgandy bg-stateFairBurgandy text-white px-3 py-1 hover:border-2 hover:border-stateFairBurgandy  hover:bg-white hover:text-stateFairBurgandy ">
+            Contact
+          </div>{" "}
+          <div className="rounded border-2 border-stateFairBurgandy hover:border-2  bg-stateFairBurgandy text-white px-4 py-1 hover:bg-white hover:text-stateFairBurgandy ">
+            About
+          </div>{" "}
+        </Link>
+      </div>
+      <div className="p-10 mt-32">
         <div className="text-seven text-center mb-10 font-Quicksand">
           State Fair
         </div>
@@ -1017,7 +1027,7 @@ function StateFair() {
         </div>
         <img
           className="pl-10 drop-shadow-2xl"
-          src={"/images/note_book_background.svg"}
+          src={"/images/note.svg"}
           alt="Aprender Screens"
           width={1100}
         ></img>
