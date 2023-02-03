@@ -622,7 +622,7 @@ function StateFair() {
                     }}
                     className="mb-6"
                   >
-                    <div className={`font-bold mb-1 hover:text-stateFairRed ${ showAppArrow1 && "text-stateFairRed"}`}>
+                    <div className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${ showAppArrow1 && "text-stateFairRed"}`}>
                       User control and freedom
                     </div>
                     <div>
@@ -639,7 +639,7 @@ function StateFair() {
                     }}
                     className="mb-6"
                   >
-                    <div className={`font-bold mb-1 hover:text-stateFairRed ${ showAppArrow2 && "text-stateFairRed"}`}>
+                    <div className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${ showAppArrow2 && "text-stateFairRed"}`}>
                       Consistency and Standards
                     </div>
                     <div>
@@ -657,7 +657,7 @@ function StateFair() {
                     }}
                     className="mb-6 mt-8"
                   >
-                    <div className={`font-bold mb-1 hover:text-stateFairRed ${ showAppArrow3 && "text-stateFairRed"}`}>
+                    <div className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${ showAppArrow3 && "text-stateFairRed"}`}>
                       Visibility of System Status
                     </div>
                     <div>
@@ -675,7 +675,7 @@ function StateFair() {
                     }}
                     className="mb-6"
                   >
-                    <div className={`font-bold mt-8 hover:text-stateFairRed ${ showAppArrow4 && "text-stateFairRed"}`}>
+                    <div className={`font-bold mt-8 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${ showAppArrow4 && "text-stateFairRed"}`}>
                       Match Between System and the Real World
                     </div>
                     <div>
@@ -695,7 +695,7 @@ function StateFair() {
                     }}
                     className="mt-8"
                   >
-                    <div className={`font-bold mb-1 mt-9 hover:text-stateFairRed ${ showAppArrow5 && "text-stateFairRed"}`}>
+                    <div className={`font-bold mb-1 mt-9 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${ showAppArrow5 && "text-stateFairRed"}`}>
                       Aesthetic and Minimalist design
                     </div>
                     <div>
@@ -714,7 +714,7 @@ function StateFair() {
                       setAppArrow6((prev) => !prev);
                     }}
                   >
-                    <div className={`font-bold mb-1 w-2/5 hover:text-stateFairRed ${showAppArrow6 && "text-stateFairRed"}`}>
+                    <div className={`font-bold mb-1 w-2/5 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${showAppArrow6 && "text-stateFairRed"}`}>
                       Error Prevention
                     </div>
                     <div>
@@ -738,7 +738,7 @@ function StateFair() {
                     }}
                     className="mb-8"
                   >
-                    <div className={`font-bold mb-1 hover:text-stateFairRed ${ showAppArrow7 && "text-stateFairRed"}`}>
+                    <div className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${ showAppArrow7 && "text-stateFairRed"}`}>
                       Recognition rather than recall
                     </div>
                     <div>
@@ -756,7 +756,7 @@ function StateFair() {
                     }}
                     className="mb-8"
                   >
-                    <div className={`font-bold mb-1 hover:text-stateFairRed ${ showAppArrow11 && "text-stateFairRed"}`}>
+                    <div className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${ showAppArrow11 && "text-stateFairRed"}`}>
                       Error Prevention
                     </div>
                     <div>
@@ -776,7 +776,7 @@ function StateFair() {
                     }}
                     className="mb-8"
                   >
-                    <div className={`font-bold mb-1 hover:text-stateFairRed ${ showAppArrow10 && "text-stateFairRed"}`}>
+                    <div className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${ showAppArrow10 && "text-stateFairRed"}`}>
                       Visibility of System Status
                     </div>
                     <div>
@@ -793,7 +793,7 @@ function StateFair() {
                       setAppArrow7(false);
                     }}
                   >
-                    <div className={`font-bold mb-1 hover:text-stateFairRed ${ showAppArrow8 && "text-stateFairRed"}`}>
+                    <div className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${ showAppArrow8 && "text-stateFairRed"}`}>
                       Visibility of System Status
                     </div>
                     <div>
