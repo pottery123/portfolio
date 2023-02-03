@@ -408,7 +408,7 @@ function StateFair() {
                         src={"/images/red-arrow.svg"}
                         style={{
                           position: "absolute",
-                          top: 380,
+                          top: 286,
                           left: 110,
                           width: 29.54,
                           height: 29.84,
@@ -421,7 +421,7 @@ function StateFair() {
                         src={"/images/red-arrow.svg"}
                         style={{
                           position: "absolute",
-                          top: 518,
+                          top: 423,
                           left: 200,
                           width: 29.54,
                           height: 29.84,
@@ -436,8 +436,8 @@ function StateFair() {
                         style={{
                           position: "absolute",
                           zIndex: 10,
-                          top: 640,
-                          left: 240,
+                          top: 545,
+                          left: 233,
                           width: 29.54,
                           height: 29.84,
                         }}
@@ -449,7 +449,7 @@ function StateFair() {
                         src={"/images/red-arrow.svg"}
                         style={{
                           position: "absolute",
-                          top: 550,
+                          top: 453,
                           left: 100,
                           rotate: "-20deg",
                           width: 29.54,
@@ -463,7 +463,7 @@ function StateFair() {
                         src={"/images/red-arrow.svg"}
                         style={{
                           position: "absolute",
-                          top: 710,
+                          top: 610,
                           left: 200,
                           width: 29.54,
                           height: 29.84,
@@ -493,7 +493,7 @@ function StateFair() {
                         src={"/images/red-arrow.svg"}
                         style={{
                           position: "absolute",
-                          top: 530,
+                          top: 430,
                           left: 200,
                           width: 29.54,
                           height: 29.84,
@@ -535,7 +535,7 @@ function StateFair() {
                         src={"/images/red-arrow.svg"}
                         style={{
                           position: "absolute",
-                          top: 695,
+                          top: 597,
                           left: 270,
                           width: 29.54,
                           height: 29.84,
@@ -550,7 +550,7 @@ function StateFair() {
                         src={"/images/red-arrow.svg"}
                         style={{
                           position: "absolute",
-                          top: 740,
+                          top: 640,
                           left: 310,
                           width: 29.54,
                           height: 29.84,
@@ -565,7 +565,7 @@ function StateFair() {
                         src={"/images/red-arrow.svg"}
                         style={{
                           position: "absolute",
-                          top: 480,
+                          top: 380,
                           width: 29.54,
                           height: 29.84,
                           left: 195,
@@ -578,7 +578,7 @@ function StateFair() {
                         src={"/images/red-arrow.svg"}
                         style={{
                           position: "absolute",
-                          top: 540,
+                          top: 445,
                           width: 29.54,
                           height: 29.84,
                           rotate: "-90deg",
@@ -621,7 +621,7 @@ function StateFair() {
                     }}
                     className="mb-6"
                   >
-                    <div className="font-bold mb-2 underline-offset-4 hover:text-stateFairRed">
+                    <div className="font-bold  underline-offset-4 hover:text-stateFairRed">
                       User control and freedom
                     </div>
                     <div>
@@ -637,7 +637,7 @@ function StateFair() {
                     }}
                     className="mb-6"
                   >
-                    <div className="font-bold mb-2 hover:text-stateFairRed">
+                    <div className="font-bold mb-2 mt-3 hover:text-stateFairRed">
                       Consistency and Standards
                     </div>
                     <div>
@@ -752,7 +752,7 @@ function StateFair() {
                     }}
                     className="mb-8"
                   >
-                    <div className="font-bold mb-2 hover:text-stateFairRed ">
+                    <div className="font-bold mb-1 hover:text-stateFairRed ">
                       Error Prevention
                     </div>
                     <div>
@@ -789,7 +789,7 @@ function StateFair() {
                       setAppArrow8(true);
                     }}
                   >
-                    <div className="font-bold mb-2 hover:text-stateFairRed">
+                    <div className="font-bold mb-2 -mt-2 hover:text-stateFairRed">
                       Visibility of System Status
                     </div>
                     <div>
