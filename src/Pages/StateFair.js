@@ -613,15 +613,16 @@ function StateFair() {
               {showAppScreen1 && (
                 <div style={{ height: 568 }} className=" w-96">
                   <div
-                    onMouseOut={() => {
-                      setAppArrow1(false);
-                    }}
-                    onMouseOver={() => {
+                    onClick={() => {
                       setAppArrow1(true);
+                      setAppArrow2(false);
+                      setAppArrow3(false);
+                      setAppArrow4(false);
+                      setAppArrow5(false);
                     }}
                     className="mb-6"
                   >
-                    <div className="font-bold mb-1  underline-offset-4 hover:text-stateFairRed">
+                    <div className={`font-bold mb-1 hover:text-stateFairRed ${ showAppArrow1 && "text-stateFairRed"}`}>
                       User control and freedom
                     </div>
                     <div>
@@ -629,15 +630,16 @@ function StateFair() {
                     </div>
                   </div>
                   <div
-                    onMouseOut={() => {
-                      setAppArrow2(false);
-                    }}
-                    onMouseOver={() => {
+                    onClick={() => {
                       setAppArrow2(true);
+                      setAppArrow1(false);
+                      setAppArrow3(false);
+                      setAppArrow4(false);
+                      setAppArrow5(false);
                     }}
                     className="mb-6"
                   >
-                    <div className="font-bold mt-8 mb-2 hover:text-stateFairRed">
+                    <div className={`font-bold mb-1 hover:text-stateFairRed ${ showAppArrow2 && "text-stateFairRed"}`}>
                       Consistency and Standards
                     </div>
                     <div>
@@ -646,15 +648,16 @@ function StateFair() {
                     </div>
                   </div>
                   <div
-                    onMouseOut={() => {
-                      setAppArrow3(false);
-                    }}
-                    onMouseOver={() => {
+                    onClick={() => {
                       setAppArrow3(true);
+                      setAppArrow1(false);
+                      setAppArrow2(false);
+                      setAppArrow4(false);
+                      setAppArrow5(false);
                     }}
                     className="mb-6 mt-8"
                   >
-                    <div className="font-bold -mt-2 mb-1 hover:text-stateFairRed">
+                    <div className={`font-bold mb-1 hover:text-stateFairRed ${ showAppArrow3 && "text-stateFairRed"}`}>
                       Visibility of System Status
                     </div>
                     <div>
@@ -662,15 +665,17 @@ function StateFair() {
                     </div>
                   </div>
                   <div
-                    onMouseOut={() => {
-                      setAppArrow4(false);
-                    }}
-                    onMouseOver={() => {
+                    onClick={() => {
                       setAppArrow4(true);
+                      setAppArrow1(false);
+                      setAppArrow2(false);
+                      setAppArrow3(false);
+                      setAppArrow5(false);
+                      
                     }}
                     className="mb-6"
                   >
-                    <div className="font-bold mb-1 mt-8 hover:text-stateFairRed">
+                    <div className={`font-bold mt-8 hover:text-stateFairRed ${ showAppArrow4 && "text-stateFairRed"}`}>
                       Match Between System and the Real World
                     </div>
                     <div>
@@ -680,15 +685,17 @@ function StateFair() {
                     </div>
                   </div>
                   <div
-                    onMouseOut={() => {
-                      setAppArrow5(false);
-                    }}
-                    onMouseOver={() => {
+                    onClick={() => {
                       setAppArrow5(true);
+                      setAppArrow1(false);
+                      setAppArrow2(false);
+                      setAppArrow3(false);
+                      setAppArrow4(false);
+                      
                     }}
                     className="mt-8"
                   >
-                    <div className="font-bold -mt-2 mb-2 hover:text-stateFairRed">
+                    <div className={`font-bold mb-1 mt-9 hover:text-stateFairRed ${ showAppArrow5 && "text-stateFairRed"}`}>
                       Aesthetic and Minimalist design
                     </div>
                     <div>
@@ -703,14 +710,11 @@ function StateFair() {
               {showAppScreen2 && (
                 <div style={{ height: 568 }} className="w-96">
                   <div
-                    onMouseOut={() => {
-                      setAppArrow6(false);
-                    }}
-                    onMouseOver={() => {
-                      setAppArrow6(true);
+                    onClick={() => {
+                      setAppArrow6((prev) => !prev);
                     }}
                   >
-                    <div className="font-bold mb-1 w-2/5 hover:text-stateFairRed">
+                    <div className={`font-bold mb-1 w-2/5 hover:text-stateFairRed ${showAppArrow6 && "text-stateFairRed"}`}>
                       Error Prevention
                     </div>
                     <div>
@@ -726,15 +730,15 @@ function StateFair() {
               {showAppScreen3 && (
                 <div style={{ height: 568 }} className="w-96">
                   <div
-                    onMouseOut={() => {
-                      setAppArrow7(false);
-                    }}
-                    onMouseOver={() => {
+                    onClick={() => {
                       setAppArrow7(true);
+                      setAppArrow11(false);
+                      setAppArrow10(false);
+                      setAppArrow8(false);
                     }}
                     className="mb-8"
                   >
-                    <div className="font-bold mb-1 hover:text-stateFairRed ">
+                    <div className={`font-bold mb-1 hover:text-stateFairRed ${ showAppArrow7 && "text-stateFairRed"}`}>
                       Recognition rather than recall
                     </div>
                     <div>
@@ -744,15 +748,15 @@ function StateFair() {
                     </div>
                   </div>
                   <div
-                    onMouseOut={() => {
-                      setAppArrow11(false);
-                    }}
-                    onMouseOver={() => {
+                    onClick={() => {
                       setAppArrow11(true);
+                      setAppArrow7(false);
+                      setAppArrow10(false);
+                      setAppArrow8(false);
                     }}
                     className="mb-8"
                   >
-                    <div className="font-bold mb-1 hover:text-stateFairRed ">
+                    <div className={`font-bold mb-1 hover:text-stateFairRed ${ showAppArrow11 && "text-stateFairRed"}`}>
                       Error Prevention
                     </div>
                     <div>
@@ -764,15 +768,15 @@ function StateFair() {
                   </div>
 
                   <div
-                    onMouseOut={() => {
-                      setAppArrow10(false);
-                    }}
-                    onMouseOver={() => {
+                    onClick={() => {
                       setAppArrow10(true);
+                      setAppArrow11(false);
+                      setAppArrow7(false);
+                      setAppArrow8(false);
                     }}
                     className="mb-8"
                   >
-                    <div className="font-bold mb-2 hover:text-stateFairRed mt-3">
+                    <div className={`font-bold mb-1 hover:text-stateFairRed ${ showAppArrow10 && "text-stateFairRed"}`}>
                       Visibility of System Status
                     </div>
                     <div>
@@ -782,14 +786,14 @@ function StateFair() {
                   </div>
 
                   <div
-                    onMouseOut={() => {
-                      setAppArrow8(false);
-                    }}
-                    onMouseOver={() => {
+                    onClick={() => {
                       setAppArrow8(true);
+                      setAppArrow10(false);
+                      setAppArrow11(false);
+                      setAppArrow7(false);
                     }}
                   >
-                    <div className="font-bold mb-2 -mt-2 hover:text-stateFairRed">
+                    <div className={`font-bold mb-1 hover:text-stateFairRed ${ showAppArrow8 && "text-stateFairRed"}`}>
                       Visibility of System Status
                     </div>
                     <div>
