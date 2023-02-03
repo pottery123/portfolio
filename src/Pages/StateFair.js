@@ -637,7 +637,7 @@ function StateFair() {
                     }}
                     className="mb-6"
                   >
-                    <div className="font-bold mb-2 mt-3 hover:text-stateFairRed">
+                    <div className="font-bold mt-8 mb-2 hover:text-stateFairRed">
                       Consistency and Standards
                     </div>
                     <div>
@@ -654,7 +654,7 @@ function StateFair() {
                     }}
                     className="mb-6 mt-8"
                   >
-                    <div className="font-bold mb-2 hover:text-stateFairRed">
+                    <div className="font-bold -mt-2 mb-1 hover:text-stateFairRed">
                       Visibility of System Status
                     </div>
                     <div>
@@ -670,7 +670,7 @@ function StateFair() {
                     }}
                     className="mb-6"
                   >
-                    <div className="font-bold mb-2 hover:text-stateFairRed">
+                    <div className="font-bold mb-2 mt-8 hover:text-stateFairRed">
                       Match Between System and the Real World
                     </div>
                     <div>
