@@ -56,7 +56,7 @@ function Aprender() {
           alt="Aprender Screens"
         ></img>
         <div className="text-eight font-Bhaijaan2 font-semibold pt-52 text-white pl-10">
-         <div className="pt-18">Aprender</div> 
+          <div className="pt-18">Aprender</div>
           <p className="text-four font-normal tracking-wide">
             <span className="font-bold">Role:</span> UX/UI Designer, Interaction
             Designer, UX Researcher
@@ -282,10 +282,10 @@ function Aprender() {
                   <p className="text-2xl leading-relaxed">
                     I grew up in a very diverse zip code in Seattle. I was
                     surrounded by languages and people from all over the world.
-                    One day, I decided purchase something at a corner shop near
-                    where I lived. Feeling confident I decided to practice my
-                    Spanish with some of the employees at that shop. But when I
-                    got there I couldn’t recall any Spanish words or phrases
+                    One day, I decided to purchase something at a corner shop
+                    near where I lived. Feeling confident, I decided to practice
+                    my Spanish with some of the employees at that shop. But when
+                    I got there, I couldn’t recall any Spanish words or phrases
                     related to the context I was in. Which led me to wonder...
                   </p>
                 </div>
@@ -305,9 +305,9 @@ function Aprender() {
             <p className="font-semibold text-five mb-4">User Research</p>
             <div className="flex justify-evenly">
               <p className="text-2xl leading-relaxed">
-                I took some time I sent out a research survey via google forms
-                to 28 participants who had used language learning apps in the
-                past. The survey centered around one main question:
+                I sent out a research survey via Google Forms to 28 participants
+                who had used language learning apps in the past. The survey
+                centered around one main question:
                 <p className="text-center text-3xl text-aprenderBlue mt-32 mb-24">
                   “Did the app help you communicate in different contexts or
                   situations...in the language you were studying?”
@@ -403,8 +403,8 @@ function Aprender() {
                 <div className="flex justify-evenly">
                   <p className="text-2xl leading-relaxed mb-20">
                     After I finished collecting the data and the research
-                    analysis I created a fictional character that represents a
-                    typical participant, their needs and frustrations.
+                    analysis, I created a fictional character that represents
+                    typical participant's needs and frustrations.
                   </p>
                 </div>
 
@@ -415,14 +415,14 @@ function Aprender() {
                         Target 1
                       </p>
                       <p className="text-aprenderPink font-bold pb-2">
-                        Who:
+                        <span>Who:</span> &nbsp;
                         <span className="text-black font-normal">
                           Casual Language Learners
                         </span>
                       </p>
 
                       <p className="text-aprenderPink font-bold pb-2">
-                        Struggle To:{" "}
+                        <span>Struggle To:</span> &nbsp;
                         <span className="text-black font-normal">
                           Retain the words and phrases they've learned while
                           using a language learning app.
@@ -430,7 +430,7 @@ function Aprender() {
                       </p>
 
                       <p className="text-aprenderPink font-bold pb-2">
-                        Why?:{" "}
+                        <span>Why?:</span>&nbsp;&nbsp;
                         <span className="text-black font-normal">
                           Because the current information learned within the app
                           is not relevant to scenarios or locations they
@@ -439,7 +439,7 @@ function Aprender() {
                       </p>
 
                       <p className="text-aprenderPink font-bold pb-2">
-                        Instead, enable them too?:{" "}
+                        <span>Instead, enable them too?:</span>&nbsp;&nbsp;
                         <span className="text-black font-normal">
                           Focus their language education on words and phrases
                           that are relevant to everyday scenarios or locations
@@ -448,7 +448,7 @@ function Aprender() {
                       </p>
 
                       <p className="text-aprenderPink font-bold">
-                        Possible Features:
+                        <span>Possible Features:</span>&nbsp;&nbsp;
                         <span className="text-black font-normal">
                           List words/phrases related to the place they are
                           currently in, such as kitchen, bedroom, store, street,
@@ -490,55 +490,57 @@ function Aprender() {
             <div className="grid grid-cols-2 gap-24">
               <div>
                 <img
-                  className="ml-32 mb-3"
+                  className="mb-3"
                   width={24}
                   height={24}
                   src={"/images/quote.svg"}
                   alt="user feedback"
                 ></img>
-                <div className="">
+                <div className="w-72">
                   “too much emphasis on vocabulary I did not need...I’ve better
-                  results from finding or making targeted word lists and
-                  then working on pronunciation and vocabulary.”
+                  results from finding or making targeted word lists and then
+                  working on pronunciation and vocabulary.”
                 </div>
               </div>
 
               <div>
                 <img
-                  className="ml-32 mb-3"
+                  className="mb-3"
                   width={24}
                   height={24}
                   src={"/images/user-feedback-check.svg"}
                   alt="user feedback"
                 ></img>
-                Provide targeted word lists and avoid vocabulary that is not
-                needed. To address this problem the user should have the liberty
-                to choose what they need to learn.
+                <div className="w-72">
+                  Provide targeted word lists and avoid vocabulary that is not
+                  needed. To address this problem the user should have the
+                  liberty to choose what they need to learn.
+                </div>
               </div>
             </div>
 
             <div className="grid grid-cols-2 gap-24">
-              <div>
+              <div className="">
                 <img
-                  className="ml-32 mb-3"
+                  className="mb-3"
                   width={24}
                   height={24}
                   src={"/images/quote.svg"}
                   alt="user feedback"
                 ></img>
-                <div className="">
+                <div className="w-72">
                   “I haven’t tried out my skills in a functional context yet.”
                 </div>
               </div>
               <div className="">
                 <img
-                  className="ml-32 mb-3"
+                  className=" mb-3"
                   width={24}
                   height={24}
                   src={"/images/user-feedback-check.svg"}
                   alt="user feedback"
                 ></img>
-                <div className="">
+                <div className="w-72">
                   Content should be able to allow users to apply new vocabulary
                   immediately by providing words/phrases that are relevant to
                   the context/situation they are in.
@@ -548,97 +550,111 @@ function Aprender() {
             <div className="grid grid-cols-2 gap-24">
               <div>
                 <img
-                  className="ml-32 mb-3"
+                  className=" mb-3"
                   width={24}
                   height={24}
                   src={"/images/quote.svg"}
                   alt="user feedback"
                 ></img>
-                “It focused on everything at  once, and not just one subject.”
+                <div className="w-72">
+                  “It focused on everything at once, and not just one subject.”
+                </div>
               </div>
 
               <div>
                 <img
-                  className="ml-32 mb-3"
+                  className=" mb-3"
                   width={24}
                   height={24}
                   src={"/images/user-feedback-check.svg"}
                   alt="user feedback"
                 ></img>
-                Content should focus on one subject of their choosing.
+                <div className="w-72">
+                  Content should focus on one subject of their choosing.
+                </div>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-24">
               <div>
                 <img
-                  className="ml-32 mb-3"
+                  className=" mb-3"
                   width={24}
                   height={24}
                   src={"/images/quote.svg"}
                   alt="user feedback"
                 ></img>
-                “Most phrases weren’t super common and more
-                conversational/situation practices was separate from main
-                curriculum.”
+                <div className="w-72">
+                  “Most phrases weren’t super common and more
+                  conversational/situation practices was separate from main
+                  curriculum.”
+                </div>
               </div>
 
               <div>
                 <img
-                  className="ml-32 mb-3"
+                  className=" mb-3"
                   width={24}
                   height={24}
                   src={"/images/user-feedback-check.svg"}
                   alt="user feedback"
                 ></img>
-                Content should provide user with common vocabulary. Not
-                vocabulary they will rarely use.
+                <div className="w-72">
+                  Content should provide user with common vocabulary. Not
+                  vocabulary they will rarely use.
+                </div>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-24">
               <div>
                 <img
-                  className="ml-32 mb-3"
+                  className=" mb-3"
                   width={24}
                   height={24}
                   src={"/images/quote.svg"}
                   alt="user feedback"
                 ></img>
-                “I didn’t complete the course, but what I did finish, the
-                content was varied.”
+                <div className="w-72">
+                  “I didn’t complete the course, but what I did finish, the
+                  content was varied.”
+                </div>
               </div>
 
               <div>
                 <img
-                  className="ml-32 mb-3"
+                  className=" mb-3"
                   width={24}
                   height={24}
                   src={"/images/user-feedback-check.svg"}
                   alt="user feedback"
                 ></img>
-                Users should not have to complete the ‘course’ or ‘lesson’ to
-                learn useful and practical vocabulary.
+                <div className="w-72">
+                  Users should not have to complete the ‘course’ or ‘lesson’ to
+                  learn useful and practical vocabulary.
+                </div>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-24">
               <div>
                 <img
-                  className="mx-32 mb-3"
+                  className=" mb-3"
                   width={24}
                   height={24}
                   src={"/images/quote.svg"}
                   alt="user feedback"
                 ></img>
-                <div>“Hard to remember what I learned and apply it.”</div>
+                <div className="w-72">
+                  “Hard to remember what I learned and apply it.”
+                </div>
               </div>
               <div>
                 <img
-                  className="ml-40 mb-3"
+                  className=" mb-3"
                   width={24}
                   height={24}
                   src={"/images/user-feedback-check.svg"}
                   alt="user feedback"
                 ></img>
-                <div>
+                <div className="w-72">
                   Content must be able to provide words that users can apply to
                   their everyday life immediately.
                 </div>
@@ -651,8 +667,11 @@ function Aprender() {
               <p className="font-semibold text-five mb-4">User Story Mapping</p>
               <div className="flex justify-evenly">
                 <p className="text-2xl leading-relaxed">
-                The MVP for the app Aprender consisted of one major aspect that would solve for the problems users were having when using language learning apps. 
-                I broke down the interactions into simple user stories. Each story addressed a problem users expressed having with other language learning apps.
+                  The MVP for Aprender would solve for the problems users were
+                  having when using language learning apps. I broke down the
+                  interactions into simple user stories. Each story addressed a
+                  problem users expressed having with other language learning
+                  apps.
                 </p>
               </div>
             </div>
@@ -676,8 +695,8 @@ function Aprender() {
               <p className="text-2xl leading-relaxed">
                 After the content was solidified it was time to create a UI that
                 would address each user story that correlated with solving a
-                specific problem. I started with sketches to make sure I had
-                all the elements in place before building out the high fidelity
+                specific problem. I started with sketches to make sure I had all
+                the elements in place before building out the high fidelity
                 mockups.
               </p>
             </div>
@@ -696,15 +715,18 @@ function Aprender() {
           <p className="font-semibold text-five mb-4">Usability Testing</p>
           <div className="flex justify-evenly">
             <p className="text-2xl leading-relaxed">
-            Usability Testing
-Testing the sketches with actual users early on in the process helped me to eliminate things that were confusing to the user, and add things that helped the user get the task done. 
-Because of this the final mockups differed little from the original sketches, which saved me a lot of time.
-
+              Usability Testing Testing the sketches with actual users early on
+              in the process helped me to eliminate things that were confusing
+              to the user, and add things that helped the user get the task
+              done. Because of this the final mockups differed little from the
+              original sketches, which saved me a lot of time.
             </p>
           </div>
           <p className="p-10 bg-slate-200 mt-24">
             <div className="font-bold">SUS Score</div>
-            The SUS score for these wireframes was 6.5 out of 7. Because I tested early and made changes to the sketches, all the interactions in the final mockups were very similar to the sketches.
+            The SUS score for these wireframes was 6.5 out of 7. Because I
+            tested early and made changes to the sketches, all the interactions
+            in the final mockups were very similar to the sketches.
             <p className="mt-10">
               <div className="font-bold">User Issues Addressed </div>
 
@@ -733,9 +755,9 @@ Because of this the final mockups differed little from the original sketches, wh
             The Corner Shop (revisited)
           </p>
           <p className="text-2xl mx-44">
-          
-Remember the corner shop I spoke about before, and how I was unable to recall any words or phrases related to that context? Well, I hoped to avoid those issues with the new mobile app I named...
-
+            Remember the corner shop I spoke about before, and how I was unable
+            to recall any words or phrases related to that context? Well, I
+            hoped to avoid those issues with the new mobile app I named...
           </p>
           <p className="font-Bhaijaan2 text-nine font-medium text-aprenderPink text-center my-40">
             Aprender
@@ -755,38 +777,51 @@ Remember the corner shop I spoke about before, and how I was unable to recall an
               <div className="font-bold mb-5">
                 The importance of early usability testing
               </div>
-              <div className="">
-              The importance of early usability testing
-               Through this process I learned the importance of gathering information from the user to help solve their needs and early usability testing. Because I tested the sketches early I was able to quickly discover user issues and immediately address them before implementing them in the final mockups. This saved me a lot of time.
-	  
-
+              <div>
+                <ul className="list-disc">
+                  <li>
+                    Through this process I learned the importance of gathering
+                    information from the user to help solve their needs and
+                    early usability testing.{" "}
+                  </li>
+                  <li>
+                    Because I tested the sketches early, I was able to quickly
+                    discover user issues and immediately address them before
+                    implementing them in the final mockups. This saved me a lot
+                    of time.
+                  </li>
+                </ul>
               </div>
             </div>
             <p className="bg-slate-200  p-10 ">
               <div className="font-bold mb-5">
                 Add features based on user research
               </div>
-              <p>•  Add common and useful phrases for each locations.</p>
-              <p>
-                • Add scenarios/scripts that people are most likely to need in each location when interacting with people.
-              </p>
+              <ul className="list-disc">
+                <li>Add common and useful phrases for each locations.</li>
+                <li>
+                  Add scenarios/scripts that people are most likely to need in
+                  each location when interacting with people.
+                </li>
+              </ul>
             </p>
             <p className=" bg-slate-200  p-10 ">
               <div className="font-bold  mb-5">Steps to add in V2</div>
-              <p>• Include task specific usability testing </p>
-              <p>
-                • Add success metrics for each task that would provide more
+              <ul className="list-disc" >
+
+              <li>Include task specific usability testing </li>
+              <li>
+                Add success metrics for each task that would provide more
                 qualitative data{" "}
-              </p>
-              <p>• UI enhancements from v1.</p>
-              <p>• Usability test the final mockups.</p>
-              <p>
-              • Conduct qualitative tests to measure if Aprender helped users
-                remember useful information in comparison to other language learning
-                apps.{" "}
-
-
-              </p>
+              </li>
+              <li>UI enhancements from v1.</li>
+              <li>Usability test the final mockups.</li>
+              <li>
+                Conduct qualitative tests to measure if Aprender helped users
+                remember useful information in comparison to other language
+                learning apps.{" "}
+              </li>
+              </ul>
             </p>
           </div>
         </div>
