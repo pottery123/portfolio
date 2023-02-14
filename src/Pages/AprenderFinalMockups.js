@@ -15,13 +15,13 @@ function AprenderFinalMockups() {
     }
   }, [showModal1, showModal2, showModal3, showModal4]);
 
- 
-
   const description1 = (
     <div className=" font-Bhaijaan2 max-w-lg ">
-      Sarah lives in the Rainier Vallely, one of the most diverse zip codes in the United States. 
-      There is a new corner shop that has opened up a few blocks away from where she lives. Sarah wants to try out her Spanish in a way to better connect with her new neighbors. 
-      Before she departs Sarah opens up the app Aprender.
+      Sarah lives in the Rainier Vallely, one of the most diverse zip codes in
+      the United States. There is a new corner shop that has opened up a few
+      blocks away from where she lives. Sarah wants to try out her Spanish in a
+      way to better connect with her new neighbors. Before she departs Sarah
+      opens up the app Aprender.
     </div>
   );
 
@@ -47,6 +47,50 @@ function AprenderFinalMockups() {
     </div>
   );
 
+  const aprenderModalObject = {
+    modal: [showModal1, showModal2, showModal3, showModal4],
+    setModal: [setShowModal1, setShowModal2, setShowModal3, setShowModal4],
+    greetings: ["image 1", "image 2", "image 3", "image 4"],
+    images: [
+      "/images/aprender-screen-1.svg",
+      "/images/aprender-screen-2.svg",
+      "/images/aprender-screen-3.svg",
+      "/images/aprender-screen-4.svg",
+    ],
+    videos1: [
+      "/images/aprender-video-1.mov",
+      "/images/aprender-video-2.mov",
+      "/images/aprender-video-3.mov",
+      "/images/aprender-video-4.mov",
+    ],
+
+    videos2: [
+      "/images/aprender-video-2.mov",
+      "/images/aprender-video-3.mov",
+      "/images/aprender-video-4.mov",
+      "/images/aprender-video-1.mov",
+    ],
+
+    videos3: [
+      "/images/aprender-video-3.mov",
+      "/images/aprender-video-4.mov",
+      "/images/aprender-video-2.mov",
+      "/images/aprender-video-1.mov",
+    ],
+
+    videos4: [
+      "/images/aprender-video-4.mov",
+      "/images/aprender-video-3.mov",
+      "/images/aprender-video-2.mov",
+      "/images/aprender-video-1.mov",
+    ],
+
+    
+    texts1: [description1, description2, description3, description4],
+    texts2: [description2, description3, description4, description1],
+    texts3: [description3, description4, description1, description2,],
+    texts4: [ description4,description1, description2, description3,],
+  };
 
   return (
     <>
@@ -55,13 +99,39 @@ function AprenderFinalMockups() {
           <Modal
             showModal={showModal1}
             setShowModal={setShowModal1}
-            greetings={"image 1"}
+            greetings={aprenderModalObject.greetings}
             img={"/images/aprender-screen-1.svg"}
-            video={"/images/aprender-video-1.mov"}
-            text={description1}
+            video={aprenderModalObject.videos1}
+            text={aprenderModalObject.texts1}
           ></Modal>
 
           <Modal
+            showModal={showModal2}
+            setShowModal={setShowModal2}
+            greetings={aprenderModalObject.greetings}
+            img={"/images/aprender-screen-2.svg"}
+            video={aprenderModalObject.videos2}
+            text={aprenderModalObject.texts2}
+          ></Modal>
+
+          <Modal
+            showModal={showModal3}
+            setShowModal={setShowModal3}
+            greetings={aprenderModalObject.greetings}
+            img={"/images/aprender-screen-3.svg"}
+            video={aprenderModalObject.videos3}
+            text={aprenderModalObject.texts3}
+          ></Modal>
+          <Modal
+            showModal={showModal4}
+            setShowModal={setShowModal4}
+            greetings={aprenderModalObject.greetings}
+            img={"/images/aprender-screen-4.svg"}
+            video={aprenderModalObject.videos4}
+            text={aprenderModalObject.texts4}
+          ></Modal>
+
+          {/* <Modal
             showModal={showModal2}
             setShowModal={setShowModal2}
             greetings={"image 2"}
@@ -84,14 +154,11 @@ function AprenderFinalMockups() {
             img={"/images/aprender-screen-4.svg"}
             video={"/images/aprender-video-4.mov"}
             text={description4}
-          ></Modal>
+          ></Modal> */}
         </div>
       </div>
     </>
   );
 }
-
-
-
 
 export default AprenderFinalMockups;

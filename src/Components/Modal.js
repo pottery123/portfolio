@@ -1,21 +1,74 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Modal({ showModal, setShowModal, img, video, text }) {
+  const [count, setCount] = useState(0);
+
+  function NextButton() {
+    return (
+      <img
+        alt="back"
+        img={"/images/arrow-back.svg"}
+        onClick={() => {
+          if (count === 3) {
+            setCount(0);
+          } else {
+            setCount((prevCount) => prevCount + 1);
+          }
+        }}
+        >
+      </img>
+    )
+  }
+
+  function BackButton() {
+    if (count === 0 ) {
+      setCount(3);
+    } else {
+      setCount((prevCount) => prevCount - 1);
+    }
+  }
+
+  function OpenCloseModal() {
+    setShowModal((prev) => !prev);
+    setCount(0);
+  }
+
   return (
     <>
       {showModal ? (
         <div className="bg-white-30 fixed inset-0 z-50  h-screen  font-Bhaijaan2 backdrop-blur-md">
           <button
-            onClick={() => setShowModal((prev) => !prev)}
+            onClick={OpenCloseModal}
             className="text-black text-5xl absolute ml-24 mt-12 text-Bhaijaan2  hover:text-aprenderPink"
           >
             X
           </button>
           <div className="flex justify-around">
-            <div className="text-Bhaijaan2 mt-52 text-2xl">{text}</div>
-              <video className="mt-10" width='260' muted autoPlay loop>
-                <source src={video} type="video/mp4" />
-              </video>
+            <div className="text-Bhaijaan2 mt-52 text-2xl">
+              <div className="grid grid-rows-1">
+                <div className="h-64">{text[count]}</div>
+                <div className="flex gap-10 m-auto">
+                  <div className={`rounded-full w-2 h-2 bg-aprenderPink  ${count !== 0 && "bg-slate-400" }`}></div>
+                  <div className={`rounded-full w-2 h-2 bg-aprenderPink  ${count !== 1 && "bg-slate-400" }`}></div>
+                  <div className={`rounded-full w-2 h-2 bg-aprenderPink  ${count !== 2 && "bg-slate-400" }`}></div>
+                  <div className={`rounded-full w-2 h-2 bg-aprenderPink  ${count !== 3 && "bg-slate-400" }`}></div>
+                </div>
+                <div className="flex gap-5 m-auto mt-10 ">
+                  <NextButton />
+                  <div onClick={NextButton}>next</div>
+                </div>
+              </div>
+            </div>
+            <video
+              key={video[count]}
+              className="mt-10"
+              width="260"
+              muted
+              autoPlay
+              loop
+            >
+              <source src={video[count]} type="video/mp4" />
+            </video>
           </div>
         </div>
       ) : (

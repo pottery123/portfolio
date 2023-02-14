@@ -485,7 +485,6 @@ function Aprender() {
               </p>
             </div>
           </div>
-
           <div className=" font-Bhaijaan2 grid grid-rows-6 gap-16 bg-slate-200 p-32 mx-40">
             <div className="grid grid-cols-2 gap-24">
               <div>
@@ -734,16 +733,16 @@ function Aprender() {
                 Issues I addressed in wireframes discovered through robust
                 usability testing.
               </p>
-              <p className="p-3">
-                <div>
-                  • I changed the word scenario to location after users did not
+              <ul className="p-8  list-disc">
+                <li>
+                  I changed the word scenario to location after users did not
                   understand.
-                </div>
-                <div className="mt-5">
-                  • I placed English word underneath learning word, to reduce
+                </li>
+                <li className="mt-5">
+                  I placed English word underneath learning word, to reduce
                   the amount of steps user would need to see translation.
-                </div>
-              </p>
+                </li>
+              </ul>
             </p>
           </p>
         </div>

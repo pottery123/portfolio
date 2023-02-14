@@ -187,70 +187,83 @@ function StateFair() {
                     <div className=" font-bold w-96 animate-wave2 mt-7 ">
                       Heuristic Evaluation Highlights
                     </div>
-                    <div className="w-96 pt-3 animate-wave2 leading-7 mt-3">
+                    <ul className="w-96 pt-3 animate-wave2 leading-6 list-disc">
                       {" "}
-                      • <span className="text-stateFairRed">
-                        Prices
-                      </span> for{" "}
-                      <span className="text-stateFairRed">accessible</span> and{" "}
-                      <span className="text-stateFairRed">non-accessible</span>{" "}
-                      seats were
-                      <span className="text-stateFairRed">
-                        {" "}
-                        NOT clearly displayed
-                      </span>
-                    </div>
-                    <div className="w-96 pt-5 animate-wave3 leading-8 ">
-                      {" "}
-                      •{" "}
-                      <span className="text-stateFairRed">
-                        Accessible seats
-                      </span>{" "}
-                      in all locations
-                      <span className="text-stateFairRed">
-                        {" "}
-                        were NOT clearly
-                      </span>
-                      <span> marked on the section map.</span>
-                    </div>
-                    <div className="w-96 pt-3 animate-wave4 leading-10">
-                      {" "}
-                      • The design
-                      <span className="text-stateFairRed">
-                        {" "}
-                        DID NOT
-                      </span> let{" "}
-                      <span className="text-stateFairRed"> users know</span> if
-                      a section{" "}
-                      <span className="text-stateFairRed"> is sold out.</span>
-                    </div>
-                    <div className="w-96 pt-5 animate-wave5 leading-7">
-                      {" "}
-                      • The{" "}
-                      <span className="text-stateFairRed">image size</span> of
-                      the seats and sections maps were{" "}
-                      <span className="text-stateFairRed">TOO small.</span>
-                    </div>
-                    <div className="w-96 pt-3 animate-wave5 leading-9">
-                      •{" "}
-                      <span className="text-stateFairRed">
-                        Accessible seats
-                      </span>{" "}
-                      ARE NOT{" "}
-                      <span className="text-stateFairRed">
-                        {" "}
-                        directly displayed
-                      </span>{" "}
-                      on the seat map.{" "}
-                    </div>
-                    <div className="w-96 pt-3 animate-wave6 leading-7">
-                      •{" "}
-                      <span className="text-stateFairRed">
-                        TOO many options
-                      </span>{" "}
-                      when selecting sections/seats is
-                      <span className="text-stateFairRed"> confusing.</span>
-                    </div>
+                      <li>
+                        <span className="text-stateFairRed">Prices</span> for{" "}
+                        <span className="text-stateFairRed">accessible</span>{" "}
+                        and{" "}
+                        <span className="text-stateFairRed">
+                          non-accessible
+                        </span>{" "}
+                        seats were
+                        <span className="text-stateFairRed">
+                          {" "}
+                          NOT clearly displayed
+                        </span>
+                      </li>
+                    </ul>
+                    <ul className="w-96 pt-5 animate-wave3 leading-8  list-disc">
+                      <li>
+                        <span className="text-stateFairRed">
+                          Accessible seats
+                        </span>{" "}
+                        in all locations
+                        <span className="text-stateFairRed">
+                          {" "}
+                          were NOT clearly
+                        </span>
+                        <span> marked on the section map.</span>
+                      </li>
+                    </ul>
+                    <ul className="w-96 pt-3 animate-wave4 leading-10 list-disc">
+                      <li>
+                        The design
+                        <span className="text-stateFairRed">
+                          {" "}
+                          DID NOT
+                        </span> let{" "}
+                        <span className="text-stateFairRed">
+                          {" "}
+                          users know
+                        </span>{" "}
+                        if a section{" "}
+                        <span className="text-stateFairRed"> is sold out.</span>
+                      </li>
+                    </ul>
+                    <ul className="w-96 pt-5 animate-wave5 leading-7 list-disc">
+                      <li>
+                        The
+                        <span className="text-stateFairRed">
+                          {" "}
+                          image size
+                        </span>{" "}
+                        of the seats and sections maps were{" "}
+                        <span className="text-stateFairRed">TOO small.</span>
+                      </li>
+                    </ul>
+                    <ul className="w-96 pt-3 animate-wave5 leading-8 list-disc mt-3">
+                      <li>
+                        <span className="text-stateFairRed">
+                          Accessible seats
+                        </span>{" "}
+                        ARE NOT{" "}
+                        <span className="text-stateFairRed">
+                          {" "}
+                          directly displayed
+                        </span>{" "}
+                        on the seat map.{" "}
+                      </li>
+                    </ul>
+                    <ul className="w-96 pt-3 animate-wave6 leading-7 list-disc mt-2">
+                      <li>
+                        <span className="text-stateFairRed">
+                          TOO many options
+                        </span>{" "}
+                        when selecting sections/seats is
+                        <span className="text-stateFairRed"> confusing.</span>
+                      </li>
+                    </ul>
                   </div>
                 )}
               </div>
@@ -279,33 +292,36 @@ function StateFair() {
               the System Usability Scale (SUS) framework. I used these results
               to establish success metrics for future designs.
             </div>
-            <div className="flex justify-between mt-32 ml-32 gap-32">
-              <div
-                className="bg-stateFairRed justify-around p-5 text-white"
-                style={{ width: "241px", height: "264px" }}
-              >
-                {" "}
+            <div className=" mt-32 grid grid-cols-1 gap-14">
+              <div className="bg-stateFairRed p-10 text-white">
                 <div className="font-bold"> First Usability Test Results: </div>
-                <div className="mt-5"> • Over all SUS score of 3.3 of 7. </div>
-                <div className="mt-3">
-                  {" "}
-                  • Only 40% of users were able to select assessable and
-                  non-accessible seats.
-                </div>
+                <ul className="list-disc pl-5">
+                  <li className="mt-5"> Over all SUS score of 3.3 of 7. </li>
+                  <li className="mt-3">
+                    Only 40% of users were able to select assessable and
+                    non-accessible seats.
+                  </li>
+                </ul>
               </div>
-              <div
-                className="bg-stateFairBlue p-5 text-white"
-                style={{ width: "241px", height: "264px" }}
+              <img
+              width={700}
+              height={700}
+              className="rounded-lg drop-shadow-xl"
+              alt='sus score'
+              src={"/images/first-sus-score.svg"}
               >
+              </img>
+              <div className="bg-stateFairBlue p-10 text-white">
                 <div className="font-bold">Success Metrics: </div>
-                <div className="mt-5">
-                  {" "}
-                  • Higher SUS score than the original design.
-                </div>
-                <div className="mt-3">
-                  • Majority of users will be able to select accessible and not
-                  accessible seats.
-                </div>
+                <ul className='list-disc pl-5'>
+                  <li className="mt-5">
+                    Higher SUS score than the original design.
+                  </li>
+                  <li className="mt-3">
+                    Majority of users will be able to select accessible and
+                    not accessible seats.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -376,21 +392,18 @@ function StateFair() {
                   ></img>
                 )}
               </div>
-              <div style={{ width: 500 }} className="mt-36 text-xl leading-8">
-                <div className="mt-5">
-                  {" "}
-                  • Final SUS Score:{" "}
-                  <span className="text-stateFairRed">5.2 of 7</span>
-                </div>
-                <div className="">
-                  {" "}
-                  •{" "}
+              <ul  className="p-32 mt-36 text-xl leading-8 list-disc">
+                <li className="mt-3">
+                  Final SUS Score:
+                  <span className="text-stateFairRed"> 5.2 of 7</span>
+                </li>
+                <li className="">
                   <span className="text-stateFairRed">
                     80% of participants
-                  </span>{" "}
+                  </span>
                   were able to select accessible and non- accessible seats.
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
           </div>
         )}
@@ -622,7 +635,11 @@ function StateFair() {
                     }}
                     className="mb-6"
                   >
-                    <div className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${ showAppArrow1 && "text-stateFairRed"}`}>
+                    <div
+                      className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${
+                        showAppArrow1 && "text-stateFairRed"
+                      }`}
+                    >
                       User control and freedom
                     </div>
                     <div>
@@ -639,7 +656,11 @@ function StateFair() {
                     }}
                     className="mb-6"
                   >
-                    <div className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${ showAppArrow2 && "text-stateFairRed"}`}>
+                    <div
+                      className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${
+                        showAppArrow2 && "text-stateFairRed"
+                      }`}
+                    >
                       Consistency and Standards
                     </div>
                     <div>
@@ -657,7 +678,11 @@ function StateFair() {
                     }}
                     className="mb-6 mt-8"
                   >
-                    <div className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${ showAppArrow3 && "text-stateFairRed"}`}>
+                    <div
+                      className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${
+                        showAppArrow3 && "text-stateFairRed"
+                      }`}
+                    >
                       Visibility of System Status
                     </div>
                     <div>
@@ -671,11 +696,14 @@ function StateFair() {
                       setAppArrow2(false);
                       setAppArrow3(false);
                       setAppArrow5(false);
-                      
                     }}
                     className="mb-6"
                   >
-                    <div className={`font-bold mt-8 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${ showAppArrow4 && "text-stateFairRed"}`}>
+                    <div
+                      className={`font-bold mt-8 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${
+                        showAppArrow4 && "text-stateFairRed"
+                      }`}
+                    >
                       Match Between System and the Real World
                     </div>
                     <div>
@@ -691,11 +719,14 @@ function StateFair() {
                       setAppArrow2(false);
                       setAppArrow3(false);
                       setAppArrow4(false);
-                      
                     }}
                     className="mt-8"
                   >
-                    <div className={`font-bold mb-1 mt-9 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${ showAppArrow5 && "text-stateFairRed"}`}>
+                    <div
+                      className={`font-bold mb-1 mt-9 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${
+                        showAppArrow5 && "text-stateFairRed"
+                      }`}
+                    >
                       Aesthetic and Minimalist design
                     </div>
                     <div>
@@ -714,7 +745,11 @@ function StateFair() {
                       setAppArrow6((prev) => !prev);
                     }}
                   >
-                    <div className={`font-bold mb-1 w-2/5 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${showAppArrow6 && "text-stateFairRed"}`}>
+                    <div
+                      className={`font-bold mb-1 w-2/5 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${
+                        showAppArrow6 && "text-stateFairRed"
+                      }`}
+                    >
                       Error Prevention
                     </div>
                     <div>
@@ -738,7 +773,11 @@ function StateFair() {
                     }}
                     className="mb-8"
                   >
-                    <div className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${ showAppArrow7 && "text-stateFairRed"}`}>
+                    <div
+                      className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${
+                        showAppArrow7 && "text-stateFairRed"
+                      }`}
+                    >
                       Recognition rather than recall
                     </div>
                     <div>
@@ -756,7 +795,11 @@ function StateFair() {
                     }}
                     className="mb-8"
                   >
-                    <div className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${ showAppArrow11 && "text-stateFairRed"}`}>
+                    <div
+                      className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${
+                        showAppArrow11 && "text-stateFairRed"
+                      }`}
+                    >
                       Error Prevention
                     </div>
                     <div>
@@ -776,7 +819,11 @@ function StateFair() {
                     }}
                     className="mb-8"
                   >
-                    <div className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${ showAppArrow10 && "text-stateFairRed"}`}>
+                    <div
+                      className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${
+                        showAppArrow10 && "text-stateFairRed"
+                      }`}
+                    >
                       Visibility of System Status
                     </div>
                     <div>
@@ -793,7 +840,11 @@ function StateFair() {
                       setAppArrow7(false);
                     }}
                   >
-                    <div className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${ showAppArrow8 && "text-stateFairRed"}`}>
+                    <div
+                      className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${
+                        showAppArrow8 && "text-stateFairRed"
+                      }`}
+                    >
                       Visibility of System Status
                     </div>
                     <div>
@@ -810,47 +861,47 @@ function StateFair() {
         {showNextSteps && (
           <div className="font-Quicksand">
             <div className="mt-28 leading-8 font-black text-lg">Takeaways</div>
-            <div style={{ width: 700 }} className="mt-7 leading-7">
-              <div>
-                • The{" "}
-                <span className="text-stateFairRed">value of heuristics</span>{" "}
+            <ul style={{ width: 700 }} className=" ml-9 leading-7 list-disc">
+              <li>
+                The
+                <span className="text-stateFairRed"> value of heuristics</span>{" "}
                 evaluations as a{" "}
                 <span className="text-stateFairRed">cheap, quick </span> way to
                 <span className="text-stateFairRed">
                   uncover usability issues.{" "}
                 </span>
-              </div>
-              <div>
-                • <span className="text-stateFairRed"> Keeping it simple</span>{" "}
+              </li>
+              <li>
+                <span className="text-stateFairRed"> Keeping it simple</span>{" "}
                 during the UI design process helped me get unstuck when got
                 stuck.{" "}
-              </div>
-              <div>
-                •{" "}
+              </li>
+              <li>
                 <span className="text-stateFairRed">
                   Testing designs early and often
                 </span>{" "}
                 to catch and fix issues.{" "}
-              </div>
-              <div>
-                • Next time I would add an
+              </li>
+              <li>
+                Next time I would add an
                 <span className="text-stateFairRed">
                   {" "}
                   ‘time to finish task’
                 </span>{" "}
                 to my usability tests to measure the amount of time it took for
                 users to select seats and sections{" "}
-              </div>
-            </div>
+              </li>
+            </ul>
 
             <div className="font-black mt-10 leading-9 text-lg">Next Steps</div>
-            <div>
-              •{" "}
+            <ul className="list-disc ml-9">
+              <li>
               <span className="text-stateFairRed">
                 Discuss with developers and other stakeholders{" "}
               </span>
               the technical requirements for implementing the updated design.{" "}
-            </div>
+              </li>
+            </ul>
           </div>
         )}
       </div>

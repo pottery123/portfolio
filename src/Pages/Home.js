@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 
 setInterval(function() {
-  axios.get("http://sekane-projec.herokuapp.com")
+  axios.get("http://sekane-project.herokuapp.com")
   .then(function (response) {
     // handle success
     console.log("it's working");
