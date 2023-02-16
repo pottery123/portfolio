@@ -15,7 +15,7 @@ function ModalStateFair({ showModal, setShowModal, img = [], object }) {
   return (
     <>
       {showModal ? (
-        <div className="bg-white-30 fixed inset-0 z-60 h-screen font-Bhaijaan2 backdrop-blur-md">
+        <div className="bg-white-30 fixed inset-0 z-60 h-screen font-Bhaijaan2 backdrop-blur-2xl">
           <button
             onClick={() => setShowModal((prev) => !prev)}
             className=" text-2xl absolute mr-24 mt-12 text-Bhaijaan2  hover:text-stateFairBurgandy right-0"

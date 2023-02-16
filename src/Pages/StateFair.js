@@ -64,8 +64,9 @@ function StateFair() {
 
     function NextButton() {
       return (
-        <div
-          className="text-center font-Quicksand text-sm text-white bg-stateFairBurgandy px-2 py-2  rounded-full m-auto w-24  hover:bg-stateFairBurgandyDark"
+        <img
+          src={"/images/arrow-forward.svg"}
+          alt="arrow forward"
           onClick={() => {
             if (showAppScreen1) {
               setAppScreen1(false);
@@ -75,18 +76,36 @@ function StateFair() {
               setAppScreen1(false);
               setAppScreen2(false);
               setAppScreen3(true);
-            } else if (showAppScreen3) {
+            } 
+          }}
+        >
+        </img>
+      );
+    }
+
+    function BackButton() {
+      return (
+        <img
+          className="ml-96"
+          src={"/images/arrow-back.svg"}
+          alt="arrow back"
+          onClick={() => {
+            if (showAppScreen3) {
+              setAppScreen1(false);
+              setAppScreen2(true);
+              setAppScreen3(false);
+            } else if (showAppScreen2) {
               setAppScreen1(true);
               setAppScreen2(false);
               setAppScreen3(false);
-            }
+            } 
           }}
         >
-          {" "}
-          Next
-        </div>
+        </img>
       );
     }
+
+   
 
     return (
       <div className="">
@@ -100,7 +119,7 @@ function StateFair() {
               the ticket purchasing process in the Washington State Fair mobile
               app. I used{" "}
               <a
-                className="underline"
+                className="underline hover:text-aprenderBlue"
                 href="https://www.nngroup.com/articles/ten-usability-heuristics/"
               >
                 {" "}
@@ -109,12 +128,15 @@ function StateFair() {
               Through this process I was able to identify some major usability
               issues users were having when they tried to purchase tickets for
               concerts and shows.
+
+              <div className="my-12 font-bold text-aprenderBlue ">Click or press the images to see the evaluation details.</div>
             </div>
-            <div className="grid grid-cols-4 gap-24 text-sm mt-36 font-Quicksand">
+            
+            <div className="grid grid-cols-4 gap-24 text-sm mt-56 font-Quicksand">
               <div className="w-36">
                 <div className="mb-10 leading-7 mt-3">
                   This is the first screen users see after choosing the concert
-                  they want to attend.
+                  they want to attend. 
                 </div>
                 <ModalStateFair
                   showModal={showModal1}
@@ -160,7 +182,7 @@ function StateFair() {
                   arrow={["/images/arrow.svg"]}
                   object={TextObject.screen5object}
                 ></ModalStateFair>
-                <div className=" text-lg mt-14 w-96 font-Quicksand">
+                <div className=" text-aprenderBlue font-bold text-lg mt-16 w-96 font-Quicksand">
                   This is long. For the highlights{" "}
                   {!showOverView ? (
                     <div
@@ -187,7 +209,7 @@ function StateFair() {
                     <div className=" font-bold w-96 animate-wave2 mt-7 ">
                       Heuristic Evaluation Highlights
                     </div>
-                    <ul className="w-96 pt-3 animate-wave2 leading-6 list-disc">
+                    <ul className="w-96 pt-3 animate-wave2 leading-6 list-disc mt-5 font-bold">
                       {" "}
                       <li>
                         <span className="text-stateFairRed">Prices</span> for{" "}
@@ -203,7 +225,7 @@ function StateFair() {
                         </span>
                       </li>
                     </ul>
-                    <ul className="w-96 pt-5 animate-wave3 leading-8  list-disc">
+                    <ul className="w-96 pt-5 animate-wave3 leading-8  list-disc font-bold">
                       <li>
                         <span className="text-stateFairRed">
                           Accessible seats
@@ -216,7 +238,7 @@ function StateFair() {
                         <span> marked on the section map.</span>
                       </li>
                     </ul>
-                    <ul className="w-96 pt-3 animate-wave4 leading-10 list-disc">
+                    <ul className="w-96 pt-3 animate-wave4 leading-7 list-disc font-bold mt-3">
                       <li>
                         The design
                         <span className="text-stateFairRed">
@@ -231,7 +253,7 @@ function StateFair() {
                         <span className="text-stateFairRed"> is sold out.</span>
                       </li>
                     </ul>
-                    <ul className="w-96 pt-5 animate-wave5 leading-7 list-disc">
+                    <ul className="w-96 pt-5 animate-wave5 leading-7 list-disc font-bold">
                       <li>
                         The
                         <span className="text-stateFairRed">
@@ -242,7 +264,7 @@ function StateFair() {
                         <span className="text-stateFairRed">TOO small.</span>
                       </li>
                     </ul>
-                    <ul className="w-96 pt-3 animate-wave5 leading-8 list-disc mt-3">
+                    <ul className="w-96 pt-3 animate-wave5 leading-7 list-disc mt-3 font-bold">
                       <li>
                         <span className="text-stateFairRed">
                           Accessible seats
@@ -255,7 +277,7 @@ function StateFair() {
                         on the seat map.{" "}
                       </li>
                     </ul>
-                    <ul className="w-96 pt-3 animate-wave6 leading-7 list-disc mt-2">
+                    <ul className="w-96 pt-3 animate-wave6 leading-6 list-disc mt-2 font-bold">
                       <li>
                         <span className="text-stateFairRed">
                           TOO many options
@@ -287,9 +309,9 @@ function StateFair() {
         {showBenchmarking && (
           <div className=" font-Quicksand mt-28">
             <div className="text-lg font-black">Benchmarking</div>
-            <div className=" absolute mt-3 leading-7  mt-7">
+            <div className=" absolute mt-5 leading-7  mt-7">
               I conducted a usability test on the ticket buying process using
-              the System Usability Scale (SUS) framework. I used these results
+              the System Usability Scale (SUS) framework <span className="font-bold">after I completed the heuristic evaluation </span>. I used these results
               to establish success metrics for future designs.
             </div>
             <div className=" mt-32 grid grid-cols-1 gap-14">
@@ -332,14 +354,14 @@ function StateFair() {
             <div style={{ width: 800 }} className="mt-7 leading-7">
               <div className="">
                 I{" "}
-                <span className="text-stateFairRed">
+                <span className="font-bold">
                   wrote user stories that addressed each usability issues the
                   heuristics evaluation uncovered
                 </span>{" "}
                 in the ticket buying process. For each user story I designed a
                 solution, tested the design, analyzed feedback from the test,
                 and incorporated relevant feedback back into the design. I{" "}
-                <span className="text-stateFairRed">
+                <span className="font-bold">
                   stopped this process when the design met the
                 </span>
                 <span> success metrics. </span>
@@ -354,9 +376,9 @@ function StateFair() {
                 {showTestScreen1 && (
                   <img
                     className="mt-4 mx-8"
-                    src={"/images/test-screen-1.svg"}
+                    src={"/images/test-screen-3.svg"}
                     alt="Aprender Screens"
-                    style={{ width: "250px" }}
+                    style={{ width: "200px" }}
                     onClick={() => {
                       setShowTestScreen1(false);
                       setShowTestScreen3(false);
@@ -368,9 +390,9 @@ function StateFair() {
                 {showTestScreen2 && (
                   <img
                     className="mt-4 mx-8"
-                    src={"/images/test-screen-2.svg"}
+                    src={"/images/test-screen-1.svg"}
                     alt="Aprender Screens"
-                    style={{ width: "250px" }}
+                    style={{ width: "200px" }}
                     onClick={() => {
                       setShowTestScreen1(false);
                       setShowTestScreen3(true);
@@ -381,9 +403,9 @@ function StateFair() {
                 {showTestScreen3 && (
                   <img
                     className="mt-4 mx-8"
-                    src={"/images/test-screen-3.svg"}
+                    src={"/images/test-screen-2.svg"}
                     alt="Aprender Screens"
-                    style={{ width: "250px" }}
+                    style={{ width: "200px" }}
                     onClick={() => {
                       setShowTestScreen1(true);
                       setShowTestScreen3(false);
@@ -392,27 +414,52 @@ function StateFair() {
                   ></img>
                 )}
               </div>
-              <ul  className="p-32 mt-36 text-xl leading-8 list-disc">
+              { showTestScreen1 && (<div>
+              <ul  className="p-32  text-xl leading-8 list-disc">
+                <li className="mt-3">
+                 SUS score &lt;
+                  <span className="text-stateFairRed">  5.2 of 7</span>
+                </li>
+              </ul>
+              </div>)
+              }
+
+              { showTestScreen2 && (<div>
+              <ul  className="p-32  text-xl leading-8 list-disc">
                 <li className="mt-3">
                   Final SUS Score:
                   <span className="text-stateFairRed"> 5.2 of 7</span>
                 </li>
                 <li className="">
-                  <span className="text-stateFairRed">
-                    80% of participants
-                  </span>
-                  were able to select accessible and non- accessible seats.
+                  <span className="text-stateFairRed"> 80% of participants </span>
+                  were able to select accessible and non-accessible seats. <span className="font-bold">To see the final changes click on the Final Mockups tab.</span>
                 </li>
               </ul>
+              </div>)
+              }
+              { showTestScreen3 && (<div>
+              <ul  className="p-32  text-xl leading-8 list-disc">
+                <li className="mt-3">
+                  Final SUS Score:
+                  <span className="text-stateFairRed"> 5.2 of 7</span>
+                </li>
+                <li className="">
+                  <span className="text-stateFairRed"> 80% of participants </span>
+                  were able to select accessible and non-accessible seats. <span className="font-bold">To see the final changes click on the Final Mockups tab.</span>
+                </li>
+              </ul>
+              </div>)
+              }
             </div>
           </div>
         )}
         {showFinalMockups && (
-          <div className="font-Quicksand ">
-            <div className="text-lg font-bold mt-28 leading-8">
+          <div className="font-Quicksand">
+            <div className="text-lg font-bold mt-28 mb-20 leading-8">
               Final Mockups
+              <div className=" mt-12 text-stateFairBlue">To see design changes click or press the headings.</div>
             </div>
-            <div className="ml-20 flex gap-28 mt-20">
+            <div className="ml-20 flex gap-28">
               <div className="overflow-hidden">
                 {showAppScreen1 && (
                   <div>
@@ -421,7 +468,7 @@ function StateFair() {
                         src={"/images/red-arrow.svg"}
                         style={{
                           position: "absolute",
-                          top: 286,
+                          top: 366,
                           left: 110,
                           width: 29.54,
                           height: 29.84,
@@ -434,7 +481,7 @@ function StateFair() {
                         src={"/images/red-arrow.svg"}
                         style={{
                           position: "absolute",
-                          top: 423,
+                          top: 503,
                           left: 200,
                           width: 29.54,
                           height: 29.84,
@@ -449,7 +496,7 @@ function StateFair() {
                         style={{
                           position: "absolute",
                           zIndex: 10,
-                          top: 545,
+                          top: 625,
                           left: 233,
                           width: 29.54,
                           height: 29.84,
@@ -462,7 +509,7 @@ function StateFair() {
                         src={"/images/red-arrow.svg"}
                         style={{
                           position: "absolute",
-                          top: 453,
+                          top: 533,
                           left: 100,
                           rotate: "-20deg",
                           width: 29.54,
@@ -476,7 +523,7 @@ function StateFair() {
                         src={"/images/red-arrow.svg"}
                         style={{
                           position: "absolute",
-                          top: 610,
+                          top: 690,
                           left: 200,
                           width: 29.54,
                           height: 29.84,
@@ -506,7 +553,7 @@ function StateFair() {
                         src={"/images/red-arrow.svg"}
                         style={{
                           position: "absolute",
-                          top: 430,
+                          top: 510,
                           left: 200,
                           width: 29.54,
                           height: 29.84,
@@ -548,7 +595,7 @@ function StateFair() {
                         src={"/images/red-arrow.svg"}
                         style={{
                           position: "absolute",
-                          top: 597,
+                          top: 680,
                           left: 270,
                           width: 29.54,
                           height: 29.84,
@@ -563,7 +610,7 @@ function StateFair() {
                         src={"/images/red-arrow.svg"}
                         style={{
                           position: "absolute",
-                          top: 640,
+                          top: 724,
                           left: 310,
                           width: 29.54,
                           height: 29.84,
@@ -578,7 +625,7 @@ function StateFair() {
                         src={"/images/red-arrow.svg"}
                         style={{
                           position: "absolute",
-                          top: 380,
+                          top: 465,
                           width: 29.54,
                           height: 29.84,
                           left: 195,
@@ -591,7 +638,7 @@ function StateFair() {
                         src={"/images/red-arrow.svg"}
                         style={{
                           position: "absolute",
-                          top: 445,
+                          top: 525,
                           width: 29.54,
                           height: 29.84,
                           rotate: "-90deg",
@@ -855,48 +902,49 @@ function StateFair() {
                 </div>
               )}
             </div>
+            <div className="flex gap-5 -mt-3">
+            <BackButton />
             <NextButton />
+            </div>
           </div>
         )}
         {showNextSteps && (
           <div className="font-Quicksand">
             <div className="mt-28 leading-8 font-black text-lg">Takeaways</div>
-            <ul style={{ width: 700 }} className=" ml-9 leading-7 list-disc">
+            <ul style={{ width: 700 }} className=" mt-5 ml-9 leading-7 list-disc">
               <li>
                 The
-                <span className="text-stateFairRed"> value of heuristics</span>{" "}
+                <span className="font-bold"> value of heuristics</span>{" "}
                 evaluations as a{" "}
-                <span className="text-stateFairRed">cheap, quick </span> way to
-                <span className="text-stateFairRed">
-                  uncover usability issues.{" "}
-                </span>
+                <span className="font-bold">cheap, quick </span> way to
+                  <span className="font-bold"> uncover usability issues.{" "} </span>
               </li>
               <li>
-                <span className="text-stateFairRed"> Keeping it simple</span>{" "}
+                <span className="font-bold"> Keeping it simple</span>{" "}
                 during the UI design process helped me get unstuck when got
                 stuck.{" "}
               </li>
               <li>
-                <span className="text-stateFairRed">
+                <span className="font-bold">
                   Testing designs early and often
                 </span>{" "}
                 to catch and fix issues.{" "}
               </li>
               <li>
                 Next time I would add an
-                <span className="text-stateFairRed">
+                <span className="font-bold">
                   {" "}
                   ‘time to finish task’
                 </span>{" "}
                 to my usability tests to measure the amount of time it took for
-                users to select seats and sections{" "}
+                users to select seats and sections.{" "}
               </li>
             </ul>
 
             <div className="font-black mt-10 leading-9 text-lg">Next Steps</div>
             <ul className="list-disc ml-9">
               <li>
-              <span className="text-stateFairRed">
+              <span className="font-bold">
                 Discuss with developers and other stakeholders{" "}
               </span>
               the technical requirements for implementing the updated design.{" "}

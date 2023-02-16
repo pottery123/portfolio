@@ -7,7 +7,7 @@ function Modal({ showModal, setShowModal, img, video, text }) {
     return (
       <img
         alt="back"
-        img={"/images/arrow-back.svg"}
+        src={"/images/arrow-forward.svg"}
         onClick={() => {
           if (count === 3) {
             setCount(0);
@@ -15,17 +15,24 @@ function Modal({ showModal, setShowModal, img, video, text }) {
             setCount((prevCount) => prevCount + 1);
           }
         }}
-        >
-      </img>
-    )
+      ></img>
+    );
   }
 
   function BackButton() {
-    if (count === 0 ) {
-      setCount(3);
-    } else {
-      setCount((prevCount) => prevCount - 1);
-    }
+    return (
+      <img
+        alt="back"
+        src={"/images/arrow-back.svg"}
+        onClick={() => {
+          if (count === 0) {
+            setCount(3);
+          } else {
+            setCount((prevCount) => prevCount - 1);
+          }
+        }}
+      ></img>
+    );
   }
 
   function OpenCloseModal() {
@@ -48,14 +55,31 @@ function Modal({ showModal, setShowModal, img, video, text }) {
               <div className="grid grid-rows-1">
                 <div className="h-64">{text[count]}</div>
                 <div className="flex gap-10 m-auto">
-                  <div className={`rounded-full w-2 h-2 bg-aprenderPink  ${count !== 0 && "bg-slate-400" }`}></div>
-                  <div className={`rounded-full w-2 h-2 bg-aprenderPink  ${count !== 1 && "bg-slate-400" }`}></div>
-                  <div className={`rounded-full w-2 h-2 bg-aprenderPink  ${count !== 2 && "bg-slate-400" }`}></div>
-                  <div className={`rounded-full w-2 h-2 bg-aprenderPink  ${count !== 3 && "bg-slate-400" }`}></div>
+                  <div
+                    className={`rounded-full w-2 h-2 bg-aprenderPink  ${
+                      count !== 0 && "bg-slate-400"
+                    }`}
+                  ></div>
+                  <div
+                    className={`rounded-full w-2 h-2 bg-aprenderPink  ${
+                      count !== 1 && "bg-slate-400"
+                    }`}
+                  ></div>
+                  <div
+                    className={`rounded-full w-2 h-2 bg-aprenderPink  ${
+                      count !== 2 && "bg-slate-400"
+                    }`}
+                  ></div>
+                  <div
+                    className={`rounded-full w-2 h-2 bg-aprenderPink  ${
+                      count !== 3 && "bg-slate-400"
+                    }`}
+                  ></div>
                 </div>
                 <div className="flex gap-5 m-auto mt-10 ">
+                  <BackButton />
                   <NextButton />
-                  <div onClick={NextButton}>next</div>
+                  
                 </div>
               </div>
             </div>

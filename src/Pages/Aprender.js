@@ -27,7 +27,7 @@ function Aprender() {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative w-auto overflow-hidden">
       <Link
         to="/"
         className="rounded bg-aprenderPinkLight text-white px-3 py-1 hover:bg-white hover:text-aprenderPink absolute  left-12 top-10  z-50 font-Nunito"
@@ -47,7 +47,7 @@ function Aprender() {
         </Link>
       </div>
 
-      <div className="flex justify-around bg-aprenderPink pb-16 w-full">
+      <div className="flex justify-around bg-aprenderPink w-auto overflow-hidden">
         <img
           className="pt-32"
           width={500}
@@ -68,7 +68,7 @@ function Aprender() {
         </div>
       </div>
 
-      <div className="bg-white w-full drop-shadow-sm flex justify-between sticky top-0 z-30">
+      <div className="bg-white w-full drop-shadow-sm flex justify-between sticky top-0 z-30 overflow-scroll ">
         <button
           onClick={() => {
             setProblemSection(true);
