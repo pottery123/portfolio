@@ -314,37 +314,108 @@ function StateFair() {
               the System Usability Scale (SUS) framework <span className="font-bold">after I completed the heuristic evaluation </span>. I used these results
               to establish success metrics for future designs.
             </div>
-            <div className=" mt-32 grid grid-cols-1 gap-14">
-              <div className="bg-stateFairRed p-10 text-white">
-                <div className="font-bold"> First Usability Test Results: </div>
+            <div className="mt-36">
+              <div className="-mt-2">
+                <div className="font-bold text-stateFairBlue"> First Usability Test Results: </div>
                 <ul className="list-disc pl-5">
-                  <li className="mt-5"> Over all SUS score of 3.3 of 7. </li>
-                  <li className="mt-3">
+                  <li className=""> Over all SUS score of 3.3 of 7. </li>
+                  <li className="">
                     Only 40% of users were able to select assessable and
                     non-accessible seats.
                   </li>
                 </ul>
               </div>
-              <img
-              width={700}
-              height={700}
-              className="rounded-lg drop-shadow-xl"
-              alt='sus score'
-              src={"/images/first-sus-score.svg"}
-              >
-              </img>
-              <div className="bg-stateFairBlue p-10 text-white">
-                <div className="font-bold">Success Metrics: </div>
+              <div className="leading-6  mt-8">
+                <div className="font-bold text-stateFairBlue">Success Metrics: </div>
                 <ul className='list-disc pl-5'>
-                  <li className="mt-5">
+                  <li className="">
                     Higher SUS score than the original design.
                   </li>
-                  <li className="mt-3">
+                  <li className="pt-1">
                     Majority of users will be able to select accessible and
                     not accessible seats.
                   </li>
                 </ul>
               </div>
+              <div className="">
+              <div className="font-bold mt-8 text-stateFairBlue "> To reach success metrics I needed to design solutions to these problems listed below.</div>
+                    <ul className="list-disc pl-5 ">
+                      <li className="pt-1">
+                        <span className="text-stateFairRed">Prices</span> for{" "}
+                        <span className="text-stateFairRed">accessible</span>{" "}
+                        and{" "}
+                        <span className="text-stateFairRed">
+                          non-accessible
+                        </span>{" "}
+                        seats were
+                        <span className="text-stateFairRed">
+                          {" "}
+                          NOT clearly displayed
+                        </span>
+                      </li>
+                    </ul>
+                    <ul className="list-disc  pl-5 ">
+                      <li>
+                        <span className="text-stateFairRed">
+                          Accessible seats
+                        </span>{" "}
+                        in all locations
+                        <span className="text-stateFairRed">
+                          {" "}
+                          were NOT clearly
+                        </span>
+                        <span> marked on the section map.</span>
+                      </li>
+                    </ul>
+                    <ul className="list-disc  pl-5">
+                      <li>
+                        The design
+                        <span className="text-stateFairRed">
+                          {" "}
+                          DID NOT
+                        </span> let{" "}
+                        <span className="text-stateFairRed">
+                          {" "}
+                          users know
+                        </span>{" "}
+                        if a section{" "}
+                        <span className="text-stateFairRed"> is sold out.</span>
+                      </li>
+                    </ul>
+                    <ul className=" list-disc  pl-5 pt-1">
+                      <li>
+                        The
+                        <span className="text-stateFairRed">
+                          {" "}
+                          image size
+                        </span>{" "}
+                        of the seats and sections maps were{" "}
+                        <span className="text-stateFairRed">TOO small.</span>
+                      </li>
+                    </ul>
+                    <ul className=" list-disc  pl-5">
+                      <li>
+                        <span className="text-stateFairRed">
+                          Accessible seats
+                        </span>{" "}
+                        ARE NOT{" "}
+                        <span className="text-stateFairRed">
+                          {" "}
+                          directly displayed
+                        </span>{" "}
+                        on the seat map.{" "}
+                      </li>
+                    </ul>
+                    <ul className=" list-disc  pl-5 pt-1">
+                      <li>
+                        <span className="text-stateFairRed">
+                          TOO many options
+                        </span>{" "}
+                        when selecting sections/seats is
+                        <span className="text-stateFairRed"> confusing.</span>
+                      </li>
+                    </ul>
+                  </div>
             </div>
           </div>
         )}
