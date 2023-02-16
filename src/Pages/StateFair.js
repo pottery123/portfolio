@@ -438,8 +438,8 @@ function StateFair() {
                 <span> success metrics. </span>
               </div>
             </div>
-            <div className="mt-20 ml-10 mb-3">
-              Click to see my different iterations
+            <div className="mt-10 ml-10 mb-3 font-bold text-stateFairBlue">
+              Click or press to see my different iterations.
             </div>
 
             <div className="flex ">
@@ -486,37 +486,41 @@ function StateFair() {
                 )}
               </div>
               { showTestScreen1 && (<div>
-              <ul  className="p-32  text-xl leading-8 list-disc">
-                <li className="mt-3">
-                 SUS score &lt;
-                  <span className="text-stateFairRed">  5.2 of 7</span>
+                <ul  className="p-32  text-lg list-disc">
+                <li className="mt-5">
+                   SUS Score:
+                  <span className="text-stateFairRed"> 3.3 of 7</span>
+                </li>
+                <li className="">
+                  <span className="text-stateFairRed"> 40% </span>
+                  of participants  were able to select accessible and non-accessible seats. 
                 </li>
               </ul>
               </div>)
               }
 
               { showTestScreen2 && (<div>
-              <ul  className="p-32  text-xl leading-8 list-disc">
-                <li className="mt-3">
-                  Final SUS Score:
-                  <span className="text-stateFairRed"> 5.2 of 7</span>
+              <ul  className="p-32  text-lg list-disc">
+                <li className="mt-5">
+                   SUS Score:
+                  <span className="text-stateFairRed"> 4.4 of 7</span>
                 </li>
                 <li className="">
-                  <span className="text-stateFairRed"> 80% of participants </span>
-                  were able to select accessible and non-accessible seats. <span className="font-bold">To see the final changes click on the Final Mockups tab.</span>
+                  <span className="text-stateFairRed"> 50%  </span>
+                  of participants were able to select accessible and non-accessible seats. 
                 </li>
               </ul>
               </div>)
               }
               { showTestScreen3 && (<div>
-              <ul  className="p-32  text-xl leading-8 list-disc">
-                <li className="mt-3">
-                  Final SUS Score:
+                <ul  className="p-32  text-lg list-disc">
+                <li className="mt-5">
+                  SUS Score:
                   <span className="text-stateFairRed"> 5.2 of 7</span>
                 </li>
                 <li className="">
-                  <span className="text-stateFairRed"> 80% of participants </span>
-                  were able to select accessible and non-accessible seats. <span className="font-bold">To see the final changes click on the Final Mockups tab.</span>
+                  <span className="text-stateFairRed"> 80% </span>
+                  of participants were able to select accessible and non-accessible seats. 
                 </li>
               </ul>
               </div>)
@@ -1011,7 +1015,6 @@ function StateFair() {
                 users to select seats and sections.{" "}
               </li>
             </ul>
-
             <div className="font-black mt-10 leading-9 text-lg">Next Steps</div>
             <ul className="list-disc ml-9">
               <li>

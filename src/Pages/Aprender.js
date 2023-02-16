@@ -714,7 +714,7 @@ function Aprender() {
           <p className="font-semibold text-five mb-4">Usability Testing</p>
           <div className="flex justify-evenly">
             <p className="text-2xl leading-relaxed">
-              Usability Testing Testing the sketches with actual users early on
+              Usability Testing the sketches with actual users early on
               in the process helped me to eliminate things that were confusing
               to the user, and add things that helped the user get the task
               done. Because of this the final mockups differed little from the
