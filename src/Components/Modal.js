@@ -46,7 +46,7 @@ function Modal({ showModal, setShowModal, img, video, text }) {
         <div className=" backdrop-blur-3xl fixed inset-0 z-50  h-screen font-Bhaijaan2 lg:backdrop-blur-md md:backdrop-blur-md overflow-scroll">
           <button
             onClick={OpenCloseModal}
-            className="text-black md:text-5xl lg:text-5xl text-3xl absolute ml-10 md:ml-24 lg:ml-24 mt-8 text-Bhaijaan2  hover:text-aprenderPink"
+            className="text-black md:text-5xl lg:text-5xl text-3xl absolute ml-10 md:ml-10 lg:ml-24 mt-8 text-Bhaijaan2  hover:text-aprenderPink"
           >
             X
           </button>
@@ -65,8 +65,8 @@ function Modal({ showModal, setShowModal, img, video, text }) {
           <div className="md:flex md:justify-around">
             <div className="text-Bhaijaan2 lg:mt-52 md:mt-52 mt-5 text-2xl">
               <div className="grid grid-rows-1">
-                <div className="h-64 md:flex lg:flex hidden">{text[count]}</div>
-                <div className="flex gap-10 m-auto">
+                <div className="h-64 md:flex lg:flex hidden md:mt-32 lg:mt-0 lg:mt-0 lg:p-0 md:p-10 ">{text[count]}</div>
+                <div className="flex gap-10 m-auto lg:mt-0 md:mt-20">
                   <div
                     className={`rounded-full w-2 h-2 bg-aprenderPink  ${
                       count !== 0 && "bg-slate-400"
@@ -88,7 +88,7 @@ function Modal({ showModal, setShowModal, img, video, text }) {
                     }`}
                   ></div>
                 </div>
-                <div className="flex gap-5 m-auto mt-10 pb-10 ">
+                <div className="flex gap-5 m-auto mt-10 pb-10 lg:mt-5 ">
                   <BackButton />
                   <NextButton />
                   
@@ -97,7 +97,7 @@ function Modal({ showModal, setShowModal, img, video, text }) {
             </div>
             <video
               key={video[count]}
-              className="mt-10  md:flex lg:flex hidden"
+              className="mt-10  md:flex lg:flex hidden md:mt-52 lg:mt-10 md:mr-5"
               width="260"
               muted
               autoPlay
