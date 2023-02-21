@@ -6,6 +6,12 @@ module.exports = {
       backgroundImage: {
         'hero': "url('../public/images/note_book_background.svg')",
       },
+      sreens: {
+        sm: "640px",
+        md: "768px",
+        lg: "104px",
+        xl: "1280",
+      },
       fontSize: {
         one: "0.236rem",
         two: "0.382rem",

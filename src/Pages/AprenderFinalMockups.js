@@ -95,7 +95,7 @@ function AprenderFinalMockups() {
   return (
     <>
       <div>
-        <div className="grid grid-cols-4">
+        <div className="md:grid grid-cols-4">
           <Modal
             showModal={showModal1}
             setShowModal={setShowModal1}

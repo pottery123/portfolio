@@ -43,17 +43,29 @@ function Modal({ showModal, setShowModal, img, video, text }) {
   return (
     <>
       {showModal ? (
-        <div className="bg-white-30 fixed inset-0 z-50  h-screen  font-Bhaijaan2 backdrop-blur-md">
+        <div className=" backdrop-blur-3xl fixed inset-0 z-50  h-screen font-Bhaijaan2 lg:backdrop-blur-md md:backdrop-blur-md overflow-scroll">
           <button
             onClick={OpenCloseModal}
-            className="text-black text-5xl absolute ml-24 mt-12 text-Bhaijaan2  hover:text-aprenderPink"
+            className="text-black md:text-5xl lg:text-5xl text-3xl absolute ml-10 md:ml-24 lg:ml-24 mt-8 text-Bhaijaan2  hover:text-aprenderPink"
           >
             X
           </button>
-          <div className="flex justify-around">
-            <div className="text-Bhaijaan2 mt-52 text-2xl">
+          <div className="text-xl lg:hidden md:hidden mt-10 p-10">{text[count]}</div>
+          <video
+              key={video[count]}
+              className=" md:hidden lg:hidden m-auto"
+              width="350"
+              muted
+              autoPlay
+              loop
+            >
+              <source src={video[count]} type="video/mp4" />
+            </video>
+
+          <div className="md:flex md:justify-around">
+            <div className="text-Bhaijaan2 lg:mt-52 md:mt-52 mt-5 text-2xl">
               <div className="grid grid-rows-1">
-                <div className="h-64">{text[count]}</div>
+                <div className="h-64 md:flex lg:flex hidden">{text[count]}</div>
                 <div className="flex gap-10 m-auto">
                   <div
                     className={`rounded-full w-2 h-2 bg-aprenderPink  ${
@@ -76,7 +88,7 @@ function Modal({ showModal, setShowModal, img, video, text }) {
                     }`}
                   ></div>
                 </div>
-                <div className="flex gap-5 m-auto mt-10 ">
+                <div className="flex gap-5 m-auto mt-10 pb-10 ">
                   <BackButton />
                   <NextButton />
                   
@@ -85,7 +97,7 @@ function Modal({ showModal, setShowModal, img, video, text }) {
             </div>
             <video
               key={video[count]}
-              className="mt-10"
+              className="mt-10  md:flex lg:flex hidden"
               width="260"
               muted
               autoPlay
@@ -97,7 +109,7 @@ function Modal({ showModal, setShowModal, img, video, text }) {
         </div>
       ) : (
         <img
-          className="w-60 mx-8 hover:scale-105 hover:transition delay-75 duration-72 ease-in-out"
+          className="lg:ml-12 md:ml-12 hover:scale-105 hover:transition delay-75 duration-72 ease-in-out md:p-0 lg:p-0 p-12"
           src={img}
           alt={img}
           onClick={() => setShowModal((prev) => !prev)}
