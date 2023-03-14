@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      transitionProperty: {
+        'margin': 'margin'
+    },
       backgroundImage: {
         'hero': "url('../public/images/note_book_background.svg')",
       },
@@ -11,6 +14,9 @@ module.exports = {
         md: "768px",
         lg: "104px",
         xl: "1280",
+      },
+      width: {
+        twoHundred: '200px'
       },
       fontSize: {
         one: "0.236rem",
@@ -68,9 +74,12 @@ module.exports = {
             },
         },
         grow: {
-          from: { width: "0%" },
+            "0%":{height: "0%"},
+            "25%":{height: "50%"},
+            "75%":{height: "70%"},
+            "100%":{height: "100%"}
 
-          to: { width: "100%" },
+         
         },
         to: {
           "stroke-dashoffset": "1000",
@@ -133,7 +142,7 @@ module.exports = {
         "gradient-x": "gradient-x 1s ease infinite",
         "gradient-y": "gradient-y 1s ease infinite",
         "gradient-xy": "gradient-xy 1s ease infinite",
-        "grow": "grow linear 4s",
+        "grow": "grow 100s linear ease-out ",
         'fade-in-down': 'fade-in-down 0.5s ease-out'
 
       },

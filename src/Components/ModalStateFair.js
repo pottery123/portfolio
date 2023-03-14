@@ -15,25 +15,26 @@ function ModalStateFair({ showModal, setShowModal, img = [], object }) {
   return (
     <>
       {showModal ? (
-        <div className="bg-white-30 fixed inset-0 z-60 h-screen font-Bhaijaan2 backdrop-blur-2xl">
+        <div className="bg-white-30 overflow-auto fixed inset-0 z-60 h-screen font-Bhaijaan2 backdrop-blur-2xl">
           <button
             onClick={() => setShowModal((prev) => !prev)}
-            className=" text-2xl absolute mr-24 mt-12 text-Bhaijaan2  hover:text-stateFairBurgandy right-0"
+            className=" mx-4 my-4 text-2xl md:absolute lg:absolute lg:mr-24 md:mr-24 md:mt-12 lg:mt-12 text-Bhaijaan2  hover:text-stateFairBurgandy md:right-0 lg:right-0"
           >
             Close
           </button>
           <div className="m-auto">
-            <div className="flex gap-24 mt-14 justify-center">
+            <div className="md:flex lg:flex gap-24 lg:mt-14 md:mt-14 md:justify-center lg:justify-center">
               <div>
+              <div className="text-base lg:hidden md:hidden mx-4">{object.text[index]}</div>
                 <img
-                  className="w-40"
+                  className="md:w-40 lg:w-40 my-5 m-auto"
                   src={object.images[index]}
                   alt={object.alt}
                   style={object.imageStyle[index]}
                 ></img>
                 <div>
                   {object.images.length === 1 && (
-                    <div className=" flex justify-center mt-5 gap-5">
+                    <div className=" flex justify-center my-4 gap-5">
                       <div className="rounded-full w-3 h-3  bg-stateFairBlue"></div>
                     </div>
                   )}
@@ -41,7 +42,7 @@ function ModalStateFair({ showModal, setShowModal, img = [], object }) {
                   {object.images.length === 2 && (
                     <div>
                       {index === 0 && (
-                        <div className=" flex justify-center mt-5 gap-5">
+                        <div className=" flex justify-center mt-5 gap-5  my-4">
                           <div className="rounded-full w-3 h-3  bg-stateFairBlue"></div>
                           <div className="rounded-full w-3 h-3  bg-slate-200"></div>
                         </div>
@@ -82,8 +83,8 @@ function ModalStateFair({ showModal, setShowModal, img = [], object }) {
                   {object.images.length === 4 && (
                     <div>
                        {index === 0 && (
-                        <div className="flex justify-center mt-5 gap-5">
-                          <div className="rounded-full w-3 h-3  bg-stateFairBlue"></div>
+                        <div className="flex justify-center mt-5 gap-5 my-4">
+                          <div className="rounded-full w-3 h-3  bg-stateFairBlue "></div>
                           <div className="rounded-full w-3 h-3  bg-slate-200"></div>
                           <div className="rounded-full w-3 h-3  bg-slate-200"></div>
                           <div className="rounded-full w-3 h-3  bg-slate-200"></div>
@@ -129,7 +130,7 @@ function ModalStateFair({ showModal, setShowModal, img = [], object }) {
                   )}
                 </div>
               </div>
-              <div className="p-3">
+              <div className="md:block lg:block hidden lg:p-3 md:p-3">
                 {index === 0 &&
                   object.arrowStyle1.map((style) => (
                     <img
@@ -180,7 +181,7 @@ function ModalStateFair({ showModal, setShowModal, img = [], object }) {
                     ></img>
                   ))}
               </div>
-              <div className="w-96 text-base">{object.text[index]}</div>
+              <div className="w-96 text-base hidden lg:block md:block">{object.text[index]}</div>
             </div>
           </div>
           <div
@@ -188,7 +189,7 @@ function ModalStateFair({ showModal, setShowModal, img = [], object }) {
               onClick={() => arrayIndex()}
             >
               {object.text.length > 1 && (
-                <div className="text-center font-Quicksand text-sm text-white bg-stateFairYellow hover:bg-stateFairYellowDark px-2 py-2  rounded-full m-auto w-24 -mt-10">
+                <div className="text-center font-Quicksand text-sm text-white bg-stateFairYellow hover:bg-stateFairYellowDark px-2 py-2 rounded-full m-auto w-24 -mt-10">
                   Next
                 </div>
               )}
@@ -196,7 +197,7 @@ function ModalStateFair({ showModal, setShowModal, img = [], object }) {
         </div>
       ) : (
         <img
-          className="hover:scale-105 hover:transition delay-75 duration-72 ease-in-out"
+          className=" hover:scale-105 hover:transition delay-75 duration-72 ease-in-out  block m-auto "
           src={img}
           alt={img}
           onClick={() => setShowModal((prev) => !prev)}
