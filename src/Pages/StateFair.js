@@ -120,7 +120,7 @@ function StateFair() {
   return (
     <div className="relative w-auto overflow-hidden">
       <div className=" md:flex justify-around bg-stateFairBurgandy w-auto overflow-hidden relative block z-20">
-      <img
+        <img
           className="md:pt-32 mt-36 lg:mt-6 lg:mb-6 p-5  lg:hidden md:hidden"
           width={500}
           height={500}
@@ -311,15 +311,10 @@ function StateFair() {
         </button>
       </div>
 
-      <div
-        className={` h-0  ${
-          openCaseStudy &&
-          "  h-full"
-        } `}
-      >
+      <div className={` h-0  ${openCaseStudy && "  h-full"} `}>
         {showTheProblems && (
-          <div className="md:p-40 lg:p-40">
-            <div className=" font-black font-Quicksand lg:text-2xl md:text-2xl md:mb-4 lg:mb-4">
+          <div className="md:p-40 lg:p-40 mx-8 my-4 ">
+            <div className=" font-black font-Quicksand lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 text-xl mb-4">
               The Problems
             </div>
             <div className="">
@@ -334,8 +329,8 @@ function StateFair() {
           </div>
         )}
         {showHeuristicEvaluation && (
-          <div className="md:p-40 lg:p-40 ">
-            <div className=" font-black font-Quicksand lg:text-2xl md:text-2xl md:mb-4 lg:mb-4">
+          <div className="md:p-40 lg:p-40 mx-8 my-4 ">
+            <div className=" font-black font-Quicksand lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 text-xl mb-4">
               Usability Heuristic Evaluation
             </div>
             <div className="font-Quicksand  md:block lg:block md:text-xl lg:text-xl mb-4">
@@ -352,19 +347,36 @@ function StateFair() {
               Through this process I was able to identify some major usability
               issues users were having when they tried to purchase tickets for
               concerts and shows.
-              <div className="md:my-12 lg:my-5 md:mb-10 lg:mb-10 font-bold text-aprenderBlue lg:block md:block hidden">
+              <div className="md:my-12 lg:my-5 md:mb-10 lg:mb-10 font-bold text-aprenderBlue lg:block md:block mt-8">
                 Click or press the images to see the evaluation details or for
-                an overview<span className=" underline underline-offset-2">  click here.</span> 
+                an overview
+                <span
+                  onClick={() => {
+                    setShowBenchmarking(true);
+                    setShowHeuristicEvaluation(false);
+                    setShowDesignAndTest(false);
+                    setShowFinalMockups(false);
+                    setShowNextSteps(false);
+                    setShowTheProblems(false);
+
+                    setUnderlineProblems(false);
+                    setUnderlineHeuristicEvaluation(false);
+                    setUnderlineBenchmarking(true);
+                    setUnderlineDesignAndTest(false);
+                    setUnderlineFinalMockups(false);
+                    setUnderlineNextSteps(false);
+                  }}
+                  className=" underline underline-offset-2"
+                >
+                  {" "}
+                  click here.
+                </span>
               </div>
             </div>
 
             <div className="md:grid grid-cols-4 lg:grid grid-cols-4 gap-3 text-sm  font-Quicksand ">
-              <div className="md:w-36 lg:w-36 md:mt-0 lg:mt-0 mt-80">
-                <div className="md:mb-10 leading-7 md:mt-3 md:mx-0 lg:mx-0 mx-8 mt-32">
-                  <div className=" mb-24 mt-20 font-bold text-aprenderBlue lg:hidden md:hidden">
-                    Click or press the images to see the evaluation details or
-                    for an overview click here.
-                  </div>
+              <div className="md:w-36 lg:w-36 md:mt-0 lg:mt-0 mt-20">
+                <div className="md:mb-10 leading-7 md:mt-3 md:mx-0 lg:mx-0 mx-8 mt-20">
                   This is the first screen users see after choosing the concert
                   they want to attend.
                 </div>
@@ -537,9 +549,11 @@ function StateFair() {
           </div>
         )}
         {showBenchmarking && (
-          <div className="md:p-40 lg:p-40">
-            <div className="font-Quicksand font-black lg:text-2xl md:text-2xl md:mb-4 lg:mb-4  ">Benchmarking</div>
-            <div className="font-Quicksand md:text-xl lg:text-xl md:mb-8 lg:mb-8">
+          <div className="md:p-40 lg:p-40 mx-8 my-4">
+            <div className="font-Quicksand font-black lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 text-xl mb-4  ">
+              Benchmarking
+            </div>
+            <div className="font-Quicksand md:text-xl lg:text-xl md:mb-8 lg:mb-8 mb-4">
               I conducted a usability test on the ticket buying process using
               the System Usability Scale (SUS) framework{" "}
               <span className="font-bold">
@@ -577,7 +591,7 @@ function StateFair() {
                 </ul>
               </div>
               <div className="">
-                <div className="font-bold lg:mt-8 md:mt-8 lg:mb-2 md:mb-2 text-stateFairBlue ">
+                <div className="font-bold lg:mt-8 md:mt-8 lg:mb-2 md:mb-2 text-stateFairBlue mt-4 mb-4 ">
                   {" "}
                   To reach success metrics I needed to design solutions to these
                   problems listed below.
@@ -642,8 +656,10 @@ function StateFair() {
           </div>
         )}
         {showDesignAndTest && (
-          <div className="font-Quicksand md:p-40 lg:p-40 ">
-            <div className="font-black lg:text-2xl md:text-2xl md:mb-4 lg:mb-4">Design & Test</div>
+          <div className="font-Quicksand md:p-40 lg:p-40 mx-8 my-4 ">
+            <div className="font-black lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 mb-4 text-xl">
+              Design & Test
+            </div>
             <div className=" lg:text-xl md:text-xl  ">
               <div className="">
                 I{" "}
@@ -806,9 +822,9 @@ function StateFair() {
               <div className="font-black lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 mt-8 text-xl mb-4">
                 Final Mockups
               </div>
-                <div className=" text-stateFairBlue lg:mb-8 md:mb-8 ">
-                  To see design changes click or press the headings.
-                </div>
+              <div className=" text-stateFairBlue lg:mb-8 md:mb-8 ">
+                To see design changes click or press the headings.
+              </div>
               <div className="md:ml-20 lg:ml-20 lg:flex md:flex md:gap-28 lg:gap-28">
                 <div className="block lg:hidden md:hidden mb-8 mt-16">
                   {showAppScreen1 && (
@@ -965,7 +981,7 @@ function StateFair() {
                           </div>
                         }
                       </div>
-                      
+
                       {showAppArrow2 && (
                         <img
                           src={"/images/red-arrow.svg"}
@@ -1580,10 +1596,8 @@ function StateFair() {
           </div>
         )}
         {showNextSteps && (
-          <div className="font-Quicksand md:p-40 lg:p-40 ">
-            <div className=" font-black  lg:text-xl md:text-xl">
-              Takeaways
-            </div>
+          <div className="font-Quicksand md:p-40 lg:p-40 mx-8 my-4 ">
+            <div className=" font-black  lg:text-xl md:text-xl text-xl mb-4">Takeaways</div>
             <ul className=" ml-9 md:w-[43.75rem] lg:w-[43.75rem] md:mt-5 lg:mt-5 md:ml-9 lg:ml-9 leading-7 lg:mb-4 md:mb-4 list-disc">
               <li>
                 The
@@ -1609,7 +1623,9 @@ function StateFair() {
                 to select seats and sections.{" "}
               </li>
             </ul>
-            <div className=" font-bold lg:text-xl md:text-xl md:mb-4 lg:mb-4">Next Steps</div>
+            <div className=" font-bold lg:text-xl md:text-xl md:mb-4 lg:mb-4 mb-4 text-xl mt-4">
+              Next Steps
+            </div>
             <ul className="list-disc ml-9">
               <li>
                 <span className="font-bold">
