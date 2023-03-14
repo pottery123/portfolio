@@ -199,7 +199,7 @@ const description11 = (
       "The design should always keep users informed about what is going on,
       through appropriate feedback within a reasonable amount of time." --Nielsen 
     </div>
-    <div className="">
+    <div className="mt-10">
       The color used when a seat is selected is too light for the user to see
       without great effort. The color needs to be darker to provide better
       contrast so the user can easily see when they have selected a seat.

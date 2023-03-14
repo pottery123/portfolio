@@ -128,7 +128,7 @@ function StateFair() {
           alt="Aprender Screens"
         ></img>
         <div className=" font-Bhaijaan2 font-semibold md:pt-52 text-white md:pl-10 p-8">
-          <div className="lg:pt-18 md:text-eight text-seven ">State Fair</div>
+          <div className="lg:pt-18 md:text-eight lg:text-eight text-six ">State Fair</div>
           <p className="md:text-four md:font-normal font-normal tracking-wide sm:mr-10 mb-5 ">
             <span className="font-bold">Role:</span> UX/UI Designer, Interaction
             Designer, UX Researcher
