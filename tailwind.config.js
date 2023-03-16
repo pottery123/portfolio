@@ -7,7 +7,7 @@ module.exports = {
         'margin': 'margin'
     },
       backgroundImage: {
-        'hero': "url('../public/images/note_book_background.svg')",
+        'hero': "url('../public/images/background-hero.svg')",
       },
       sreens: {
         sm: "640px",
@@ -37,6 +37,7 @@ module.exports = {
         Nunito: "'Nunito',  sans-serif",
         Dosis: "'Dosis', sans-serif",
         Quicksand: "'Quicksand', sans-serif",
+        Poppins: "'Poppins', sans-serif;",
       },
       colors: {
         somoBlue: "#212153",
@@ -61,6 +62,9 @@ module.exports = {
         stateFairBurgandyDark: "#550002",
         stateFairYellow: "#F29F05",
         stateFairYellowDark: "#D48100",
+        heroPink: "#D45769",
+        heroPurple: "#6D597A",
+        heroBlue: '#355070',
       },
       keyframes: {
           'fade-in-down': {

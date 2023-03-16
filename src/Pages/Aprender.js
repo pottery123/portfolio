@@ -50,7 +50,7 @@ function Aprender() {
           src={"/images/aprender-screens.svg"}
           alt="Aprender Screens"
         ></img>
-        <div className=" font-Bhaijaan2 font-semibold md:pt-52 text-white md:pl-10 p-8">
+        <div className=" font-poppins font-semibold md:pt-52 text-white md:pl-10 p-8">
           <div className="lg:pt-18 md:text-eight text-seven ">Aprender</div>
           <p className="md:text-four md:font-normal font-normal tracking-wide sm:mr-10 mb-5 ">
             <span className="font-bold">Role:</span>  UX/UI Designer, Interaction
@@ -85,7 +85,7 @@ function Aprender() {
             setUnderlineMockups(false);
             setUnderlineTakeaway(false);
           }}
-          className="font-Bhaijaan2 text-lg p-8 hover:text-aprenderPink"
+          className="font-poppins text-lg p-8 hover:text-aprenderPink"
         >
           <div>The </div> <div> Problem</div>
           {underlineProblem ? (
@@ -112,7 +112,7 @@ function Aprender() {
             setUnderlineMockups(false);
             setUnderlineTakeaway(false);
           }}
-          className="font-Bhaijaan2 text-lg p-8 hover:text-aprenderPink"
+          className="font-poppins text-lg p-8 hover:text-aprenderPink"
         >
           <div>User</div> <div>Research</div>
           {underlineResearch ? (
@@ -140,7 +140,7 @@ function Aprender() {
             setUnderlineMockups(false);
             setUnderlineTakeaway(false);
           }}
-          className="font-Bhaijaan2 text-lg p-8 hover:text-aprenderPink"
+          className="font-poppins text-lg p-8 hover:text-aprenderPink"
         >
           <div>Design </div> <div>Decisions</div>
           {underlineDesign ? (
@@ -168,7 +168,7 @@ function Aprender() {
             setUnderlineMockups(false);
             setUnderlineTakeaway(false);
           }}
-          className="font-Bhaijaan2 text-lg p-8 hover:text-aprenderPink"
+          className="font-poppins text-lg p-8 hover:text-aprenderPink"
         >
           <div>Wireframing</div> <div>Prototyping</div>
           {underlineWireframing ? (
@@ -196,7 +196,7 @@ function Aprender() {
             setUnderlineMockups(false);
             setUnderlineTakeaway(false);
           }}
-          className="font-Bhaijaan2 text-lg p-8 hover:text-aprenderPink"
+          className="font-poppins text-lg p-8 hover:text-aprenderPink"
         >
           <div>Usability </div> <div>Testing</div>
           {underlineTesting ? (
@@ -223,7 +223,7 @@ function Aprender() {
             setUnderlineMockups(true);
             setUnderlineTakeaway(false);
           }}
-          className="font-Bhaijaan2 text-lg p-8 hover:text-aprenderPink"
+          className="font-poppins text-lg p-8 hover:text-aprenderPink"
         >
           <div>High-Fidelity </div> <div>Mockups</div>
           {underlineMockups ? (
@@ -250,7 +250,7 @@ function Aprender() {
             setUnderlineMockups(false);
             setUnderlineTakeaway(true);
           }}
-          className="font-Bhaijaan2 text-lg p-5 hover:text-aprenderPink "
+          className="font-poppins text-lg p-5 hover:text-aprenderPink "
         >
           <div>Takeaways/</div> <div>Next Steps </div>
           {underlineTakeaway ? (
@@ -270,7 +270,7 @@ function Aprender() {
         {problemSection ? (
           <div className="my-10 md:my-32">
             {problemSection1 ? (
-              <div className="font-Bhaijaan2 lg:mx-44 md:mx-12 mx-8">
+              <div className="font-poppins lg:mx-44 md:mx-12 mx-8">
                 <p className="font-semibold md:text-five mb-4 text-xl">
                   The Corner Shop
                 </p>
@@ -291,7 +291,7 @@ function Aprender() {
               </div>
             ) : null}
             <div className="grid grid-cols-1 lg:mx-44">
-              <p className="font-Bhaijaan2 text-center text-2xl md:text-5xl lg:text-5xl text-aprenderPink bg-white p-10 md:p-20 mt-1 md:mt-20">
+              <p className="font-poppins text-center text-2xl md:text-5xl lg:text-5xl text-aprenderPink bg-white p-10 md:p-20 mt-1 md:mt-20">
                 Did other people have this issue? If so, how could it be solved?
               </p>
             </div>
@@ -299,7 +299,7 @@ function Aprender() {
         ) : null}
         {researchSection ? (
           <div className="my-10 md:my-32">
-            <div className="font-Bhaijaan2 lg:mx-44 md:mx-12 mx-8 ">
+            <div className="font-poppins lg:mx-44 md:mx-12 mx-8 ">
               <p className="font-semibold md:text-five text-xl mb-4">
                 User Research
               </p>
@@ -379,7 +379,7 @@ function Aprender() {
             </div>
 
             <div className="grid gird-cols-1 mb-16 md:mx-44 lg:mx-44 mx-8 md:mx-12 ">
-              <div className="font-Bhaijaan2">
+              <div className="font-Poppins">
                 <p className="font-semibold md:text-five text-xl mb-4">
                   How Might we...
                 </p>
@@ -391,7 +391,7 @@ function Aprender() {
                     solution that solved the problem.
                   </p>
                 </div>
-                <p className="font-Bhaijaan2 text-center text-xl md:text-4xl leading-relaxed  text-aprenderGold md:my-24 my-10">
+                <p className="font-poppins text-center text-xl md:text-4xl leading-relaxed  text-aprenderGold md:my-24 my-10">
                   "How might we improve the experience of learning a new
                   language so that users can retain and apply useful vocabulary
                   for specific locations or scenarios?"
@@ -400,7 +400,7 @@ function Aprender() {
             </div>
             <div className="font-Bhaijaan lg:mx-44 mx-8 md:mx-16">
               <div className="grid grid-cols-1 justify-center">
-                <div className="font-Bhaijaan2">
+                <div className="font-Poppins">
                   <p className="font-semibold md:text-five text-xl mb-4">
                     Target User
                   </p>
@@ -412,7 +412,7 @@ function Aprender() {
                     </p>
                   </div>
 
-                  <div className="md:flex bg-slate-200 p-5 md:p-10 justify-center mb-72 font-Bhaijaan2">
+                  <div className="md:flex bg-slate-200 p-5 md:p-10 justify-center mb-72 font-Poppins">
                     <div className="text-sm md:text-lg md:w-3/6">
                       <div className="leading-relaxed">
                         <p className="text-aprenderPink font-bold pb-3 ">
@@ -478,7 +478,7 @@ function Aprender() {
 
         {designSection ? (
           <div className=" grid grid-cols-1 md:my-32 my-10 ">
-            <div className="font-Bhaijaan2 lg:mx-44 md:mx-12 mx-8">
+            <div className="font-poppins lg:mx-44 md:mx-12 mx-8">
               <p className="font-semibold md:text-five mb-4 text-xl">
                 Design Solutions
               </p>
@@ -492,7 +492,7 @@ function Aprender() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 bg-slate-200  text-left  font-Bhaijaan2 p-10 mx-8 lg:mx-44 ">
+            <div className="grid grid-cols-1 bg-slate-200  text-left  font-poppins p-10 mx-8 lg:mx-44 ">
               <div className="space-y-8 md:space-y-0 lg:space-y-0 md:flex lg:flex lg:space-x-10 md:space-x-10  lg:justify-around md:justify-around">
                 <div className="">
                   <img
@@ -525,7 +525,7 @@ function Aprender() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 bg-slate-200  text-left  font-Bhaijaan2 p-10 mx-8 lg:mx-44 ">
+            <div className="grid grid-cols-1 bg-slate-200  text-left  font-poppins p-10 mx-8 lg:mx-44 ">
               <div className="space-y-8 md:space-y-0 lg:space-y-0 md:flex lg:flex lg:space-x-10 md:space-x-10  lg:justify-around md:justify-around">
                 <div className="">
                   <img
@@ -556,7 +556,7 @@ function Aprender() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 bg-slate-200  text-left  font-Bhaijaan2 p-10 mx-8 lg:mx-44 ">
+            <div className="grid grid-cols-1 bg-slate-200  text-left  font-poppins p-10 mx-8 lg:mx-44 ">
               <div className="space-y-8 md:space-y-0 lg:space-y-0 md:flex lg:flex lg:space-x-10 md:space-x-10  lg:justify-around md:justify-around">
                 <div className="">
                   <img
@@ -586,7 +586,7 @@ function Aprender() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 bg-slate-200  text-left  font-Bhaijaan2 p-10 mx-8 lg:mx-44 ">
+            <div className="grid grid-cols-1 bg-slate-200  text-left  font-poppins p-10 mx-8 lg:mx-44 ">
               <div className="space-y-8 md:space-y-0 lg:space-y-0 md:flex lg:flex lg:space-x-10 md:space-x-10  lg:justify-around md:justify-around">
                 <div className="">
                   <img
@@ -618,7 +618,7 @@ function Aprender() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 bg-slate-200  text-left  font-Bhaijaan2 p-10 mx-8 lg:mx-44 ">
+            <div className="grid grid-cols-1 bg-slate-200  text-left  font-poppins p-10 mx-8 lg:mx-44 ">
               <div className="space-y-8 md:space-y-0 lg:space-y-0 md:flex lg:flex lg:space-x-10 md:space-x-10  lg:justify-around md:justify-around">
                 <div className="">
                   <img
@@ -649,7 +649,7 @@ function Aprender() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 bg-slate-200  text-left  font-Bhaijaan2 p-10 mx-8 lg:mx-44 ">
+            <div className="grid grid-cols-1 bg-slate-200  text-left  font-poppins p-10 mx-8 lg:mx-44 ">
               <div className="space-y-8 md:space-y-0 lg:space-y-0 md:flex lg:flex lg:space-x-10 md:space-x-10  lg:justify-around md:justify-around">
                 <div className="">
                   <img
@@ -679,7 +679,7 @@ function Aprender() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 justify-center font-Bhaijaan2 lg:mx-44 md:mx-12 md:my-20 mx-8 ">
+            <div className="grid grid-cols-1 justify-center font-poppins lg:mx-44 md:mx-12 md:my-20 mx-8 ">
               <div>
                 <p className="font-semibold md:text-five mb-4 mt-10">
                   User Story Mapping
@@ -708,7 +708,7 @@ function Aprender() {
         ) : null}
         {wireframingSection ? (
           <div className="lg:mx-44 md:mx-12 md:my-32 mx-8 my-10">
-            <div className="font-Bhaijaan2">
+            <div className="font-Poppins">
               <p className="font-semibold md:text-five mb-4 text-xl">
                 Quick Sketches
               </p>
@@ -732,7 +732,7 @@ function Aprender() {
         ) : null}
 
         {testingSection ? (
-          <div className="font-Bhaijaan2 lg:mx-44 md:mx-12 md:my-32 mx-8 my-10">
+          <div className="font-poppins lg:mx-44 md:mx-12 md:my-32 mx-8 my-10">
             <p className="font-semibold text-five mb-4 text-xl md:text-five  ">
               Usability Testing
             </p>
@@ -774,7 +774,7 @@ function Aprender() {
         ) : null}
 
         {mockupsSection ? (
-          <div className="font-Bhaijaan2 md:my-32 my-10   ">
+          <div className="font-poppins md:my-32 my-10   ">
             <p className="font-semibold  lg:mx-44 md:mx-12  mb-4 mx-8 text-xl md:text-five ">
               The Corner Shop <span className="text-aprenderPink">(revisited)</span>
             </p>
@@ -784,7 +784,7 @@ function Aprender() {
               Well, I hoped to avoid those issues with the new mobile app I
               named...
             </p>
-            <p className="font-Bhaijaan2 text-seven md:text-nine font-medium text-aprenderPink text-center my-5 md:my-32  mt-20">
+            <p className="font-poppins text-seven md:text-nine font-medium text-aprenderPink text-center my-5 md:my-32  mt-20">
               Aprender
             </p>
             <div className="md:ml-10 md:mr-32">
@@ -794,7 +794,7 @@ function Aprender() {
         ) : null}
 
         {takeawaySection ? (
-          <div className="font-Bhaijaan2 lg:mx-44 md:my-32 mx-8 my-10">
+          <div className="font-poppins lg:mx-44 md:my-32 mx-8 my-10">
             <p className="font-semibold md:text-five mb-6 text-xl ">
               Next Steps & Takeaways
             </p>

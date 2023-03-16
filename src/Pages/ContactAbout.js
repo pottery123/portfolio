@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 function ContactAbout() {
   return (
-    <div className=" h-screen text-primary font-Nunito">
+    <div className=" h-screen text-primary font-Poppins">
       <Link
         to="/"
-        className=" absolute  right-12 top-10  z-50 font-Nunito rounded bg-primary text-white px-3 py-1 hover:bg-secondary"
+        className=" absolute  right-12 top-10  z-50 font-Poppins rounded text-heroPink px-3 py-1 hover:bg-heroPurple"
       >
         Home
       </Link>
@@ -26,7 +26,7 @@ function ContactAbout() {
               href="https://www.linkedin.com/in/sarah-e-kane"
               target="_blank"
               rel="noreferrer"
-              className="underline decoration-solid text-primary hover:text-secondary"
+              className="underline decoration-solid text-primary hover:text-heroPurple"
             >
               www.linkedin.com/in/sarah-e-kane
             </a>{" "}

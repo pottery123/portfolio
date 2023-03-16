@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import Aprender from "./Aprender";
 import StateFair from "./StateFair";
+import Somo from "./Somo";
 
 setInterval(function () {
   axios
@@ -28,42 +29,52 @@ function Home() {
   }, []);
 
   return (
-    <div className=" mb-4 mt-10 text-primary font-semibold">
-      <div className="bg-transparent absolute flex right-12 top-10  z-50 ">
+    <div className=" ">
+      <div className=" absolute flex left-16 top-5  z-50 ">
         {" "}
         <div className=" flex gap-10">
           {" "}
           <Link
-            className="rounded bg-primary text-white px-2 py-1 hover:bg-secondary"
+            className="rounded text-heroPink px-2 py-1 hover:bg-heroPurple font-Poppins "
             to="/contact-about"
           >
             Contact
           </Link>{" "}
           <Link
-            className="rounded bg-primary text-white px-3 py-1 hover:bg-secondary"
+            className="rounded text-heroPink px-3 py-1 hover:bg-heroPurple font-Poppins"
             to="/contact-about"
           >
             About
           </Link>{" "}
         </div>
       </div>
-      <div class="">
-        <div className="lg:text-eight md:text-eight lg:pl-16 md:pl-16 text-primary ">
-          Sarah Kane
+      <div className="flex gap-32 font-Poppins ">
+        <div className="mt-28 ml-20 ">
+          <img width={700} src={"/images/self.svg"} alt="background"></img>
         </div>
-        <div className=" text-six">
-          <p className="text-six md:ml-48 lg:ml-48 md:mt-24 lg:mt-24 lg:mr-48 md:mr-48 lg:text-center md:text-center">
-            {" "}
-            I am a product designer with a background in front-end engineering.
-            My work ethos can be expressed in one phrase,{" "}
-            <span className="text-secondary">
-              {" "}
-              design with care, build with integrity.
-            </span>
-          </p>
+
+        <div className="mt-24">
+          <div className="z-10 font-extralight text-heroPink  ">
+            <div className="text-seven pb-8 font-extralight text-heroPink  ">
+              Sarah Kane
+            </div>
+            <div className=" text-xl">
+              I am a product designer with a background in front-end
+              engineering. My work ethos can be expressed in two phrase,{" "}
+              <span className="text-heroBlue font-medium ">
+                {" "}
+                design with care, build integrity.
+              </span>{" "}
+              Checkout my work below.
+            </div>
+          </div>
         </div>
+        <img
+          className="w-56 -translate-y-32"
+          src={"/images/accent-image.svg"}
+          alt={"accent"}
+        ></img>
       </div>
-      
 
       <div>
         <Aprender />
