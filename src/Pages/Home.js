@@ -70,7 +70,7 @@ function Home() {
           </div>
         </div>
         <img
-          className="w-56 -translate-y-32"
+          className="w-72 -translate-y-32"
           src={"/images/accent-image.svg"}
           alt={"accent"}
         ></img>
