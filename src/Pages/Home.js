@@ -60,7 +60,7 @@ function Home() {
             </div>
             <div className=" text-xl">
               I am a product designer with a background in front-end
-              engineering. My work ethos can be expressed in two phrase,{" "}
+              engineering. My work ethos can be expressed in two phrases,{" "}
               <span className="text-heroBlue font-medium ">
                 {" "}
                 design with care, build integrity.
