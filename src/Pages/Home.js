@@ -1,10 +1,9 @@
 import React from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import Aprender from "./Aprender";
 import StateFair from "./StateFair";
-import Somo from "./Somo";
+import NavBar from "../Components/NavBar";
 
 setInterval(function () {
   axios
@@ -29,51 +28,34 @@ function Home() {
   }, []);
 
   return (
-    <div className=" ">
-      <div className=" absolute flex left-16 top-5  z-50 ">
-        {" "}
-        <div className=" flex gap-10">
-          {" "}
-          <Link
-            className="rounded text-heroPink px-2 py-1 hover:bg-heroPurple font-Poppins "
-            to="/contact-about"
-          >
-            Contact
-          </Link>{" "}
-          <Link
-            className="rounded text-heroPink px-3 py-1 hover:bg-heroPurple font-Poppins"
-            to="/contact-about"
-          >
-            About
-          </Link>{" "}
+    <div className="">
+      <div className="bg-heroBlue">
+        <div className="relative">
+          <NavBar />
+          <img
+            className="w-80 top-0  z-0 relative"
+            src={"/images/accent-half-moon.svg"}
+            alt="half moon accent"
+          ></img>
         </div>
-      </div>
-      <div className="flex gap-32 font-Poppins ">
-        <div className="mt-28 ml-20 ">
-          <img width={700} src={"/images/self.svg"} alt="background"></img>
+        <div className="text-heroPink text-eight ml-10 font-bold mt-16">
+          Sarah Kane
         </div>
-
-        <div className="mt-24">
-          <div className="z-10 font-extralight text-heroPink  ">
-            <div className="text-seven pb-8 font-extralight text-heroPink  ">
-              Sarah Kane
-            </div>
-            <div className=" text-xl">
-              I am a product designer with a background in front-end
-              engineering. My work ethos can be expressed in two phrases,{" "}
-              <span className="text-heroBlue font-medium ">
-                {" "}
-                design with care, build integrity.
-              </span>{" "}
-              Checkout my work below.
-            </div>
+        <div className="flex justify-between">
+          <div className="text-five ml-10 text-white w-3/5 leading-loose">
+            I am a product designer with a background in front-end engineering.
+            My work ethos can be expressed in two phrases,{" "}
+            <span className="text-heroPink">
+              design with care, build integrity.
+            </span>{" "}
+            Check out my work below. Enjoy!
           </div>
+          <img
+            className=" h-96 "
+            src={"/images/image-self.svg"}
+            alt="self"
+          ></img>
         </div>
-        <img
-          className="w-72 -translate-y-32"
-          src={"/images/accent-image.svg"}
-          alt={"accent"}
-        ></img>
       </div>
 
       <div>

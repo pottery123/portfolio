@@ -7,7 +7,7 @@ module.exports = {
         'margin': 'margin'
     },
       backgroundImage: {
-        'hero': "url('../public/images/background-hero.svg')",
+        'header-accent': "url('../public/images/accent-half-moon.svg')",
       },
       sreens: {
         sm: "640px",
@@ -42,7 +42,7 @@ module.exports = {
       colors: {
         somoBlue: "#212153",
         stateFairWhite: "#E9E2DB",
-        aprenderPink: "#D45769",
+        aprenderPink: "#D45769", 
         aprenderPinkLight: "#e18996",
         theme: "#FDF5DF",
         third: "#8CBDB9",
@@ -62,9 +62,10 @@ module.exports = {
         stateFairBurgandyDark: "#550002",
         stateFairYellow: "#F29F05",
         stateFairYellowDark: "#D48100",
-        heroPink: "#D45769",
+        heroPink: "#EA576D",
         heroPurple: "#6D597A",
-        heroBlue: '#355070',
+        heroBlue: '#353643',
+        
       },
       keyframes: {
           'fade-in-down': {

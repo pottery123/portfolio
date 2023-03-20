@@ -318,7 +318,7 @@ function StateFair() {
               The Problems
             </div>
             <div className="">
-              <div className="font-Poppins md:text-xl lg:text-xl">
+              <div className="font-Poppins md:text-xl lg:text-xl font-normal ">
                 Just over a million people visit the Washington State Fair every
                 year. Many of the attendees use the Washington State Fair mobile
                 app to purchase tickets for concerts and shows. This projects
@@ -333,7 +333,7 @@ function StateFair() {
             <div className="font-bold font-Poppins lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 text-xl mb-4">
               Usability Heuristic Evaluation
             </div>
-            <div className="font-Poppins  md:block lg:block md:text-xl lg:text-xl mb-4">
+            <div className="font-Poppins  md:block lg:block md:text-xl lg:text-xl mb-4 font-normal">
               The project started off with a usability heuristic evaluation of
               the ticket purchasing process in the Washington State Fair mobile
               app. I used{" "}
@@ -553,7 +553,7 @@ function StateFair() {
             <div className="font-Poppins font-bold lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 text-xl mb-4  ">
               Benchmarking
             </div>
-            <div className="font-Poppins md:text-xl lg:text-xl md:mb-8 lg:mb-8 mb-4">
+            <div className="font-Poppins md:text-xl lg:text-xl md:mb-8 lg:mb-8 mb-4 font-normal">
               I conducted a usability test on the ticket buying process using
               the System Usability Scale (SUS) framework{" "}
               <span className="font-bold">
@@ -661,7 +661,7 @@ function StateFair() {
               Design & Test
             </div>
             <div className=" lg:text-xl md:text-xl  ">
-              <div className="">
+              <div className="font-normal">
                 I{" "}
                 <span className="font-bold md:text-xl lg:text-xl">
                   wrote user stories that addressed each usability issues the
