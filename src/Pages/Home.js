@@ -3,7 +3,9 @@ import axios from "axios";
 import { useEffect } from "react";
 import Aprender from "./Aprender";
 import StateFair from "./StateFair";
+import SOMO from "./Somo";
 import NavBar from "../Components/NavBar";
+
 
 setInterval(function () {
   axios
@@ -64,6 +66,10 @@ function Home() {
       <div>
         <StateFair />
       </div>
+      <div>
+        <SOMO />
+      </div>
+
     </div>
   );
 }

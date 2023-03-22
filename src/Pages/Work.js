@@ -4,10 +4,10 @@ import NavBar from "../Components/NavBar";
 function ContactAbout() {
   return (
     <div className="bg-heroBlue">
-      <div className="relative">
+      <div className="relative z-10">
         <NavBar />
         <img
-          className="w-96 top-0 inset-x-2/4  z-0 relative ml-[230px] "
+          className="w-96 top-0 absolute  z-0 right-0"
           src={"/images/accent-half-moon-right.svg"}
           alt="half moon accent"
         ></img>
@@ -15,7 +15,7 @@ function ContactAbout() {
 
       <div className="flex">
         <div className="text-five ml-20  text-white w-3/5 leading-loose -mt">
-          <div className="text-heroPink text-eight font-bold">Work</div>
+          <div className="text-heroPink text-eight font-bold mt-32">Work</div>
           <div className="text-xl mt-8">
             <div className="font-bold">
               Build2Lead,{" "}

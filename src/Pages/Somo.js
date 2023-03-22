@@ -25,7 +25,7 @@ function Somo() {
   function OpenStudy() {
     return (
       <div
-        className=" border-2 border-white rounded-full text-center px-1 py-2 w-40 bg-white text-aprenderPink hover:bg-aprenderPink hover:text-white"
+        className=" border-2 border-white rounded-full text-center px-1 py-2 w-40 bg-white text-heroSomoBlue hover:bg-heroSomoBlue hover:text-white"
         onClick={() => {
           setOpenCaseStudy((prev) => !prev);
         }}
@@ -42,7 +42,7 @@ function Somo() {
 
   return (
     <div className="relative w-auto overflow-hidden">
-      <div className=" md:flex justify-around bg-aprenderPink w-auto overflow-hidden relative block z-20 ">
+      <div className=" md:flex justify-around bg-heroSomoBlue w-auto overflow-hidden relative block z-20 ">
         <img
           className="md:pt-32 mt-36 lg:mt-6 lg:mb-6 p-5"
           width={500}
@@ -51,7 +51,7 @@ function Somo() {
           alt="Aprender Screens"
         ></img>
         <div className=" font-poppins font-semibold md:pt-52 text-white md:pl-10 p-8">
-          <div className="lg:pt-18 md:text-eight text-seven ">Aprender</div>
+          <div className="lg:pt-18 md:text-eight text-seven ">SOMO</div>
           <p className="md:text-four md:font-normal font-normal tracking-wide sm:mr-10 mb-5 ">
             <span className="font-bold">Role:</span>  UX/UI Designer, Interaction
             Designer, UX Researcher
@@ -85,11 +85,11 @@ function Somo() {
             setUnderlineMockups(false);
             setUnderlineTakeaway(false);
           }}
-          className="font-poppins text-lg p-8 hover:text-aprenderPink"
+          className="font-poppins text-lg p-8 hover:text-heroSomoBlue"
         >
           <div>The </div> <div> Problem</div>
           {underlineProblem ? (
-            <div className=" h-1 bg-aprenderPink" />
+            <div className=" h-1 bg-heroSomoBlue" />
           ) : (
             <div className="h-1 bg-white" />
           )}
@@ -112,11 +112,11 @@ function Somo() {
             setUnderlineMockups(false);
             setUnderlineTakeaway(false);
           }}
-          className="font-poppins text-lg p-8 hover:text-aprenderPink"
+          className="font-poppins text-lg p-8 hover:text-heroSomoBlue"
         >
           <div>User</div> <div>Research</div>
           {underlineResearch ? (
-            <div className="h-1  bg-aprenderPink" />
+            <div className="h-1  bg-heroSomoBlue" />
           ) : (
             <div className="h-1  bg-white" />
           )}
@@ -140,11 +140,11 @@ function Somo() {
             setUnderlineMockups(false);
             setUnderlineTakeaway(false);
           }}
-          className="font-poppins text-lg p-8 hover:text-aprenderPink"
+          className="font-poppins text-lg p-8 hover:text-heroSomoBlue"
         >
           <div>Design </div> <div>Decisions</div>
           {underlineDesign ? (
-            <div className="h-1  bg-aprenderPink" />
+            <div className="h-1  bg-heroSomoBlue" />
           ) : (
             <div className="h-1  bg-white" />
           )}
@@ -168,11 +168,11 @@ function Somo() {
             setUnderlineMockups(false);
             setUnderlineTakeaway(false);
           }}
-          className="font-poppins text-lg p-8 hover:text-aprenderPink"
+          className="font-poppins text-lg p-8 hover:text-heroSomoBlue"
         >
           <div>Wireframing</div> <div>Prototyping</div>
           {underlineWireframing ? (
-            <div className="h-1  bg-aprenderPink" />
+            <div className="h-1  bg-heroSomoBlue" />
           ) : (
             <div className="h-1  bg-white" />
           )}
@@ -196,11 +196,11 @@ function Somo() {
             setUnderlineMockups(false);
             setUnderlineTakeaway(false);
           }}
-          className="font-poppins text-lg p-8 hover:text-aprenderPink"
+          className="font-poppins text-lg p-8 hover:text-heroSomoBlue"
         >
           <div>Usability </div> <div>Testing</div>
           {underlineTesting ? (
-            <div className="h-1  bg-aprenderPink" />
+            <div className="h-1  bg-heroSomoBlue" />
           ) : (
             <div className="h-1  bg-white" />
           )}
@@ -223,11 +223,11 @@ function Somo() {
             setUnderlineMockups(true);
             setUnderlineTakeaway(false);
           }}
-          className="font-poppins text-lg p-8 hover:text-aprenderPink"
+          className="font-poppins text-lg p-8 hover:text-heroSomoBlue"
         >
           <div>High-Fidelity </div> <div>Mockups</div>
           {underlineMockups ? (
-            <div className="h-1  bg-aprenderPink" />
+            <div className="h-1  bg-heroSomoBlue" />
           ) : (
             <div className="h-1  bg-white" />
           )}
@@ -250,11 +250,11 @@ function Somo() {
             setUnderlineMockups(false);
             setUnderlineTakeaway(true);
           }}
-          className="font-poppins text-lg p-5 hover:text-aprenderPink "
+          className="font-poppins text-lg p-5 hover:text-heroSomoBlue "
         >
           <div>Takeaways/</div> <div>Next Steps </div>
           {underlineTakeaway ? (
-            <div className="h-1  bg-aprenderPink" />
+            <div className="h-1  bg-heroSomoBlue" />
           ) : (
             <div className="h-1  bg-white" />
           )}
@@ -291,7 +291,7 @@ function Somo() {
               </div>
             ) : null}
             <div className="grid grid-cols-1 lg:mx-44">
-              <p className="font-poppins text-center text-2xl md:text-5xl lg:text-5xl text-aprenderPink bg-white p-10 md:p-20 mt-1 md:mt-20">
+              <p className="font-poppins text-center text-2xl md:text-5xl lg:text-5xl text-heroSomoBlue bg-white p-10 md:p-20 mt-1 md:mt-20">
                 Did other people have this issue? If so, how could it be solved?
               </p>
             </div>

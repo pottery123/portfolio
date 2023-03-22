@@ -65,6 +65,8 @@ module.exports = {
         heroPink: "#EA576D",
         heroPurple: "#6D597A",
         heroBlue: '#353643',
+        heroGreen: '#00A5A2',
+        heroSomoBlue: '#212153',
         
       },
       keyframes: {
