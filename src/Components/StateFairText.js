@@ -1,13 +1,13 @@
 const description1 = (
   <div className="max-w-lgs">
-    <div className=" text-2xl ">Aesthetic and Minimalist Design</div>
-    <div className="pt-5 italic lg:text-base md:text-base text-xs">
+    <div className=" text-xl ">Aesthetic and Minimalist Design</div>
+    <div className="pt-5 italic lg:text-xs md:text-xs text-xs font-light">
       "Interfaces should not contain information which is irrelevant or rarely
       needed. Every extra unit of information in an interface competes with the
       relevant units of information and diminishes their relative
       visibility." --Nielsen 
     </div>
-    <div className="mt-10 text-lg">
+    <div className="mt-5 text-lg font-normal">
       The user does not need any of this information when choosing sections and
       seats. The text needs to be removed completely or reduced to only
       essential information. Also, I observed through onsite observations that
@@ -18,12 +18,12 @@ const description1 = (
 
 const description2 = (
   <div className=" max-w-lgs">
-    <div className=" text-2xl mb-3">Consistency And Standards</div>
-    <div className="pt-5 italic lg:text-base md:text-base text-xs">
+    <div className=" text-xl mb-3">Consistency And Standards</div>
+    <div className="pt-5 italic lg:text-xs md:text-xs text-xs font-light">
       "A comprehensible system should never confuse users by using different
       words, visuals, or actions for the same concepts." --Nielsen 
     </div>
-    <div className="mt-10">
+    <div className="mt-5 font-normal">
       Currently the design offers three different ways to select sections and
       seats. This could be frustrating to the user as it increases cognitive
       load. The interface should provide only one way to select sections and
@@ -35,9 +35,9 @@ const description2 = (
 
 const description3 = (
   <div className=" max-w-lgs">
-    <div className="font-bold text-xl mb-3">Match between System and the Real World</div>
-    <div className="pt-5 italic lg:text-base md:text-base text-xs">
-       "A comprehensible system should nFollow real-world conventions, making
+    <div className=" text-xl mb-3">Match between System and the Real World</div>
+    <div className="pt-5 italic lg:text-xs md:text-xs text-xs font-light">
+       "A comprehensible system should follow real-world conventions, making
       information appear in a natural and logical order. When a design’s
       controls follow real-world conventions and correspond to desired outcomes
       (called natural mapping), it’s easier for users to learn and remember how
@@ -45,7 +45,7 @@ const description3 = (
       intuitive.ever confuse users by using different words, visuals, or actions
       for the same concepts." --Nielsen 
     </div>
-    <div className="mt-10">
+    <div className="mt-5 font-normal">
       Two out of the three methods for choosing sections are difficult to
       understand because there is no visual indication of where the sections are
       located. These methods for selecting sections should be removed so the
@@ -57,9 +57,9 @@ const description3 = (
 
 const description4 = (
   <div className=" max-w-lgs">
-    <div className="font-bold text-lg mb-3">User Control and Freedom</div>
-    <div className="pt-5 italic lg:text-base md:text-base text-xs">
-      "All users certainly benAll users certainly benefit from UI controls that
+    <div className=" text-xl mb-3">User Control and Freedom</div>
+    <div className="pt-5 italic lg:text-xs md:text-xs text-xs font-light">
+      "All users certainly benefit from UI controls that
       allow people to go back to the previous state of the system(e.g., Back
       buttons to return to previous screens, Undo options to regress to former
       states, or Cancel links to quite multistep processes) regardless of the
@@ -68,7 +68,7 @@ const description4 = (
       screens, Undo options to regress to former states, or Cancel links to
       quite multistep processes) regardless of the task at hand." --Nielsen 
     </div>
-    <div className="mt-10">
+    <div className="mt-5 font-normal">
       The image size of the seat section makes it difficult for the user to
       select a section. Typically users end up increasing the screen size with
       their fingers to get a closer look. However, once a section is selected it
@@ -81,14 +81,14 @@ const description4 = (
 
 const description5 = (
   <div className=" max-w-lgs">
-    <div className="font-bold text-lg mb-3">Help and Documentation</div>
-    <div className="pt-5 italic lg:text-base md:text-base text-xs">
+    <div className=" text-xl mb-3">Help and Documentation</div>
+    <div className="pt-5 italic lg:text-xs md:text-xs text-xs font-light">
       "Even though it is better if the system can be used without documentation,
       it may be necessary to provide help and documentation. Any such
       information should be easy to search, focused on the user's task, list
       concrete steps to be carried out, and not be too large." --Nielsen 
     </div>
-    <div className="mt-10">
+    <div className="mt-5 font-normal">
       The price for accessible seats in the Golden section and Grandstand
       section is not shown on the key. The documentation leaves out important
       information for users who need accessible seating at concerts or shows.
@@ -100,12 +100,12 @@ const description5 = (
 
 const description6 = (
   <div className=" max-w-lgs">
-    <div className="font-bold text-lg mb-3">Visibility of System Status</div>
-    <div className="pt-5 italic lg:text-base md:text-base text-xs">
+    <div className=" text-xl mb-3">Visibility of System Status</div>
+    <div className="pt-5 italic lg:text-xs md:text-xs text-xs font-light">
       "The design should always keep users informed about what is going on,
       through appropriate feedback within a reasonable amount of time." --Nielsen 
     </div>
-    <div className="mt-10">
+    <div className="mt-5 font-normal">
       The section map does not indicate which sections are sold out. This
       information should be placed directly on sections so that users know
       immediately when a section is sold out.
@@ -116,14 +116,14 @@ const description6 = (
 
 const description7 = (
   <div className=" max-w-lgs">
-    <div className="font-bold text-lg mb-3">Aesthetic and Minimalist Design</div>
-    <div className="pt-5 italic lg:text-base md:text-base text-xs">
+    <div className=" text-xl mb-3">Aesthetic and Minimalist Design</div>
+    <div className="pt-5 italic lg:text-xs md:text-xs text-xs font-light">
       "Interfaces should not contain information which is irrelevant or rarely
       needed. Every extra unit of information in an interface competes with the
       relevant units of information and diminishes their relative visibility."
       --Nielsen 
     </div>
-    <div className="mt-10">
+    <div className="mt-5 font-normal">
       The key does not explain what "Regular Price" means to the user, for that
       reason it's not relevant information and should be removed. Two sections,
       "Infield" and "Center Grandstand" are the same price and the same color.
@@ -136,15 +136,15 @@ const description7 = (
 
 const description8 = (
   <div className=" max-w-lgs">
-    <div className="font-bold text-lg mb-3">Recognition rather than Recall</div>
-    <div className="pt-5 italic lg:text-base md:text-base text-xs">
+    <div className=" text-xl mb-3">Recognition rather than Recall</div>
+    <div className="pt-5 italic lg:text-xs md:text-xs text-xs font-light">
      "Minimize the user's memory load by making elements, actions, and options
       visible. The user should not have to remember information from one part of
       the interface to another. Information required to use the design (e.g.
       field labels or menu items) should be visible or easily retrievable when
       needed." --Nielsen  
     </div>
-    <div className="mt-10">
+    <div className="mt-5 font-normal">
       Accessible seats should be displayed directly on the seat map, not behind
       a button so users can see where they will be sitting in relation to others
       when they are selecting seats. The price key contents should not be hidden
@@ -157,12 +157,12 @@ const description8 = (
 
 const description9 = (
   <div className=" max-w-lgs">
-    <div className="font-bold text-lg mb-3">Consistency And Standards</div>
-    <div className="pt-5 italic lg:text-base md:text-base text-xs">
+    <div className=" text-xl mb-3">Consistency And Standards</div>
+    <div className="pt-5 italic lg:text-xs md:text-xs text-xs font-light">
       "A comprehensible system should never confuse users by using different
       words, visuals, or actions for the same concepts." --Nielsen 
     </div>
-    <div className="mt-10">
+    <div className="mt-5 font-normal">
       These buttons are used to increase, decrease or reset the screen size.
       During usability testing the users never touched them. Instead they used
       their fingers to increase and decrease the size of the screen. Using
@@ -175,14 +175,14 @@ const description9 = (
 
 const description10 = (
   <div className=" max-w-lgs">
-    <div className="font-bold text-lg mb-3">Aesthetic and Minimalist Design</div>
-    <div className="pt-5 italic lg:text-base md:text-base text-xs">
+    <div className=" text-xl mb-3">Aesthetic and Minimalist Design</div>
+    <div className="pt-5 italic lg:text-xs md:text-xs text-xs font-light">
       "Interfaces should not contain information which is irrelevant or rarely
       needed. Every extra unit of information in an interface competes with the
       relevant units of information and diminishes their relative visibility."
       --Nielsen 
     </div>
-    <div className="mt-10">
+    <div className="mt-5 font-normal">
       The user does not need to know some of the information in the key such as
       “allocated in Performance”, “seats Removed” and “Not Available”. Only
       information relevant to selecting seats should be made available to the
@@ -194,12 +194,12 @@ const description10 = (
 
 const description11 = (
   <div className=" max-w-lgs">
-    <div className="font-bold text-lg mb-3">Visibility of System Status</div>
-    <div className="pt-5 italic lg:text-base md:text-base text-xs">
+    <div className=" text-xl mb-3">Visibility of System Status</div>
+    <div className="pt-5 italic lg:text-xs md:text-xs text-xs font-light">
       "The design should always keep users informed about what is going on,
       through appropriate feedback within a reasonable amount of time." --Nielsen 
     </div>
-    <div className="mt-10">
+    <div className="mt-5 font-normal">
       The color used when a seat is selected is too light for the user to see
       without great effort. The color needs to be darker to provide better
       contrast so the user can easily see when they have selected a seat.

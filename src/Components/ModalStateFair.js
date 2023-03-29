@@ -15,7 +15,7 @@ function ModalStateFair({ showModal, setShowModal, img = [], object }) {
   return (
     <>
       {showModal ? (
-        <div className="bg-white-30 overflow-auto fixed inset-0 z-60 h-screen font-Bhaijaan2 backdrop-blur-2xl">
+        <div className="bg-white-30 overflow-auto fixed inset-0 z-60 h-screen font-poppins backdrop-blur-2xl">
           <button
             onClick={() => setShowModal((prev) => !prev)}
             className=" mx-4 my-4 text-2xl md:absolute lg:absolute lg:mr-24 md:mr-24 md:mt-12 lg:mt-12 text-Bhaijaan2  hover:text-stateFairBurgandy md:right-0 lg:right-0"
@@ -189,7 +189,7 @@ function ModalStateFair({ showModal, setShowModal, img = [], object }) {
               onClick={() => arrayIndex()}
             >
               {object.text.length > 1 && (
-                <div className="text-center font-Quicksand text-sm text-white bg-stateFairYellow hover:bg-stateFairYellowDark px-2 py-2 rounded-full m-auto w-24 mt-5">
+                <div className="text-center font-Quicksand text-sm text-white bg-stateFairYellow hover:bg-stateFairYellowDark px-2 py-2 rounded-full m-auto w-24 -mt-20">
                   Next
                 </div>
               )}

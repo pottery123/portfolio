@@ -67,7 +67,7 @@ function Home() {
         <StateFair />
       </div>
       <div>
-        <SOMO />
+     
       </div>
 
     </div>
