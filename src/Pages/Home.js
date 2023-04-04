@@ -3,7 +3,6 @@ import axios from "axios";
 import { useEffect } from "react";
 import Aprender from "./Aprender";
 import StateFair from "./StateFair";
-import SOMO from "./Somo";
 import NavBar from "../Components/NavBar";
 
 
@@ -21,7 +20,7 @@ setInterval(function () {
     .finally(function () {
       // always executed
     });
-}, 300000); // every 5 minutes (300000) http://sekane-projec.herokuapp.com
+}, 300000); 
 
 function Home() {
   useEffect(() => {
