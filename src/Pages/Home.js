@@ -3,6 +3,7 @@ import axios from "axios";
 import { useEffect } from "react";
 import Aprender from "./Aprender";
 import StateFair from "./StateFair";
+
 import NavBar from "../Components/NavBar";
 
 
@@ -52,10 +53,11 @@ function Home() {
             Check out my work below. Enjoy!
           </div>
           <img
-            className=" h-96 "
-            src={"/images/image-self.svg"}
+            className=" h-80"
+            src={"/images/self-image.png"}
             alt="self"
           ></img>
+
         </div>
       </div>
 
