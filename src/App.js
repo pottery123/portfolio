@@ -1,14 +1,15 @@
 import "./App.css";
-import React, {lazy, Suspense } from "react";
+import React, { Suspense } from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
-import ContactAbout from './Pages/ContactAbout';
-import Work from './Pages/Work';
-import Connect from "./Pages/Connect";
 
-const Aprender = lazy(()=> import("./Pages/Aprender"));
-const StateFair = lazy(()=> import("./Pages/StateFair"));
-const Somo = lazy(()=> import("./Pages/Somo"));
+
+const Aprender = React.lazy(()=> import("./Pages/Aprender"));
+const StateFair = React.lazy(()=> import("./Pages/StateFair"));
+const Somo = React.lazy(()=> import("./Pages/Somo"));
+const ContactAbout = React.lazy(()=> import("./Pages/ContactAbout"));
+const Work= React.lazy(()=> import("./Pages/Work"));
+const Connect = React.lazy(()=> import("./Pages/Connect"));
 
 function App() {
   return (

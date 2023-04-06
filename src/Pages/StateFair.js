@@ -1,6 +1,8 @@
-import { React, useState, useEffect } from "react";
-import ModalStateFair from "../Components/ModalStateFair";
+import { React, useState, useEffect, lazy } from "react";
+
 import { TextObject } from "../Components/StateFairText";
+
+const ModalStateFair= lazy(()=> import("../Components/ModalStateFair"));
 
 function StateFair() {
   // useEffect(() => {

@@ -1,5 +1,7 @@
-import { React, useState, useEffect } from "react";
-import AprenderFinalMockups from "./AprenderFinalMockups";
+import { React, useState, useEffect, lazy } from "react";
+
+
+const AprenderFinalMockups = lazy(()=> import("./AprenderFinalMockups"));
 
 function Aprender() {
   const [problemSection, setProblemSection] = useState(true);

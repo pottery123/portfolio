@@ -1,10 +1,11 @@
-import React from "react";
+import {React, lazy}  from "react";
 import axios from "axios";
 import { useEffect } from "react";
-import Aprender from "./Aprender";
-import StateFair from "./StateFair";
-
 import NavBar from "../Components/NavBar";
+
+const Aprender = lazy(()=> import("./Aprender"));
+const StateFair = lazy(()=> import("./StateFair"));
+
 
 
 setInterval(function () {
