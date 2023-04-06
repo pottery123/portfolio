@@ -3,7 +3,7 @@ import NavBar from "../Components/NavBar";
 
 function ContactAbout() {
   return (
-    <div className="bg-heroBlue">
+    <div className="bg-heroBlue font-Quicksand">
       <div className="relative z-10">
         <NavBar />
         <img

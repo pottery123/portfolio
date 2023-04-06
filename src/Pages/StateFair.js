@@ -118,7 +118,7 @@ function StateFair() {
   }
 
   return (
-    <div className="relative w-auto overflow-hidden font-Poppins font-medium">
+    <div className="relative w-auto overflow-hidden font-Quicksand font-medium">
       <div className=" md:flex justify-around bg-stateFairBurgandy w-auto overflow-hidden relative block z-20">
         <img
           className="md:pt-32 mt-36 lg:mt-6 lg:mb-6 p-5  lg:hidden md:hidden"
@@ -127,7 +127,7 @@ function StateFair() {
           src={"/images/state-fair-images.svg"}
           alt="Aprender Screens"
         ></img>
-        <div className=" font-Poppins font-semibold md:pt-52 text-white md:pl-10 p-8">
+        <div className=" font-Quicksand font-semibold md:pt-52 text-white md:pl-10 p-8">
           <div className="lg:pt-18 md:text-eight lg:text-eight text-six ">State Fair</div>
           <p className="md:text-four md:font-normal font-normal tracking-wide sm:mr-10 mb-5 ">
             <span className="font-bold">Role:</span> UX/UI Designer, Interaction
@@ -167,7 +167,7 @@ function StateFair() {
             setUnderlineFinalMockups(false);
             setUnderlineNextSteps(false);
           }}
-          className="font-Poppins p-8 hover:text-stateFairBurgandy"
+          className="font-Quicksand p-8 hover:text-stateFairBurgandy"
         >
           <div className="">The</div>
           <div>Problems</div>
@@ -193,7 +193,7 @@ function StateFair() {
             setUnderlineFinalMockups(false);
             setUnderlineNextSteps(false);
           }}
-          className="font-Poppins p-8 hover:text-stateFairBurgandy"
+          className="font-Quicksand p-8 hover:text-stateFairBurgandy"
         >
           <div>Heuristic</div>
           <div>Evaluation</div>
@@ -219,7 +219,7 @@ function StateFair() {
             setUnderlineFinalMockups(false);
             setUnderlineNextSteps(false);
           }}
-          className="font-Poppins  p-8 hover:text-stateFairBurgandy"
+          className="font-Quicksand  p-8 hover:text-stateFairBurgandy"
         >
           <div>Benchmarking</div>
           {underlineBenchmarking ? (
@@ -245,7 +245,7 @@ function StateFair() {
             setUnderlineFinalMockups(false);
             setUnderlineNextSteps(false);
           }}
-          className="font-Poppins  p-8 hover:text-stateFairBurgandy"
+          className="font-Quicksand  p-8 hover:text-stateFairBurgandy"
         >
           <div>Design &</div>
           <div>Test</div>
@@ -272,7 +272,7 @@ function StateFair() {
             setUnderlineFinalMockups(true);
             setUnderlineNextSteps(false);
           }}
-          className="font-Poppins  p-8 hover:text-stateFairBurgandy"
+          className="font-Quicksand  p-8 hover:text-stateFairBurgandy"
         >
           <div>Final</div>
           <div>Mockups</div>
@@ -299,7 +299,7 @@ function StateFair() {
             setUnderlineFinalMockups(false);
             setUnderlineNextSteps(true);
           }}
-          className="font-Poppins  p-8 hover:text-stateFairBurgandy"
+          className="font-Quicksand  p-8 hover:text-stateFairBurgandy"
         >
           <div>Next</div>
           <div>Steps</div>
@@ -314,11 +314,11 @@ function StateFair() {
       <div className={` h-0  ${openCaseStudy && "  h-full"} `}>
         {showTheProblems && (
           <div className="md:p-40 lg:p-40 mx-8 my-4 ">
-            <div className=" font-bold font-Poppins lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 text-xl mb-4">
+            <div className=" font-bold font-Quicksand lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 text-xl mb-4">
               The Problems
             </div>
             <div className="">
-              <div className="font-Poppins md:text-xl lg:text-xl font-normal ">
+              <div className="font-Quicksand md:text-xl lg:text-xl font-normal ">
                 Just over a million people visit the Washington State Fair every
                 year. Many of the attendees use the Washington State Fair mobile
                 app to purchase tickets for concerts and shows. This projects
@@ -330,10 +330,10 @@ function StateFair() {
         )}
         {showHeuristicEvaluation && (
           <div className="md:p-40 lg:p-40 mx-8 my-4 ">
-            <div className="font-bold font-Poppins lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 text-xl mb-4">
+            <div className="font-bold font-Quicksand lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 text-xl mb-4">
               Usability Heuristic Evaluation
             </div>
-            <div className="font-Poppins  md:block lg:block md:text-xl lg:text-xl mb-4 font-normal">
+            <div className="font-Quicksand  md:block lg:block md:text-xl lg:text-xl mb-4 font-normal">
               The project started off with a usability heuristic evaluation of
               the ticket purchasing process in the Washington State Fair mobile
               app. I used{" "}
@@ -374,7 +374,7 @@ function StateFair() {
               </div>
             </div>
 
-            <div className="md:grid grid-cols-4 lg:grid grid-cols-4 gap-3 text-sm  font-Poppins ">
+            <div className="md:grid grid-cols-4 lg:grid grid-cols-4 gap-3 text-sm  font-Quicksand ">
               <div className="md:w-36 lg:w-36 md:mt-0 lg:mt-0 mt-20">
                 <div className="md:mb-10 leading-7 md:mt-3 md:mx-0 lg:mx-0 mx-8 mt-20">
                   This is the first screen users see after choosing the concert
@@ -424,7 +424,7 @@ function StateFair() {
                   arrow={["/images/arrow.svg"]}
                   object={TextObject.screen5object}
                 ></ModalStateFair>
-                <div className=" text-aprenderBlue font-bold text-lg mt-16 w-96 font-Poppins hidden">
+                <div className=" text-aprenderBlue font-bold text-lg mt-16 w-96 font-Quicksand hidden">
                   This is long. For the highlights{" "}
                   {!showOverView ? (
                     <div
@@ -550,10 +550,10 @@ function StateFair() {
         )}
         {showBenchmarking && (
           <div className="md:p-40 lg:p-40 mx-8 my-4">
-            <div className="font-Poppins font-bold lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 text-xl mb-4  ">
+            <div className="font-Quicksand font-bold lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 text-xl mb-4  ">
               Benchmarking
             </div>
-            <div className="font-Poppins md:text-xl lg:text-xl md:mb-8 lg:mb-8 mb-4 font-normal">
+            <div className="font-Quicksand md:text-xl lg:text-xl md:mb-8 lg:mb-8 mb-4 font-normal">
               I conducted a usability test on the ticket buying process using
               the System Usability Scale (SUS) framework{" "}
               <span className="font-bold">
@@ -562,7 +562,7 @@ function StateFair() {
               . I used these results to establish success metrics for future
               designs.
             </div>
-            <div className=" font-Poppins">
+            <div className=" font-Quicksand">
               <div className="lg:mb-4 md:mb-4">
                 <div className="font-bold text-stateFairBlue lg:mb-2 md:mb-2">
                   {" "}
@@ -656,7 +656,7 @@ function StateFair() {
           </div>
         )}
         {showDesignAndTest && (
-          <div className="font-Poppins md:p-40 lg:p-40 mx-8 my-4 ">
+          <div className="font-Quicksand md:p-40 lg:p-40 mx-8 my-4 ">
             <div className="font-bold lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 mb-4 text-xl">
               Design & Test
             </div>
@@ -818,7 +818,7 @@ function StateFair() {
         )}
         {showFinalMockups && (
           <div className=" grid grid-cols-1 md:p-40 lg:p-40 mx-8">
-            <div className="font-Poppins">
+            <div className="font-Quicksand">
               <div className="font-bold lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 mt-8 text-xl mb-4">
                 Final Mockups
               </div>
@@ -1596,7 +1596,7 @@ function StateFair() {
           </div>
         )}
         {showNextSteps && (
-          <div className="font-Poppins md:p-40 lg:p-40 mx-8 my-4 ">
+          <div className="font-Quicksand md:p-40 lg:p-40 mx-8 my-4 ">
             <div className=" font-bold  lg:text-xl md:text-xl text-xl mb-4">Takeaways</div>
             <ul className=" ml-9 md:w-[43.75rem] lg:w-[43.75rem] md:mt-5 lg:mt-5 md:ml-9 lg:ml-9 leading-7 lg:mb-4 md:mb-4 list-disc">
               <li>

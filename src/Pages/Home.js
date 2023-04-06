@@ -30,7 +30,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="">
+    <div className=" font-Quicksand">
       <div className="bg-heroBlue">
         <div className="relative">
           <NavBar />
