@@ -43,10 +43,10 @@ function Modal({ showModal, setShowModal, img, video, text }) {
   return (
     <>
       {showModal ? (
-        <div className=" backdrop-blur-3xl fixed inset-0 z-50  h-screen font-Bhaijaan2 lg:backdrop-blur-md md:backdrop-blur-md overflow-scroll">
+        <div className=" backdrop-blur-3xl fixed inset-0 z-50  h-screen font-Quicksand  lg:backdrop-blur-md md:backdrop-blur-md overflow-scroll">
           <button
             onClick={OpenCloseModal}
-            className="text-black md:text-5xl lg:text-5xl text-3xl absolute ml-10 md:ml-10 lg:ml-24 mt-8 text-Bhaijaan2  hover:text-aprenderPink font-normal"
+            className="text-black md:text-5xl lg:text-5xl text-3xl absolute ml-10 md:ml-10 lg:ml-24 mt-8 font-Quicksand   hover:text-aprenderPink font-normal"
           >
             X
           </button>

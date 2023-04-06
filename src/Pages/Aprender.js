@@ -379,7 +379,7 @@ function Aprender() {
             </div>
 
             <div className="grid gird-cols-1 mb-16 md:mx-44 lg:mx-44 mx-8 md:mx-12 ">
-              <div className="font-Poppins">
+              <div className="font-Quicksand ">
                 <p className="font-semibold md:text-five text-xl mb-4">
                   How Might we...
                 </p>
@@ -400,7 +400,7 @@ function Aprender() {
             </div>
             <div className="font-Bhaijaan lg:mx-44 mx-8 md:mx-16">
               <div className="grid grid-cols-1 justify-center">
-                <div className="font-Poppins">
+                <div className="font-Quicksand ">
                   <p className="font-semibold md:text-five text-xl mb-4">
                     Target User
                   </p>
@@ -412,7 +412,7 @@ function Aprender() {
                     </p>
                   </div>
 
-                  <div className="md:flex bg-slate-200 p-5 md:p-10 justify-center mb-72 font-Poppins">
+                  <div className="md:flex bg-slate-200 p-5 md:p-10 justify-center mb-72 font-Quicksand ">
                     <div className="text-sm md:text-lg md:w-3/6">
                       <div className="leading-relaxed">
                         <p className="text-aprenderPink font-bold pb-3 ">
@@ -708,7 +708,7 @@ function Aprender() {
         ) : null}
         {wireframingSection ? (
           <div className="lg:mx-44 md:mx-12 md:my-32 mx-8 my-10">
-            <div className="font-Poppins">
+            <div className="font-Quicksand ">
               <p className="font-semibold md:text-five mb-4 text-xl">
                 Quick Sketches
               </p>
