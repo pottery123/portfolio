@@ -315,7 +315,7 @@ function StateFair() {
       <div className={` h-0  ${openCaseStudy && "  h-full"} `}>
         {showTheProblems && (
           <div className="md:p-40 lg:p-40 mx-8 my-4 ">
-            <div className=" font-bold font-Quicksand lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 text-xl mb-4">
+            <div className=" font-semibold  font-Quicksand lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 text-xl mb-4">
               The Problems
             </div>
             <div className="">
@@ -331,7 +331,7 @@ function StateFair() {
         )}
         {showHeuristicEvaluation && (
           <div className="md:p-40 lg:p-40 mx-8 my-4 ">
-            <div className="font-bold font-Quicksand lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 text-xl mb-4">
+            <div className="font-semibold  font-Quicksand lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 text-xl mb-4">
               Usability Heuristic Evaluation
             </div>
             <div className="font-Quicksand  md:block lg:block md:text-xl lg:text-xl mb-4 font-normal">
@@ -551,7 +551,7 @@ function StateFair() {
         )}
         {showBenchmarking && (
           <div className="md:p-40 lg:p-40 mx-8 my-4">
-            <div className="font-Quicksand font-bold lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 text-xl mb-4  ">
+            <div className="font-Quicksand font-semibold lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 text-xl mb-4  ">
               Benchmarking
             </div>
             <div className="font-Quicksand md:text-xl lg:text-xl md:mb-8 lg:mb-8 mb-4 font-normal">
@@ -658,7 +658,7 @@ function StateFair() {
         )}
         {showDesignAndTest && (
           <div className="font-Quicksand md:p-40 lg:p-40 mx-8 my-4 ">
-            <div className="font-bold lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 mb-4 text-xl">
+            <div className="font-semibold  lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 mb-4 text-xl">
               Design & Test
             </div>
             <div className=" lg:text-xl md:text-xl  ">
@@ -820,7 +820,7 @@ function StateFair() {
         {showFinalMockups && (
           <div className=" grid grid-cols-1 md:p-40 lg:p-40 mx-8">
             <div className="font-Quicksand">
-              <div className="font-bold lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 mt-8 text-xl mb-4">
+              <div className="font-semibold  lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 mt-8 text-xl mb-4">
                 Final Mockups
               </div>
               <div className=" text-stateFairBlue lg:mb-8 md:mb-8 ">
@@ -1598,7 +1598,7 @@ function StateFair() {
         )}
         {showNextSteps && (
           <div className="font-Quicksand md:p-40 lg:p-40 mx-8 my-4 ">
-            <div className=" font-bold  lg:text-xl md:text-xl text-xl mb-4">Takeaways</div>
+            <div className=" font-semibold   lg:text-xl md:text-xl text-xl mb-4">Takeaways</div>
             <ul className=" ml-9 md:w-[43.75rem] lg:w-[43.75rem] md:mt-5 lg:mt-5 md:ml-9 lg:ml-9 leading-7 lg:mb-4 md:mb-4 list-disc">
               <li>
                 The
@@ -1624,7 +1624,7 @@ function StateFair() {
                 to select seats and sections.{" "}
               </li>
             </ul>
-            <div className=" font-bold lg:text-xl md:text-xl md:mb-4 lg:mb-4 mb-4 text-xl mt-4">
+            <div className=" font-semibold  lg:text-xl md:text-xl md:mb-4 lg:mb-4 mb-4 text-xl mt-4">
               Next Steps
             </div>
             <ul className="list-disc ml-9">
