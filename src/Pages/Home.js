@@ -5,6 +5,7 @@ import NavBar from "../Components/NavBar";
 
 const Aprender = lazy(()=> import("./Aprender"));
 const StateFair = lazy(()=> import("./StateFair"));
+const SOMO = lazy(() => import("./Somo"));
 
 
 
@@ -69,7 +70,7 @@ function Home() {
         <StateFair />
       </div>
       <div>
-     
+        {/* <SOMO /> */}
       </div>
 
     </div>

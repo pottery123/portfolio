@@ -120,7 +120,7 @@ function StateFair() {
   }
 
   return (
-    <div className="relative w-auto overflow-hidden font-Quicksand font-medium">
+    <div className="relative w-auto overflow-hidden font-Quicksand">
       <div className=" md:flex justify-around bg-stateFairBurgandy w-auto overflow-hidden relative block z-20">
         <img
           className="md:pt-32 mt-36 lg:mt-6 lg:mb-6 p-5  lg:hidden md:hidden"
@@ -169,10 +169,9 @@ function StateFair() {
             setUnderlineFinalMockups(false);
             setUnderlineNextSteps(false);
           }}
-          className="font-Quicksand p-8 hover:text-stateFairBurgandy"
+          className="font-Quicksand text-lg  p-8 hover:text-stateFairBurgandy"
         >
-          <div className="">The</div>
-          <div>Problems</div>
+          <div>The</div><div>Problems</div>
           {underlineProblems ? (
             <div className=" h-1 bg-stateFairBurgandy" />
           ) : (
@@ -195,7 +194,7 @@ function StateFair() {
             setUnderlineFinalMockups(false);
             setUnderlineNextSteps(false);
           }}
-          className="font-Quicksand p-8 hover:text-stateFairBurgandy"
+          className="font-Quicksand p-8 text-lg hover:text-stateFairBurgandy"
         >
           <div>Heuristic</div>
           <div>Evaluation</div>
@@ -221,7 +220,7 @@ function StateFair() {
             setUnderlineFinalMockups(false);
             setUnderlineNextSteps(false);
           }}
-          className="font-Quicksand  p-8 hover:text-stateFairBurgandy"
+          className="font-Quicksand text-lg  p-8 hover:text-stateFairBurgandy"
         >
           <div>Benchmarking</div>
           {underlineBenchmarking ? (
@@ -247,7 +246,7 @@ function StateFair() {
             setUnderlineFinalMockups(false);
             setUnderlineNextSteps(false);
           }}
-          className="font-Quicksand  p-8 hover:text-stateFairBurgandy"
+          className="font-Quicksand text-lg  p-8 hover:text-stateFairBurgandy"
         >
           <div>Design &</div>
           <div>Test</div>
@@ -274,7 +273,7 @@ function StateFair() {
             setUnderlineFinalMockups(true);
             setUnderlineNextSteps(false);
           }}
-          className="font-Quicksand  p-8 hover:text-stateFairBurgandy"
+          className="font-Quicksand text-lg  p-8 hover:text-stateFairBurgandy"
         >
           <div>Final</div>
           <div>Mockups</div>
@@ -301,7 +300,7 @@ function StateFair() {
             setUnderlineFinalMockups(false);
             setUnderlineNextSteps(true);
           }}
-          className="font-Quicksand  p-8 hover:text-stateFairBurgandy"
+          className="font-Quicksand text-lg  p-8 hover:text-stateFairBurgandy"
         >
           <div>Next</div>
           <div>Steps</div>

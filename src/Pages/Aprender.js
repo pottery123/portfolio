@@ -43,7 +43,7 @@ function Aprender() {
   }, []);
 
   return (
-    <div className="relative w-auto overflow-hidden">
+    <div className="relative w-auto overflow-hidden font-Quicksand">
       <div className=" md:flex justify-around bg-aprenderPink w-auto overflow-hidden relative block z-20 ">
         <img
           className="md:pt-32 mt-36 lg:mt-6 lg:mb-6 p-5"
