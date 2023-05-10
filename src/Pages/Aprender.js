@@ -1,9 +1,14 @@
-import { React, useState, useEffect, lazy } from "react";
+import { React, useState, useEffect, lazy, useTransition } from "react";
 
 
 const AprenderFinalMockups = lazy(()=> import("./AprenderFinalMockups"));
 
 function Aprender() {
+
+  const [, startTransition ] = useTransition();
+  const [load, setLoad] = useState(false);
+
+
   const [problemSection, setProblemSection] = useState(true);
   const [researchSection, setResearchSection] = useState(false);
   const [designSection, setDesignSection] = useState(false);
@@ -37,10 +42,10 @@ function Aprender() {
     );
   }
 
-  useEffect(() => {
-    // 👇️ scroll to top on page load
-    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
-  }, []);
+  // useEffect(() => {
+  //   // 👇️ scroll to top on page load
+  //   window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  // }, []);
 
   return (
     <div className="relative w-auto overflow-hidden font-Quicksand">
@@ -224,6 +229,10 @@ function Aprender() {
             setUnderlineTesting(false);
             setUnderlineMockups(true);
             setUnderlineTakeaway(false);
+            
+            startTransition(() => {
+              setLoad(true);
+            });
           }}
           className="font-Quicksand text-lg p-8 hover:text-aprenderPink"
         >
@@ -458,7 +467,7 @@ function Aprender() {
                           <span className="text-black font-normal">
                             List words/phrases related to the place they are
                             currently in, such as kitchen, bedroom, store,
-                            street, car
+                            street, car etc.
                           </span>
                         </p>
                       </div>
@@ -790,7 +799,8 @@ function Aprender() {
               Aprender
             </p>
             <div className="md:ml-10 md:mr-32">
-              <AprenderFinalMockups />
+              {load &&   <AprenderFinalMockups />}
+           
             </div>
           </div>
         ) : null}
