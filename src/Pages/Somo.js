@@ -53,7 +53,7 @@ function Somo() {
         <div className=" font-poppins font-semibold md:pt-52 text-white md:pl-10 p-8">
           <div className="lg:pt-18 md:text-eight text-seven ">SOMO</div>
           <p className="md:text-four md:font-normal font-normal tracking-wide sm:mr-10 mb-5 ">
-            <span className="font-bold">Role:</span>  UX/UI Designer, Interaction
+            <span className="font-bold">Role:</span> UX/UI Designer, Interaction
             Designer, UX Researcher
           </p>
           <p className="text-four font-normal tracking-wide sm:mr-10 ">
@@ -261,12 +261,7 @@ function Somo() {
         </button>
       </div>
 
-      <div
-        className={` h-0  ${
-          openCaseStudy &&
-          "  h-full"
-        } `}
-      >
+      <div className={` h-0  ${openCaseStudy && "  h-full"} `}>
         {problemSection ? (
           <div className="my-10 md:my-32">
             {problemSection1 ? (
@@ -478,207 +473,6 @@ function Somo() {
 
         {designSection ? (
           <div className=" grid grid-cols-1 md:my-32 my-10 ">
-            <div className="font-poppins lg:mx-44 md:mx-12 mx-8">
-              <p className="font-semibold md:text-five mb-4 text-xl">
-                Design Solutions
-              </p>
-              <div className="flex justify-evenly">
-                <p className=" sm:text-sm md:text-xl leading-relaxed mb-20">
-                  I wrote down the most common issues users were having with the
-                  language learning apps they had used in the past. These issues
-                  were highlighted and would be used to guide my design
-                  decisions for my solution.
-                </p>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 bg-slate-200  text-left  font-poppins p-10 mx-8 lg:mx-44 ">
-              <div className="space-y-8 md:space-y-0 lg:space-y-0 md:flex lg:flex lg:space-x-10 md:space-x-10  lg:justify-around md:justify-around">
-                <div className="">
-                  <img
-                    className="mb-3"
-                    width={24}
-                    height={24}
-                    src={"/images/quote.svg"}
-                    alt="user feedback"
-                  ></img>
-                  <div className=" md:w-80 lg:w-80 ">
-                    “too much emphasis on vocabulary I did not need...I’ve
-                    better results from finding or making targeted word lists
-                    and then working on pronunciation and vocabulary.”
-                  </div>
-                </div>
-                <div className="">
-                  <img
-                    className="mb-3"
-                    width={24}
-                    height={24}
-                    src={"/images/user-feedback-check.svg"}
-                    alt="user feedback"
-                  ></img>
-                  <div className="md:w-80 lg:w-80 ">
-                    Provide targeted word lists and avoid vocabulary that is not
-                    needed. To address this problem the user should have the
-                    liberty to choose what they need to learn.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 bg-slate-200  text-left  font-poppins p-10 mx-8 lg:mx-44 ">
-              <div className="space-y-8 md:space-y-0 lg:space-y-0 md:flex lg:flex lg:space-x-10 md:space-x-10  lg:justify-around md:justify-around">
-                <div className="">
-                  <img
-                    className="mb-3"
-                    width={24}
-                    height={24}
-                    src={"/images/quote.svg"}
-                    alt="user feedback"
-                  ></img>
-                  <div className=" md:w-80 lg:w-80 ">
-                    “I haven’t tried out my skills in a functional context yet.”
-                  </div>
-                </div>
-                <div className="">
-                  <img
-                    className="mb-3"
-                    width={24}
-                    height={24}
-                    src={"/images/user-feedback-check.svg"}
-                    alt="user feedback"
-                  ></img>
-                  <div className="md:w-80 lg:w-80 ">
-                    Content should be able to allow users to apply new
-                    vocabulary immediately by providing words/phrases that are
-                    relevant to the context/situation they are in.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 bg-slate-200  text-left  font-poppins p-10 mx-8 lg:mx-44 ">
-              <div className="space-y-8 md:space-y-0 lg:space-y-0 md:flex lg:flex lg:space-x-10 md:space-x-10  lg:justify-around md:justify-around">
-                <div className="">
-                  <img
-                    className="mb-3"
-                    width={24}
-                    height={24}
-                    src={"/images/quote.svg"}
-                    alt="user feedback"
-                  ></img>
-                  <div className=" md:w-80 lg:w-80 ">
-                    “It focused on everything at once, and not just one
-                    subject.”{" "}
-                  </div>
-                </div>
-                <div className="">
-                  <img
-                    className="mb-3"
-                    width={24}
-                    height={24}
-                    src={"/images/user-feedback-check.svg"}
-                    alt="user feedback"
-                  ></img>
-                  <div className="md:w-80 lg:w-80 ">
-                    Content should focus on one subject of their choosing.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 bg-slate-200  text-left  font-poppins p-10 mx-8 lg:mx-44 ">
-              <div className="space-y-8 md:space-y-0 lg:space-y-0 md:flex lg:flex lg:space-x-10 md:space-x-10  lg:justify-around md:justify-around">
-                <div className="">
-                  <img
-                    className="mb-3"
-                    width={24}
-                    height={24}
-                    src={"/images/quote.svg"}
-                    alt="user feedback"
-                  ></img>
-                  <div className=" md:w-80 lg:w-80 ">
-                    “Most phrases weren’t super common and more
-                    conversational/situation practices was separate from main
-                    curriculum.”{" "}
-                  </div>
-                </div>
-                <div className="">
-                  <img
-                    className="mb-3"
-                    width={24}
-                    height={24}
-                    src={"/images/user-feedback-check.svg"}
-                    alt="user feedback"
-                  ></img>
-                  <div className="md:w-80 lg:w-80 ">
-                    Content should provide user with common vocabulary. Not
-                    vocabulary they will rarely use.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 bg-slate-200  text-left  font-poppins p-10 mx-8 lg:mx-44 ">
-              <div className="space-y-8 md:space-y-0 lg:space-y-0 md:flex lg:flex lg:space-x-10 md:space-x-10  lg:justify-around md:justify-around">
-                <div className="">
-                  <img
-                    className="mb-3"
-                    width={24}
-                    height={24}
-                    src={"/images/quote.svg"}
-                    alt="user feedback"
-                  ></img>
-                  <div className=" md:w-80 lg:w-80 ">
-                    I didn’t complete the course, but what I did finish, the
-                    content was varied.”{" "}
-                  </div>
-                </div>
-                <div className="">
-                  <img
-                    className="mb-3"
-                    width={24}
-                    height={24}
-                    src={"/images/user-feedback-check.svg"}
-                    alt="user feedback"
-                  ></img>
-                  <div className="md:w-80 lg:w-80 ">
-                    Users should not have to complete the ‘course’ or ‘lesson’
-                    to learn useful and practical vocabulary.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 bg-slate-200  text-left  font-poppins p-10 mx-8 lg:mx-44 ">
-              <div className="space-y-8 md:space-y-0 lg:space-y-0 md:flex lg:flex lg:space-x-10 md:space-x-10  lg:justify-around md:justify-around">
-                <div className="">
-                  <img
-                    className="mb-3"
-                    width={24}
-                    height={24}
-                    src={"/images/quote.svg"}
-                    alt="user feedback"
-                  ></img>
-                  <div className=" md:w-80 lg:w-80 ">
-                    “Hard to remember what I learned and apply it.”{" "}
-                  </div>
-                </div>
-                <div className="">
-                  <img
-                    className="mb-3"
-                    width={24}
-                    height={24}
-                    src={"/images/user-feedback-check.svg"}
-                    alt="user feedback"
-                  ></img>
-                  <div className="md:w-80 lg:w-80 ">
-                    Content must be able to provide words that users can apply
-                    to their everyday life immediately.
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <div className="grid grid-cols-1 justify-center font-poppins lg:mx-44 md:mx-12 md:my-20 mx-8 ">
               <div>
                 <p className="font-semibold md:text-five mb-4 mt-10">
@@ -695,15 +489,9 @@ function Somo() {
                 </div>
               </div>
               <div className="flex justify-start bg-slate-200 mt-20 md:p-20 p-5">
-                <img
-                  width={800}
-                  height={700}
-                  src={"/images/user-story-mapping.svg"}
-                  alt="corner shop"
-                ></img>
+                <img src={"/images/user-story-mapping-somo.png"} alt="corner shop"></img>
               </div>
             </div>
-            {/* ≠ */}
           </div>
         ) : null}
         {wireframingSection ? (
@@ -723,10 +511,10 @@ function Somo() {
               </div>
             </div>
             <img
-              className="md:mt-24 mt-10 bg-slate-200"
-              width={1600}
-              src={"/images/wireframes.svg"}
-              alt="corner shop"
+              className="md:mt-24 mt-10 bg-slate-200 p-5"
+             
+              src={"/images/wireframes-somo.png"}
+              alt="user story map"
             ></img>
           </div>
         ) : null}
@@ -746,13 +534,44 @@ function Somo() {
               </p>
             </div>
             <p className="md:p-10 p-5 bg-slate-200 mt-24">
-              <div className="font-bold">SUS Score</div>
-              The SUS score for these wireframes was 6.5 out of 7. Because I
-              tested early and made changes to the sketches, all the
-              interactions in the final mockups were very similar to the
-              sketches.
+              <div className="font-bold mb-3">Elements of a Test Plan </div>
+              <div>
+                {" "}
+                <span className="font-bold">Scope:</span> Purchase a product on
+                the market place.{" "}
+              </div>
+              <div>
+                {" "}
+                <span className="font-bold">Purpose:</span> To see if users can
+                easily use the app to purchase an item.{" "}
+              </div>
+              <div>
+                {" "}
+                <span className="font-bold">Participants:</span> Small business
+                owners who will be using the product.{" "}
+              </div>
+              <div className="flex justify-between pt-10">
+                <div className="">
+                  <div className="mb-1">Rosaly</div>
+                  <img
+                    height={300}
+                    width={300}
+                    src={"/images/user-test-results-somo-1.png"}
+                    alt="test results"
+                  ></img>
+                </div>
+                <div>
+                  <div className="mb-1">Fatma</div>
+                  <img
+                    height={300}
+                    width={300}
+                    src={"/images/user-test-results-somo-2.png"}
+                    alt="test results"
+                  ></img>
+                </div>
+              </div>
               <p className="mt-10">
-                <div className="font-bold">User Issues Addressed </div>
+                <div className="font-bold">User Feedback </div>
 
                 <p className="italic">
                   Issues I addressed in wireframes discovered through robust
@@ -760,12 +579,17 @@ function Somo() {
                 </p>
                 <ul className="p-8  list-disc">
                   <li>
-                    I changed the word scenario to location after users did not
-                    understand.
+                    Save orders in cart if connection is lost or app is closed
+                    Track delivery button (Muhseen)
                   </li>
                   <li className="mt-5">
-                    I placed English word underneath learning word, to reduce
-                    the amount of steps user would need to see translation.
+                    Use different language for where you want your items
+                    delivered ie. where do you want your items to be delivered,
+                    or some such thing. (Fatma)
+                  </li>
+                  <li className="mt-5">
+                    Shorten process for regular users(save address, and payment
+                    information) (Rosaly)
                   </li>
                 </ul>
               </p>
@@ -776,7 +600,8 @@ function Somo() {
         {mockupsSection ? (
           <div className="font-poppins md:my-32 my-10   ">
             <p className="font-semibold  lg:mx-44 md:mx-12  mb-4 mx-8 text-xl md:text-five ">
-              The Corner Shop <span className="text-aprenderPink">(revisited)</span>
+              The Corner Shop{" "}
+              <span className="text-aprenderPink">(revisited)</span>
             </p>
             <p className=" sm:text-sm md:text-xl lg:text-xl lg:mx-44 md:mx-12 leading-relaxed  mx-8">
               Remember the corner shop I spoke about before, and how I was

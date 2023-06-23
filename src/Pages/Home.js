@@ -70,7 +70,7 @@ function Home() {
         <StateFair />
       </div>
       <div>
-        {/* <SOMO /> */}
+        <SOMO />
       </div>
 
     </div>
