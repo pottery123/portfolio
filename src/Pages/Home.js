@@ -6,6 +6,7 @@ import NavBar from "../Components/NavBar";
 const Aprender = lazy(()=> import("./Aprender"));
 const StateFair = lazy(()=> import("./StateFair"));
 const SOMO = lazy(() => import("./Somo"));
+const Test = lazy(() => import("./Test"));
 
 
 
@@ -50,13 +51,13 @@ function Home() {
             I am a product designer with a background in front-end engineering.
             My work ethos can be expressed in two phrases,{" "}
             <span className="text-heroPink">
-              design with care, build integrity.
+              design with care, build with integrity.
             </span>{" "}
             Check out my work below. Enjoy!
           </div>
           <img
-            className=" h-80"
-            src={"/images/self-image.png"}
+            className="h-[25rem]"
+            src={"/images/portrait2.png"}
             alt="self"
           ></img>
 
@@ -70,8 +71,10 @@ function Home() {
         <StateFair />
       </div>
       <div>
-        <SOMO />
+        {/* <SOMO /> */}
       </div>
+
+   
 
     </div>
   );

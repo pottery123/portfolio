@@ -28,7 +28,7 @@ function StateFair() {
   const [underlineDesignAndTest, setUnderlineDesignAndTest] = useState(null);
   const [underlineFinalMockups, setUnderlineFinalMockups] = useState(null);
   const [underlineNextSteps, setUnderlineNextSteps] = useState(null);
-  const [openCaseStudy, setOpenCaseStudy] = useState(false);
+  const [openCaseStudy, setOpenCaseStudy] = useState(true);
 
   const [showModal1, setShowModal1] = useState(false);
   const [showModal2, setShowModal2] = useState(false);
@@ -139,6 +139,9 @@ function StateFair() {
             <span className="font-bold">Key skills:</span> Figma, Design
             Thinking, Prototyping, Wireframing, CSS/HTML, JavaScript
           </p>
+          <p className="text-four font-normal tracking-wide sm:mr-10 mt-5 ">
+              <span className="font-bold"> Type of project:</span> Personal, Concept
+            </p>
           <div className="mt-24">
             {" "}
             <OpenStudy />
@@ -572,7 +575,7 @@ function StateFair() {
                 <ul className="list-disc pl-5">
                   <li className=""> Over all SUS score of 3.3 of 7. </li>
                   <li className="">
-                    Only 40% of users were able to select assessable and
+                    Only 40% of users were able to select accessible and
                     non-accessible seats.
                   </li>
                 </ul>
@@ -677,11 +680,65 @@ function StateFair() {
                 <span> success metrics. </span>
               </div>
             </div>
-            <div className="lg:mt-10 md:mt-10 lg:ml-10 md:ml-10 lg:mb-3 md:mb-3 mt-5 mb-8 font-bold text-stateFairBlue">
-              Click or press to see my different iterations.
+         
+
+            <div className="flex justify-between mt-20">
+        
+                
+                <div className="">
+                <img alt="test screen " width={200} src={"/images/test-1.png"}></img>
+                <ul className="list-disc  text-xs ">
+                      <li className="">
+                        SUS Score:
+                        <span className="text-stateFairRed"> 3.3 of 7</span>
+                      </li>
+                      <li className="w-2/3">
+                        <span className="text-stateFairRed"> 40% </span>
+                        of participants were able to select accessible and
+                        non-accessible seats.
+                      </li>
+                    </ul>
+                </div>
+                <div>
+
+                <img alt="test screen" width={200}  src={"/images/test-2.png"}></img>
+                <ul className=" text-xs   list-disc">
+                      <li className="">
+                        SUS Score:
+                        <span className="text-stateFairRed"> 4.4 of 7</span>
+                      </li>
+                      <li className="w-2/3">
+                        <span className="text-stateFairRed"> 50% </span>
+                        of participants were able to select accessible and
+                        non-accessible seats.
+                      </li>
+                    </ul>
+                </div>
+
+                <div>
+
+                <img alt="test screen" width={200}  src={"/images/test-3.png"}></img>
+                <ul className="list-disc text-xs">
+                      <li className="">
+                        SUS Score:
+                        <span className="text-stateFairRed"> 5.2 of 7</span>
+                      </li>
+                      <li className="w-2/3">
+                        <span className="text-stateFairRed"> 80% </span>
+                        of participants were able to select accessible and
+                        non-accessible seats.
+                      </li>
+                    </ul>
+                </div>
+              
+        
+              
+
+
+
             </div>
 
-            <div className="md:flex lg:flex text-lg  ">
+            {/* <div className="md:flex lg:flex text-lg  ">
               <div>
                 {showTestScreen1 && (
                   <div className="md:hidden lg:hidden mb-10">
@@ -814,7 +871,7 @@ function StateFair() {
                   </ul>
                 </div>
               )}
-            </div>
+            </div> */}
           </div>
         )}
         {showFinalMockups && (
