@@ -24,7 +24,6 @@ function Connect() {
         <div className="text-heroPink text-eight font-bold">Connect</div>
         <div className=" text-five">
              <div className=" gap-7  flex ">
-               {" "}
                <span>email:</span> <span>sarah-kane@outlook.com</span>
              </div>
              <span className="flex gap-3">

@@ -38,7 +38,7 @@ function Home() {
         <div className="relative">
           <NavBar />
           <img
-            className="w-80 top-0  z-0 relative"
+            className="w-80 top-0 right-0  z-0 relative"
             src={"/images/accent-half-moon.svg"}
             alt="half moon accent"
           ></img>
@@ -46,7 +46,7 @@ function Home() {
         <div className="text-heroPink text-eight ml-10 font-bold mt-16">
           Sarah Kane
         </div>
-        <div className="flex justify-between">
+        <div className="flex ">
           <div className="text-five ml-10 text-white w-3/5 leading-loose">
             I am a product designer with a background in front-end engineering.
             My work ethos can be expressed in two phrases,{" "}
@@ -56,7 +56,7 @@ function Home() {
             Check out my work below. Enjoy!
           </div>
           <img
-            className="h-[25rem]"
+            className="h-[26rem]"
             src={"/images/portrait3.png"}
             alt="self"
           ></img>

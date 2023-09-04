@@ -14,19 +14,19 @@ function ContactAbout() {
       </div>
 
       <div className="flex">
-        <div className="text-five ml-20  text-white w-3/5 leading-loose -mt">
-          <div className="text-heroPink text-eight font-bold mt-32">Work</div>
+        <div className="text-five ml-20  text-slate-300 w-3/5 leading-loose -mt">
+          <div className="text-heroPink text-eight font-bold mt-32">Resume</div>
           <div className="text-xl mt-8">
             <div className="font-bold">
               Build2Lead,{" "}
               <span className="font-light">Sept 2022 - Present</span>{" "}
             </div>
             <div className="text-black">
-              <div className="font-light italic">
+              <div className="font-light italic text-aprenderPink">
                 Lead UX/UI Designer | Product Designer
               </div>
               <ul className="list-disc">
-                <li className="">
+                <li className=" text-slate-300">
                   Collaborated with the CEO to design and create an e-learning
                   platform for middle school and high school students.
                 </li>
@@ -39,11 +39,11 @@ function ContactAbout() {
               SOMO, <span className="font-light">May 2022 - Dec</span>{" "}
             </div>
             <div className="text-black">
-              <div className="font-light italic">
+              <div className="font-light italic text-aprenderPink">
                 Lead UX/UI Designer | Product Designer
               </div>
               <ul className="list-disc">
-                <li className="">
+                <li className=" text-slate-300">
                   Collaborated with the CEO to design an e-commerce mobile app
                   for small buyers in rural Kenyan. Conducted usability tests
                   and user interviews and integrated feedback into design.
@@ -57,9 +57,9 @@ function ContactAbout() {
               Autographa, <span className="font-light">Jan 2021-Oct</span>{" "}
             </div>
             <div className="text-black">
-              <div className="font-light italic">Front-End Developer</div>
+              <div className="font-light italic text-aprenderPink">Front-End Developer</div>
               <ul className="list-disc">
-                <li className="">
+                <li className="text-slate-300">
                   Collaborated with the UX team and other key stakeholders to
                   construct and integrate design features for the company’s
                   desktop bible translation application.
@@ -73,9 +73,9 @@ function ContactAbout() {
               NextStep, <span className="font-light">Mar 2019-Feb 2020</span>{" "}
             </div>
             <div className="text-black">
-              <div className="font-light italic">Front-End Developer</div>
+              <div className="font-light italic text-aprenderPink">Front-End Developer</div>
               <ul className="list-disc">
-                <li className="">
+                <li className="text-slate-300">
                   Collaborated with the UX team and other key stakeholders to
                   construct and integrate design features for the company’s
                   mobile application.
@@ -90,9 +90,9 @@ function ContactAbout() {
               <span className="font-light">Dec 2017 - March 2019</span>{" "}
             </div>
             <div className="text-black">
-              <div className="font-light italic">Front-End Developer</div>
+              <div className="font-light italic text-aprenderPink">Front-End Developer</div>
               <ul className="list-disc">
-                <li className="">
+                <li className="text-slate-300">
                   Collaborated with the UX team and other key stakeholders to
                   construct and integrate design features for the Mavent.io
                   desktop application.
