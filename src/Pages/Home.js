@@ -57,7 +57,7 @@ function Home() {
           </div>
           <img
             className="h-[25rem]"
-            src={"/images/portrait2.png"}
+            src={"/images/portrait3.png"}
             alt="self"
           ></img>
 
