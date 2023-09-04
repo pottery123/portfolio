@@ -159,3 +159,788 @@
           </div>{" "}
         </Link>
       </div> */}
+
+
+
+
+
+    //   {showAppScreen1 && (
+    //     <div className="grid grid-row-5 gap-10">
+    //       <div>
+    //         <div className="font-bold">
+    //           {" "}
+    //           1. User Control and Freedom
+    //         </div>
+    //         <div className="">
+    //           The ‘back to sections’ button is in an easy to spot
+    //           area.
+    //         </div>
+    //       </div>
+
+    //       <div>
+    //         <div className="font-bold">
+    //           2. Consistency and Standards
+    //         </div>
+    //         <div className="">
+    //           The new design only uses one method for choosing
+    //           sections, instead of three.
+    //         </div>
+    //       </div>
+
+    //       <div>
+    //         <div className="font-bold">
+    //           3. Visibility of System Status
+    //         </div>
+    //         <div className="">
+    //           The new design lets users know if a section is sold
+    //           out.{" "}
+    //         </div>
+    //       </div>
+
+    //       <div>
+    //         <div className="font-bold">
+    //           4. Match Between System and the Real World
+    //         </div>
+    //         <div className="">
+    //           The new design uses the section map which reflects the
+    //           real world. Also accessible seats in all locations are
+    //           clearly marked on the section map.
+    //         </div>
+    //       </div>
+
+    //       <div>
+    //         <div className="font-bold">
+    //           {" "}
+    //           5. Aesthetic and Minimalist Design
+    //         </div>
+    //         <div className="">
+    //           Only information relevant to selecting sections is
+    //           present. All prices for accessible and non-accessible
+    //           seats are clearly displayed.
+    //         </div>
+    //       </div>
+    //     </div>
+    //   )}
+
+    //   {showAppScreen2 && (
+    //     <div>
+    //       <div>
+    //         <div className="font-bold"> 1. Error Prevention</div>
+    //         <div className="">
+    //           The image size of the sections can cause user to
+    //           choose the wrong section. In the new design the
+    //           sections are expanded when the user presses on them
+    //           which can help them choose the section they want.
+    //         </div>
+    //       </div>
+    //     </div>
+    //   )}
+
+    //   {showAppScreen3 && (
+    //     <div className="grid grid-row-4 gap-10">
+    //       <div>
+    //         <div className="font-bold">
+    //           1. Recognition rather than Recall
+    //         </div>
+    //         <div className="">
+    //           The prices for seats are clearly displayed and color
+    //           coded to match the seats on the seat map. The prices
+    //           are no longer hidden behind a button.
+    //         </div>
+    //       </div>
+
+    //       <div>
+    //         <div className="font-bold"> 2. Error Prevention</div>
+    //         <div className="">
+    //           The image size of the seats can cause the user to
+    //           choose the wrong seat. In the new design the rows are
+    //           expanded when the user presses on them which helps
+    //           users to select the seat they want without making a
+    //           mistake.
+    //         </div>
+    //       </div>
+
+    //       <div>
+    //         <div className="font-bold">
+    //           3.Visibility of System Status
+    //         </div>
+    //         <div className="">
+    //           The new design allows the user to easily see when a
+    //           seat is selected with a red checkmark.
+    //         </div>
+    //       </div>
+
+    //       <div>
+    //         <div className="font-bold">
+    //           4.Visibility of System Status
+    //         </div>
+    //         <div className="">
+    //           When seats have been selected the Add to Cart button
+    //           is activated by turning a deep red color.
+    //         </div>
+    //       </div>
+    //     </div>
+    //   )}
+    // </div>
+    // <div className="relative ">
+    //   {showAppScreen1 && (
+    //     <div>
+    //       <div className="">
+    //         {showAppArrow1 && (
+    //           <img
+    //             src={"/images/red-arrow.svg"}
+    //             style={{
+    //               position: "absolute",
+    //               top: 60,
+    //               left: 50,
+    //               width: 29.54,
+    //               height: 29.84,
+    //             }}
+    //             alt="state fair arrow"
+    //           ></img>
+    //         )}
+    //       </div>
+    //       <div className="md:hidden lg:hidden ">
+    //         {
+    //           <div
+    //             className="bg-stateFairBlue font-bold rounded-full text-center text-2xl text-white"
+    //             style={{
+    //               position: "absolute",
+    //               top: 115,
+    //               left: 140,
+    //               width: 29.54,
+    //               height: 29.84,
+    //               zIndex: 10,
+    //             }}
+    //             alt="state fair arrow"
+    //           >
+    //             1
+    //           </div>
+    //         }
+    //       </div>
+
+    //       {showAppArrow2 && (
+    //         <img
+    //           src={"/images/red-arrow.svg"}
+    //           style={{
+    //             position: "absolute",
+    //             top: 198,
+    //             left: 130,
+    //             width: 29.54,
+    //             height: 29.84,
+    //             rotate: "",
+    //           }}
+    //           alt="state fair arrow"
+    //         ></img>
+    //       )}
+    //       <div className="md:hidden lg:hidden">
+    //         {
+    //           <div
+    //             className="bg-stateFairBlue font-bold rounded-full text-center text-2xl text-white"
+    //             style={{
+    //               position: "absolute",
+    //               top: 300,
+    //               left: 240,
+    //               width: 29.54,
+    //               height: 29.84,
+    //               zIndex: 10,
+    //             }}
+    //             alt="state fair arrow"
+    //           >
+    //             2
+    //           </div>
+    //         }
+    //       </div>
+
+    //       {showAppArrow3 && (
+    //         <img
+    //           src={"/images/red-arrow.svg"}
+    //           style={{
+    //             position: "absolute",
+    //             zIndex: 10,
+    //             top: 320,
+    //             left: 153,
+    //             width: 29.54,
+    //             height: 29.84,
+    //           }}
+    //           alt="state fair arrow"
+    //         ></img>
+    //       )}
+    //       <div className="md:hidden lg:hidden block">
+    //         {
+    //           <div
+    //             className="bg-stateFairBlue font-bold rounded-full text-center text-2xl text-white"
+    //             style={{
+    //               position: "absolute",
+    //               top: 430,
+    //               left: 230,
+    //               width: 29.54,
+    //               height: 29.84,
+    //               zIndex: 10,
+    //             }}
+    //             alt="state fair arrow"
+    //           >
+    //             3
+    //           </div>
+    //         }
+    //       </div>
+
+    //       {showAppArrow4 && (
+    //         <img
+    //           src={"/images/red-arrow.svg"}
+    //           style={{
+    //             position: "absolute",
+    //             top: 220,
+    //             left: 50,
+    //             rotate: "-20deg",
+    //             width: 29.54,
+    //             height: 29.84,
+    //           }}
+    //           alt="state fair arrow"
+    //         ></img>
+    //       )}
+
+    //       <div className="md:hidden lg:hidden block">
+    //         {
+    //           <div
+    //             className="bg-stateFairBlue font-bold rounded-full text-center text-2xl text-white"
+    //             style={{
+    //               position: "absolute",
+    //               top: 290,
+    //               left: 100,
+    //               width: 29.54,
+    //               height: 29.84,
+    //               zIndex: 10,
+    //             }}
+    //             alt="state fair arrow"
+    //           >
+    //             4
+    //           </div>
+    //         }
+    //       </div>
+    //       {showAppArrow5 && (
+    //         <img
+    //           className="hidden lg:block md:block"
+    //           src={"/images/red-arrow.svg"}
+    //           style={{
+    //             position: "absolute",
+    //             top: 380,
+    //             left: 170,
+    //             width: 29.54,
+    //             height: 29.84,
+    //           }}
+    //           alt="state fair arrow"
+    //         ></img>
+    //       )}
+
+    //       <div className="md:hidden lg:hidden block">
+    //         {
+    //           <div
+    //             className="bg-stateFairBlue font-bold rounded-full text-center text-2xl text-white"
+    //             style={{
+    //               position: "absolute",
+    //               top: 570,
+    //               left: 160,
+    //               width: 29.54,
+    //               height: 29.84,
+    //               rotate: "",
+    //             }}
+    //             alt="state fair arrow"
+    //           >
+    //             5
+    //           </div>
+    //         }
+    //       </div>
+    //       <div className="">
+    //         <img
+    //           className="md:w-[250px] lg:w-[250px]"
+    //           src={"images/state-fair-screen-image-1.png"}
+    //           alt="Aprender Screens"
+    //           onClick={() => {}}
+    //         ></img>
+
+    //         <div className="flex m-auto gap-10 mt-4 justify-center">
+    //           <div className="rounded-full w-3 h-3  bg-stateFairYellow"></div>
+    //           <div className="rounded-full w-3 h-3  bg-slate-200"></div>
+    //           <div className="rounded-full w-3 h-3  bg-slate-200"></div>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   )}
+    //   {showAppScreen2 && (
+    //     <div>
+    //       {showAppArrow6 && (
+    //         <img
+    //           src={"/images/red-arrow.svg"}
+    //           style={{
+    //             position: "absolute",
+    //             top: 200,
+    //             left: 120,
+    //             width: 29.54,
+    //             height: 29.84,
+    //           }}
+    //           alt="state fair arrow"
+    //         ></img>
+    //       )}
+    //       <div className="lg:hidden md:hidden">
+    //         {
+    //           <div
+    //             className="bg-stateFairBlue font-bold rounded-full text-center text-2xl text-white"
+    //             style={{
+    //               position: "absolute",
+    //               top: 250,
+    //               left: 150,
+    //               width: 29.54,
+    //               height: 29.84,
+    //             }}
+    //             alt="state fair arrow"
+    //           >
+    //             1
+    //           </div>
+    //         }
+    //       </div>
+    //       <div>
+    //         <div>
+    //           <video
+    //             muted
+    //             autoPlay
+    //             loop
+    //             className=" md:w-[250px] lg:w-[250px]"
+    //             alt="Aprender Screens"
+    //             onClick={() => {}}
+    //           >
+    //             <source
+    //               src={"images/state-fair-screen-video-2.mov"}
+    //               type="video/mp4"
+    //             />
+    //           </video>
+    //         </div>
+    //         <div className="flex m-auto gap-10 mt-4 justify-center">
+    //           <div className="rounded-full w-3 h-3 bg-slate-200"></div>
+    //           <div className="rounded-full w-3 h-3  bg-stateFairYellow  "></div>
+    //           <div className="rounded-full w-3 h-3  bg-slate-200"></div>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   )}
+
+    //   {showAppScreen3 && (
+    //     <div>
+    //       {showAppArrow7 && (
+    //         <img
+    //           className=" hidden md:block lg:block"
+    //           src={"/images/red-arrow.svg"}
+    //           style={{
+    //             position: "absolute",
+    //             top: 375,
+    //             left: 200,
+    //             width: 29.54,
+    //             height: 29.84,
+    //             rotate: "90deg",
+    //           }}
+    //           alt="state fair arrow"
+    //         ></img>
+    //       )}
+    //       <div className="lg:hidden md:hidden block">
+    //         {
+    //           <div
+    //             className="bg-stateFairBlue font-bold rounded-full text-center text-2xl text-white"
+    //             src={"/images/red-arrow.svg"}
+    //             style={{
+    //               position: "absolute",
+    //               top: 470,
+    //               left: 225,
+    //               width: 29.54,
+    //               height: 29.84,
+    //             }}
+    //             alt="state fair arrow"
+    //           >
+    //             1
+    //           </div>
+    //         }
+    //       </div>
+
+    //       {showAppArrow8 && (
+    //         <img
+    //           className="hidden lg:block md:block"
+    //           src={"/images/red-arrow.svg"}
+    //           style={{
+    //             position: "absolute",
+    //             top: 420,
+    //             left: 230,
+    //             width: 29.54,
+    //             height: 29.84,
+    //             rotate: "90deg",
+    //           }}
+    //           alt="state fair arrow"
+    //         ></img>
+    //       )}
+
+    //       <div className="lg:hidden md:hidden">
+    //         {
+    //           <div
+    //             className="bg-stateFairBlue font-bold rounded-full text-center text-2xl text-white"
+    //             style={{
+    //               position: "absolute",
+    //               top: 213,
+    //               left: 140,
+    //               width: 29.54,
+    //               height: 29.84,
+    //             }}
+    //             alt="state fair arrow"
+    //           >
+    //             2
+    //           </div>
+    //         }
+    //       </div>
+
+    //       {showAppArrow11 && (
+    //         <img
+    //           src={"/images/red-arrow.svg"}
+    //           style={{
+    //             position: "absolute",
+    //             top: 160,
+    //             width: 29.54,
+    //             height: 29.84,
+    //             left: 115,
+    //           }}
+    //           alt="state fair arrow"
+    //         ></img>
+    //       )}
+
+    //       <div className="lg:hidden md:hidden block">
+    //         {
+    //           <div
+    //             className="bg-stateFairBlue font-bold rounded-full text-center text-2xl text-white"
+    //             style={{
+    //               position: "absolute",
+    //               top: 310,
+    //               width: 29.54,
+    //               height: 29.84,
+    //               left: 100,
+    //             }}
+    //             alt="state fair arrow"
+    //           >
+    //             3
+    //           </div>
+    //         }
+    //       </div>
+
+    //       {showAppArrow10 && (
+    //         <img
+    //           src={"/images/red-arrow.svg"}
+    //           style={{
+    //             position: "absolute",
+    //             top: 220,
+    //             width: 29.54,
+    //             height: 29.84,
+    //             rotate: "-90deg",
+    //             left: 20,
+    //           }}
+    //           alt="state fair arrow"
+    //         ></img>
+    //       )}
+
+    //       <div className="lg:hidden md:hidden block">
+    //         {
+    //           <div
+    //             className="bg-stateFairBlue font-bold rounded-full text-center text-2xl text-white"
+    //             style={{
+    //               position: "absolute",
+    //               top: 560,
+    //               width: 29.54,
+    //               height: 29.84,
+    //               left: 130,
+    //             }}
+    //             alt="state fair arrow"
+    //           >
+    //             4
+    //           </div>
+    //         }
+    //       </div>
+    //       <div>
+    //         <div>
+    //           <video
+    //             muted
+    //             autoPlay
+    //             loop
+    //             className=" md:w-[250px] lg:w-[250px]"
+    //             alt="Aprender Screens"
+    //             onClick={() => {}}
+    //           >
+    //             <source
+    //               src={"images/trimVid.mov"}
+    //               type="video/mp4"
+    //             />
+    //           </video>
+    //         </div>
+    //         <div className="flex m-auto gap-10 mt-4 justify-center">
+    //           <div className="rounded-full w-3 h-3 bg-slate-200"></div>
+    //           <div className="rounded-full w-3 h-3 bg-slate-200"></div>
+    //           <div className="rounded-full w-3 h-3  bg-stateFairYellow"></div>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   )}
+    // </div>
+    // {showAppScreen1 && (
+    //   <div
+    //     style={{ height: 568 }}
+    //     className=" w-96 md:block lg:block hidden"
+    //   >
+    //     <div
+    //       onClick={() => {
+    //         setAppArrow1(true);
+    //         setAppArrow2(false);
+    //         setAppArrow3(false);
+    //         setAppArrow4(false);
+    //         setAppArrow5(false);
+    //       }}
+    //       className="mb-6"
+    //     >
+    //       <div
+    //         className={`md:font-bold lg:font-bold md:mb-1 lg:mb-1 hover:text-stateFairRed md:active:ease-in-out lg:active:ease-in-out md:active:scale-95 lg:active:scale-95 lg:active:duration-200 md:active:duration-200 ${
+    //           showAppArrow1 && "text-stateFairRed"
+    //         }`}
+    //       >
+    //         User Control and Freedom
+    //       </div>
+    //       <div className="w-4/5">
+    //         The ‘back to concerts’ button is in an easy to spot
+    //         area.
+    //       </div>
+    //     </div>
+    //     <div
+    //       onClick={() => {
+    //         setAppArrow2(true);
+    //         setAppArrow1(false);
+    //         setAppArrow3(false);
+    //         setAppArrow4(false);
+    //         setAppArrow5(false);
+    //       }}
+    //       className="mb-6"
+    //     >
+    //       <div
+    //         className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${
+    //           showAppArrow2 && "text-stateFairRed"
+    //         }`}
+    //       >
+    //         Consistency and Standards
+    //       </div>
+    //       <div className="w-4/5">
+    //         The new design only uses one method for choosing
+    //         sections, instead of three.
+    //       </div>
+    //     </div>
+    //     <div
+    //       onClick={() => {
+    //         setAppArrow3(true);
+    //         setAppArrow1(false);
+    //         setAppArrow2(false);
+    //         setAppArrow4(false);
+    //         setAppArrow5(false);
+    //       }}
+    //       className="mb-6 mt-8"
+    //     >
+    //       <div
+    //         className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${
+    //           showAppArrow3 && "text-stateFairRed"
+    //         }`}
+    //       >
+    //         Visibility of System Status
+    //       </div>
+    //       <div className="w-4/5">
+    //         The new design lets users know if a section is sold out.{" "}
+    //       </div>
+    //     </div>
+    //     <div
+    //       onClick={() => {
+    //         setAppArrow4(true);
+    //         setAppArrow1(false);
+    //         setAppArrow2(false);
+    //         setAppArrow3(false);
+    //         setAppArrow5(false);
+    //       }}
+    //       className="mb-6"
+    //     >
+    //       <div
+    //         className={`font-bold mt-8 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${
+    //           showAppArrow4 && "text-stateFairRed"
+    //         }`}
+    //       >
+    //         Match Between System and the Real World
+    //       </div>
+    //       <div className="w-4/5">
+    //         The new design uses the section map which reflects the
+    //         real world. Also accessible seats in all locations are
+    //         clearly marked on the section map.
+    //       </div>
+    //     </div>
+    //     <div
+    //       onClick={() => {
+    //         setAppArrow5(true);
+    //         setAppArrow1(false);
+    //         setAppArrow2(false);
+    //         setAppArrow3(false);
+    //         setAppArrow4(false);
+    //       }}
+    //       className="mt-8"
+    //     >
+    //       <div
+    //         className={`font-bold mb-1 mt-9 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${
+    //           showAppArrow5 && "text-stateFairRed"
+    //         }`}
+    //       >
+    //         Aesthetic and Minimalist Design
+    //       </div>
+    //       <div className="w-4/5">
+    //         Only information relevant to selecting sections is
+    //         present. All prices for accessible and non-accessible
+    //         seats are clearly displayed.
+    //       </div>
+    //     </div>
+    //   </div>
+    // )}
+
+    // {showAppScreen2 && (
+    //   <div
+    //     style={{ height: 568 }}
+    //     className="w-96 md:block lg:block hidden"
+    //   >
+    //     <div
+    //       onClick={() => {
+    //         setAppArrow6((prev) => !prev);
+    //       }}
+    //     >
+    //       <div
+    //         className={`font-bold mb-1 w-2/5 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${
+    //           showAppArrow6 && "text-stateFairRed"
+    //         }`}
+    //       >
+    //         Error Prevention
+    //       </div>
+    //       <div className="w-4/5">
+    //         The image size of the sections can cause the user to
+    //         choose the wrong section. In the new design the sections
+    //         are expanded when the user presses on them which can
+    //         help them choose the section they want.
+    //       </div>
+    //     </div>
+    //   </div>
+    // )}
+
+    // {showAppScreen3 && (
+    //   <div
+    //     style={{ height: 568 }}
+    //     className="w-96 md:block lg:block hidden"
+    //   >
+    //     <div
+    //       onClick={() => {
+    //         setAppArrow7(true);
+    //         setAppArrow11(false);
+    //         setAppArrow10(false);
+    //         setAppArrow8(false);
+    //       }}
+    //       className="mb-8"
+    //     >
+    //       <div
+    //         className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${
+    //           showAppArrow7 && "text-stateFairRed"
+    //         }`}
+    //       >
+    //         Recognition rather than Recall
+    //       </div>
+    //       <div className="w-4/5">
+    //         The prices for seats are clearly displayed and color
+    //         coded to match the seats on the seat map. The prices are
+    //         no longer hidden behind a button.
+    //       </div>
+    //     </div>
+    //     <div
+    //       onClick={() => {
+    //         setAppArrow11(true);
+    //         setAppArrow7(false);
+    //         setAppArrow10(false);
+    //         setAppArrow8(false);
+    //       }}
+    //       className="mb-8"
+    //     >
+    //       <div
+    //         className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${
+    //           showAppArrow11 && "text-stateFairRed"
+    //         }`}
+    //       >
+    //         Error Prevention
+    //       </div>
+    //       <div className="w-4/5">
+    //         The image size of the seats can cause the user to choose
+    //         the wrong seat. In the new design the rows are expanded
+    //         when the user presses on them which helps users to
+    //         select the seat they want without making a mistake.
+    //       </div>
+    //     </div>
+
+    //     <div
+    //       onClick={() => {
+    //         setAppArrow10(true);
+    //         setAppArrow11(false);
+    //         setAppArrow7(false);
+    //         setAppArrow8(false);
+    //       }}
+    //       className="mb-8"
+    //     >
+    //       <div
+    //         className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${
+    //           showAppArrow10 && "text-stateFairRed"
+    //         }`}
+    //       >
+    //         Visibility of System Status
+    //       </div>
+    //       <div className="w-4/5">
+    //         The new design allows the user to easily see when a seat
+    //         is selected with a red checkmark.
+    //       </div>
+    //     </div>
+
+    //     <div
+    //       onClick={() => {
+    //         setAppArrow8(true);
+    //         setAppArrow10(false);
+    //         setAppArrow11(false);
+    //         setAppArrow7(false);
+    //       }}
+    //     >
+    //       <div
+    //         className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${
+    //           showAppArrow8 && "text-stateFairRed"
+    //         }`}
+    //       >
+    //         Visibility of System Status
+    //       </div>
+    //       <div className="w-4/5">
+    //         When seats have been selected the Add to Cart button is
+    //         activated by turning a deep red color.
+    //       </div>
+    //     </div>
+    //     <div
+    //       onClick={() => {
+    //         setAppArrow8(true);
+    //         setAppArrow10(false);
+    //         setAppArrow11(false);
+    //         setAppArrow7(false);
+    //       }}
+    //     >
+    //       <div
+    //         className={`font-bold mb-1 hover:text-stateFairRed active:ease-in-out active:scale-95 active:duration-200 ${
+    //           showAppArrow8 && "text-stateFairRed"
+    //         }`}
+    //       >
+    //         Visibility of System Status
+    //       </div>
+    //       <div className="w-4/5">
+    //         When seats have been selected the Add to Cart button is
+    //         activated by turning a deep red color.
+    //       </div>
+    //     </div>
+    //   </div>
+    // )}

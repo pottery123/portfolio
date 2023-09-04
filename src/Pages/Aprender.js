@@ -2,6 +2,7 @@ import { React, useState, lazy, useTransition } from "react";
 
 const AprenderFinalMockups = lazy(() => import("./AprenderFinalMockups"));
 
+
 function Aprender() {
   const [, startTransition] = useTransition();
   const [load, setLoad] = useState(false);
