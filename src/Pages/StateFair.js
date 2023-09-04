@@ -1,4 +1,4 @@
-import { React, useState, useEffect, lazy } from "react";
+import { React, useState, useEffect, lazy, useRef } from "react";
 
 import { TextObject } from "../Components/StateFairText";
 
@@ -38,7 +38,26 @@ function StateFair() {
   const [showAppScreen1, setAppScreen1] = useState(true);
   const [showAppScreen2, setAppScreen2] = useState(false);
   const [showAppScreen3, setAppScreen3] = useState(false);
- 
+  
+
+
+  const ref1 = useRef(null);
+  
+  function ScrollButton(ref) {
+    const ScrollButtonClick = () => ref1.current.scrollIntoView({behavior: 'smooth'});
+    return (
+      <div
+        className=" m-20 text-2xl font-extrabold  text-stateFairRed text-center"
+        onClick={ScrollButtonClick }
+        >
+        Top
+      </div>
+    );
+  }
+
+
+
+
 
   useEffect(() => {
     if (
@@ -111,7 +130,7 @@ function StateFair() {
           alt="Aprender Screens"
         ></img>
       </div>
-      <div className="bg-white w-full drop-shadow-sm flex justify-between  top-0 z-20  relative overflow-scroll">
+      <div ref={ref1}  className="bg-white w-full drop-shadow-sm flex justify-between  top-0 z-20  relative overflow-scroll">
         <button
           onClick={() => {
             setShowTheProblems(true);
@@ -285,7 +304,9 @@ function StateFair() {
                 uncovers usability issues in the Washington State Fair mobile
                 app that users struggle with when purchasing tickets.
               </div>
+             <ScrollButton />
             </div>
+           
           </div>
         )}
         {showHeuristicEvaluation && (
@@ -404,6 +425,7 @@ function StateFair() {
                     >
                       Close
                     </div>
+                    
                   )}
                 </div>
                 {showOverView && (
@@ -506,6 +528,7 @@ function StateFair() {
                 </div>
               </div>
             </div>
+            <ScrollButton />
           </div>
         )}
         {showBenchmarking && (
@@ -613,6 +636,7 @@ function StateFair() {
                 </ul>
               </div>
             </div>
+            <ScrollButton />
           </div>
         )}
         {showDesignAndTest && (
@@ -694,6 +718,7 @@ function StateFair() {
                 </ul>
               </div>
             </div>
+            <ScrollButton />
           </div>
         )}
         {showFinalMockups && (
@@ -705,6 +730,7 @@ function StateFair() {
                 </div>
                 <StateFairFinalMockups />
               </div>
+            <ScrollButton />
             </div>
           </div>
         )}

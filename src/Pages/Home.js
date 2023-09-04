@@ -1,14 +1,12 @@
-import {React, lazy}  from "react";
+import { React, lazy } from "react";
 import axios from "axios";
 import { useEffect } from "react";
 import NavBar from "../Components/NavBar";
 
-const Aprender = lazy(()=> import("./Aprender"));
-const StateFair = lazy(()=> import("./StateFair"));
+const Aprender = lazy(() => import("./Aprender"));
+const StateFair = lazy(() => import("./StateFair"));
 const SOMO = lazy(() => import("./Somo"));
 const Test = lazy(() => import("./Test"));
-
-
 
 setInterval(function () {
   axios
@@ -24,7 +22,7 @@ setInterval(function () {
     .finally(function () {
       // always executed
     });
-}, 300000); 
+}, 300000);
 
 function Home() {
   useEffect(() => {
@@ -46,7 +44,7 @@ function Home() {
         <div className="text-heroPink text-eight ml-10 font-bold mt-16">
           Sarah Kane
         </div>
-        <div className="flex ">
+        <div className="flex justify-between ">
           <div className="text-five ml-10 text-white w-3/5 leading-loose">
             I am a product designer with a background in front-end engineering.
             My work ethos can be expressed in two phrases,{" "}
@@ -60,22 +58,14 @@ function Home() {
             src={"/images/portrait3.png"}
             alt="self"
           ></img>
-
         </div>
       </div>
-
       <div>
         <Aprender />
       </div>
       <div>
         <StateFair />
       </div>
-      <div>
-        {/* <SOMO /> */}
-      </div>
-
-   
-
     </div>
   );
 }

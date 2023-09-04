@@ -1,4 +1,4 @@
-import { React, useState, lazy, useTransition } from "react";
+import { React, useState, lazy, useTransition, useRef } from "react";
 
 const AprenderFinalMockups = lazy(() => import("./AprenderFinalMockups"));
 
@@ -40,15 +40,15 @@ function Aprender() {
     );
   }
 
-  function ScrollButton() {
-    const element = document.getElementById("navbar-section");
+  const ref1 = useRef(null);
+  
+  function ScrollButton(ref) {
+    const ScrollButtonClick = () => ref1.current.scrollIntoView({behavior: 'smooth'});
     return (
       <div
         className=" m-20 text-2xl font-extrabold  text-aprenderPink text-center"
-        onClick={() => {
-          element.scrollIntoView({ behavior: "smooth" });
-        }}
-      >
+        onClick={ScrollButtonClick }
+        >
         Top
       </div>
     );
@@ -93,7 +93,7 @@ function Aprender() {
       </div>
       <div>
         <div
-          id="navbar-section"
+          ref={ref1}
           className="bg-white w-full drop-shadow-sm flex justify-between top-0 relative z-20 "
         >
           <button
