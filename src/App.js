@@ -1,6 +1,6 @@
 import "./App.css";
-import React, { Suspense } from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import React, { Suspense, useEffect } from "react";
+import { HashRouter as Router, Routes, Route, ScrollRestoration } from "react-router-dom";
 import Home from "./Pages/Home";
 
 

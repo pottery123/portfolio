@@ -1,7 +1,4 @@
-import { React, useState, lazy, useTransition, useRef } from "react";
-
-const AprenderFinalMockups = lazy(() => import("./AprenderFinalMockups"));
-
+import { React, useState, useTransition, useRef } from "react";
 
 function Aprender() {
   const [, startTransition] = useTransition();
@@ -41,23 +38,19 @@ function Aprender() {
   }
 
   const ref1 = useRef(null);
-  
+
   function ScrollButton(ref) {
-    const ScrollButtonClick = () => ref1.current.scrollIntoView({behavior: 'smooth'});
+    const ScrollButtonClick = () =>
+      ref1.current.scrollIntoView({ behavior: "smooth" });
     return (
       <div
         className=" m-20 text-2xl font-extrabold  text-aprenderPink text-center"
-        onClick={ScrollButtonClick }
-        >
+        onClick={ScrollButtonClick}
+      >
         Top
       </div>
     );
   }
-
-  // useEffect(() => {
-  //   // 👇️ scroll to top on page load
-  //   window.scrollTo({ top: 0, left: 0, behavior: "auto" });
-  // }, []);
 
   return (
     <div className="relative w-auto overflow-hidden font-Quicksand">
@@ -831,7 +824,6 @@ function Aprender() {
                 Aprender
               </p>
               <div className="m-32">
-               
                 {load && (
                   <div>
                     <div className="flex">

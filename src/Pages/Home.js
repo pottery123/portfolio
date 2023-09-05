@@ -1,12 +1,9 @@
-import { React, lazy } from "react";
-import axios from "axios";
-import { useEffect } from "react";
-import NavBar from "../Components/NavBar";
+import { React,} from "react";
 
-const Aprender = lazy(() => import("./Aprender"));
-const StateFair = lazy(() => import("./StateFair"));
-const SOMO = lazy(() => import("./Somo"));
-const Test = lazy(() => import("./Test"));
+import axios from "axios";
+import NavBar from "../Components/NavBar";
+import Aprender from "./Aprender"
+import StateFair from "./StateFair"
 
 setInterval(function () {
   axios
@@ -25,11 +22,6 @@ setInterval(function () {
 }, 300000);
 
 function Home() {
-  useEffect(() => {
-    // 👇️ scroll to top on page load
-    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
-  }, []);
-
   return (
     <div className=" font-Quicksand">
       <div className="bg-heroBlue">
@@ -50,7 +42,7 @@ function Home() {
             My work ethos can be expressed in two phrases,{" "}
             <span className="text-heroPink">
               design with care, build with integrity.
-            </span>{" "}
+            </span>
             Check out my work below. Enjoy!
           </div>
           <img
