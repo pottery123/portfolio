@@ -1,5 +1,6 @@
 import { React } from "react";
 import NavBar from "../Components/NavBar";
+import { Link } from "react-router-dom";
 
 function ContactAbout() {
   return (
@@ -35,13 +36,12 @@ function ContactAbout() {
               <span className="flex gap-3 text-aprenderPink">
                 linkedin:{" "}
                 <a
-                  href="https:www.linkedin.com/in/sarah-e-kane"
-                  target="_blank"
+                  href="http://www.linkedin.com/in/sarah-e-kane"
+                  target='_blank'
                   rel="noreferrer"
-                  className="underline decoration-solid text-white hover:text-heroPink"
-                >
+                  className="underline decoration-solid text-white hover:text-heroPink">
                   www.linkedin.com/in/sarah-e-kane
-                </a>{" "}
+                </a>
               </span>
             </div>
           </div>

@@ -1,9 +1,9 @@
-import { React,} from "react";
+import { React } from "react";
 
 import axios from "axios";
 import NavBar from "../Components/NavBar";
-import Aprender from "./Aprender"
-import StateFair from "./StateFair"
+import Aprender from "./Aprender";
+import StateFair from "./StateFair";
 
 setInterval(function () {
   axios
