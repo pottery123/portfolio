@@ -16,6 +16,14 @@ function ContactAbout() {
       <div className="flex">
         <div className="text-five ml-20  text-slate-300 w-3/5 leading-loose -mt">
           <div className="text-heroPink text-eight font-bold mt-32">Resume</div>
+          <a download href="./Resume.pdf" className="text-heroPink text-base">
+            <div className="flex gap-3">
+            <span>Download Resume Here </span>{" "}
+            <span>
+              <img alt="download icon" src={"./images/download-icon.svg"} />
+            </span>
+            </div>
+          </a>
           <div className="text-xl mt-8">
             <div className="font-bold">
               Build2Lead,{" "}
@@ -57,7 +65,9 @@ function ContactAbout() {
               Autographa, <span className="font-light">Jan 2021-Oct</span>{" "}
             </div>
             <div className="text-black">
-              <div className="font-light italic text-aprenderPink">Front-End Developer</div>
+              <div className="font-light italic text-aprenderPink">
+                Front-End Developer
+              </div>
               <ul className="list-disc">
                 <li className="text-slate-300">
                   Collaborated with the UX team and other key stakeholders to
@@ -73,7 +83,9 @@ function ContactAbout() {
               NextStep, <span className="font-light">Mar 2019-Feb 2020</span>{" "}
             </div>
             <div className="text-black">
-              <div className="font-light italic text-aprenderPink">Front-End Developer</div>
+              <div className="font-light italic text-aprenderPink">
+                Front-End Developer
+              </div>
               <ul className="list-disc">
                 <li className="text-slate-300">
                   Collaborated with the UX team and other key stakeholders to
@@ -90,7 +102,9 @@ function ContactAbout() {
               <span className="font-light">Dec 2017 - March 2019</span>{" "}
             </div>
             <div className="text-black">
-              <div className="font-light italic text-aprenderPink">Front-End Developer</div>
+              <div className="font-light italic text-aprenderPink">
+                Front-End Developer
+              </div>
               <ul className="list-disc">
                 <li className="text-slate-300">
                   Collaborated with the UX team and other key stakeholders to
