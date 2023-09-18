@@ -33,20 +33,20 @@ function Home() {
             alt="half moon accent"
           ></img>
         </div>
-        <div className="text-heroPink text-eight ml-10 font-bold mt-16">
+        <div className="text-heroPink lg:text-eight lg:ml-10 lg:font-bold lg:mt-16 text-6xl ml-5 mt-20 font-bold">
           Sarah Kane
         </div>
         <div className="flex justify-between ">
-          <div className="text-five ml-10 text-white w-3/5 leading-loose">
+          <div className="lg:text-five lg:ml-10 text-white lg:w-3/5 lg:leading-loose ml-5 mr-5 mb-10 text-five mt-5">
             I am a product designer with a background in front-end engineering.
             My work ethos can be expressed in two phrases,{" "}
             <span className="text-heroPink">
-              design with care, build with integrity.
+              design with care, build with integrity. {" "}
             </span>
-            Check out my work below. Enjoy!
+           Check out my work below. Enjoy!
           </div>
           <img
-            className="h-[26rem]"
+            className="h-[26rem] hidden lg:block"
             src={"/images/portrait3.png"}
             alt="self"
           ></img>

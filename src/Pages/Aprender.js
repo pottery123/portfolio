@@ -87,7 +87,7 @@ function Aprender() {
       <div>
         <div
           ref={ref1}
-          className="bg-white w-full drop-shadow-sm flex justify-between top-0 relative z-20 "
+          className="bg-white w-full drop-shadow-sm flex justify-between top-0 relative z-20 overflow-scroll "
         >
           <button
             onClick={() => {
@@ -814,7 +814,7 @@ function Aprender() {
                 The Corner Shop{" "}
                 <span className="text-aprenderPink">(revisited)</span>
               </p>
-              <p className=" sm:text-sm md:text-xl lg:text-xl lg:mx-44 md:mx-12 leading-relaxed  mx-8">
+              <p className="md:text-xl lg:text-xl lg:mx-44 md:mx-12 leading-relaxed mx-8 text-sm ">
                 Remember the corner shop I spoke about before, and how I was
                 unable to recall any words or phrases related to that context?
                 Well, I hoped to avoid those issues with the new mobile app I
@@ -823,11 +823,11 @@ function Aprender() {
               <p className="font-Quicksand text-seven md:text-nine font-medium text-aprenderPink text-center my-5 md:my-32  mt-20">
                 Aprender
               </p>
-              <div className="m-32">
+              <div className="lg:m-32">
                 {load && (
                   <div>
-                    <div className="flex">
-                      <div className=" font-Bhaijaan2 text-2xl m-auto p-24">
+                    <div className="lg:flex">
+                      <div className="font-Bhaijaan2 lg:text-2xl lg:m-auto lg:p-24 my-5 mx-5">
                         Sarah lives in the Rainier Vallely, one of the most
                         diverse zip codes in the United States. There is a new
                         corner shop that has opened up a few blocks away from
@@ -835,8 +835,7 @@ function Aprender() {
                         way to better connect with her new neighbors. Before she
                         departs Sarah opens up the app Aprender.
                       </div>
-
-                      <video width="250" muted autoPlay loop>
+                      <video className="m-auto" width="250" muted autoPlay loop>
                         <source
                           src="/images/aprender-video-1.mov"
                           type="video/mp4"
@@ -844,22 +843,27 @@ function Aprender() {
                       </video>
                     </div>
 
-                    <div className="flex">
-                      <video width="250" muted autoPlay loop>
+                    <div className="lg:flex">
+                    <div className=" font-Bhaijaan2  my-5 mx-5 font-normal text-2xlp-24  lg:hidden">
+                        {" "}
+                        She chooses the language she wants to learn. Then she
+                        chooses a location.
+                      </div>
+                      <video className="m-auto" width="250" muted autoPlay loop>
                         <source
                           src="/images/aprender-video-2.mov"
                           type="video/mp4"
                         />
                       </video>
-                      <div className=" font-Bhaijaan2 m-auto font-normal text-2xl p-24">
+                      <div className=" font-Bhaijaan2 lg:m-auto lg:font-normal lg:text-2xl lg:p-24 lg:block hidden">
                         {" "}
                         She chooses the language she wants to learn. Then she
                         chooses a location.
                       </div>
                     </div>
 
-                    <div className="flex">
-                      <div className=" font-Bhaijaan2 m-auto font-normal text-2xl p-24">
+                    <div className="lg:flex">
+                      <div className=" font-Bhaijaan2 lg:m-auto lg:font-normal lg:text-2xl lg:p-24 mx-5 my-5">
                         A deck of words or phrases related to that location
                         appear on the screen. She can read the words in Spanish
                         and see a translation in English. Which helps her to
@@ -867,7 +871,7 @@ function Aprender() {
                         Spanish...{" "}
                       </div>
 
-                      <video width="250" muted autoPlay loop>
+                      <video className="m-auto" width="250" muted autoPlay loop>
                         <source
                           src="/images/aprender-video-3.mov"
                           type="video/mp4"
@@ -875,14 +879,18 @@ function Aprender() {
                       </video>
                     </div>
 
-                    <div className="flex">
-                      <video width="250" muted autoPlay loop>
+                    <div className="lg:flex">
+                    <div className=" font-Bhaijaan2 lg:m-auto lg:font-normal lg:text-2xl lg:p-24 lg:hidden mx-5 my-5">
+                        and save them in her saved cards tab to review them
+                        later.
+                      </div>
+                      <video className="m-auto" width="250" muted autoPlay loop>
                         <source
                           src="/images/aprender-video-3.mov"
                           type="video/mp4"
                         />
                       </video>
-                      <div className=" font-Bhaijaan2 m-auto font-normal text-2xl p-24">
+                      <div className=" font-Bhaijaan2 lg:m-auto lg:font-normal lg:text-2xl lg:p-24 hidden">
                         and save them in her saved cards tab to review them
                         later.
                       </div>
