@@ -287,7 +287,7 @@ function StateFair() {
 
       <div className={` h-0  ${openCaseStudy && "  h-full"} `}>
         {showTheProblems && (
-          <div className="md:p-40 lg:p-40 mx-8 my-4 ">
+          <div className="md:p-10 lg:p-40 mx-8 my-4 ">
             <div className=" font-semibold  font-Quicksand lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 text-xl mb-4">
               The Problems
             </div>
@@ -304,7 +304,7 @@ function StateFair() {
           </div>
         )}
         {showHeuristicEvaluation && (
-          <div className="md:p-40 lg:p-40 mx-8 my-4 ">
+          <div className="md:p-10 lg:p-40 mx-8 my-4 ">
             <div className="font-semibold  font-Quicksand lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 text-xl mb-4">
               Usability Heuristic Evaluation
             </div>
@@ -525,7 +525,7 @@ function StateFair() {
           </div>
         )}
         {showBenchmarking && (
-          <div className="md:p-40 lg:p-40 mx-8 my-4">
+          <div className="md:p-10 lg:p-40 mx-8 my-4">
             <div className="font-Quicksand font-semibold lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 text-xl mb-4  ">
               Benchmarking
             </div>
@@ -633,7 +633,7 @@ function StateFair() {
           </div>
         )}
         {showDesignAndTest && (
-          <div className="font-Quicksand md:p-40 lg:p-40 mx-8 my-4 ">
+          <div className="font-Quicksand md:p-10 lg:p-40 mx-8 my-4 ">
             <div className="font-semibold  lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 mb-4 text-xl">
               Design & Test
             </div>
@@ -716,7 +716,7 @@ function StateFair() {
         )}
         {showFinalMockups && (
           <div>
-            <div className=" grid grid-cols-1 md:p-40 lg:p-40 mx-8">
+            <div className=" grid grid-cols-1 md:p-10 lg:p-40 mx-8">
               <div className="font-Quicksand">
                 <div className="font-semibold  lg:text-2xl md:text-2xl md:mb-4 lg:mb-4 mt-8 text-xl mb-20">
                   Final Mockups
@@ -728,7 +728,7 @@ function StateFair() {
           </div>
         )}
         {showNextSteps && (
-          <div className="font-Quicksand md:p-40 lg:p-40 mx-8 my-4 ">
+          <div className="font-Quicksand md:p-10 lg:p-40 mx-8 my-4 ">
             <div className=" font-semibold   lg:text-xl md:text-xl text-xl mb-4">
               Takeaways
             </div>

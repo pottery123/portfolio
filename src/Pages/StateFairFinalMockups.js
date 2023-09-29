@@ -15,7 +15,7 @@ function StateFairFinalMockups() {
   const [showAppArrow10, setAppArrow10] = useState(false);
   const [showAppArrow8, setAppArrow8] = useState(false);
   return (
-    <div className="m-10 ">
+    <div className=" ">
       <div className=" md:flex lg:flex gap-10">
         <div className="lg:w-[550px] mb-10">
           <img
@@ -35,11 +35,7 @@ function StateFairFinalMockups() {
             }}
             className="mb-6"
           >
-            <div
-              className={`md:font-bold lg:font-bold font-bold md:mb-1 lg:mb-1 hover:text-stateFairRed md:active:ease-in-out lg:active:ease-in-out md:active:scale-95 lg:active:scale-95 lg:active:duration-200 md:active:duration-200 ${
-                "text-stateFairRed"
-              }`}
-            >
+            <div className="md:font-bold lg:font-bold font-bold md:mb-1 lg:mb-1 hover:text-stateFairRed md:active:ease-in-out lg:active:ease-in-out md:active:scale-95 lg:active:scale-95 lg:active:duration-200 md:active:duration-200">
               User Control and Freedom
             </div>
             <div className="md:w-4/5 lg:w-4/5">
@@ -57,14 +53,8 @@ function StateFairFinalMockups() {
             }}
             className="mb-6"
           >
-            <div
-              className={`font-bold mb-1 ${
-                "text-stateFairRed"
-              }`}
-            >
-              Consistency and Standards
-            </div>
-            <div className="w-4/5">
+            <div className="font-bold mb-1">Consistency and Standards</div>
+            <div className="lg:w-4/5">
               The new design only uses one method for choosing sections, instead
               of three.
             </div>
@@ -79,14 +69,8 @@ function StateFairFinalMockups() {
             }}
             className="mb-6 mt-8"
           >
-            <div
-              className={`font-bold mb-1 ${
-               "text-stateFairRed"
-              }`}
-            >
-              Visibility of System Status
-            </div>
-            <div className="w-4/5">
+            <div className="font-bold mb-1">Visibility of System Status</div>
+            <div className="lg:w-4/5">
               The new design lets users know if a section is sold out.{" "}
             </div>
           </div>
@@ -101,12 +85,10 @@ function StateFairFinalMockups() {
             }}
             className="mb-6"
           >
-            <div
-              className="font-bold mt-8"
-            >
+            <div className="font-bold mt-8">
               Match Between System and the Real World
             </div>
-            <div className="w-4/5">
+            <div className="lg:w-4/5">
               The new design uses the section map which reflects the real world.
               Also accessible seats in all locations are clearly marked on the
               section map.
@@ -122,12 +104,10 @@ function StateFairFinalMockups() {
             }}
             className="mt-8"
           >
-            <div
-              className="font-bold mb-1 mt-9"
-            >
+            <div className="font-bold mb-1 mt-9">
               Aesthetic and Minimalist Design
             </div>
-            <div className="md:w-4/5 lg:w-4/5">
+            <div className="lg:w-4/5">
               Only information relevant to selecting sections is present. All
               prices for accessible and non-accessible seats are clearly
               displayed.
@@ -142,11 +122,7 @@ function StateFairFinalMockups() {
               setAppArrow6((prev) => !prev);
             }}
           >
-            <div
-              className="font-bold mb-1 md:w-2/5 lg:w-2/5"
-                
-              
-            >
+            <div className="font-bold md:w-2/5 lg:w-2/5">
               Error Prevention
             </div>
             <div className="md:w-4/5 lg:-4/5">
@@ -161,7 +137,7 @@ function StateFairFinalMockups() {
           muted
           autoPlay
           loop
-          className=" md:w-[250px] lg:w-[250px]"
+          className=" md:w-[250px] lg:w-[250px] mb-10"
           alt="Aprender Screens"
           onClick={() => {}}
         >
@@ -197,7 +173,7 @@ function StateFairFinalMockups() {
           muted
           autoPlay
           loop
-          className=" md:w-[250px] lg:w-[250px]"
+          className=" md:w-[250px] lg:w-[250px] mb-10"
           alt="Aprender Screens"
           onClick={() => {}}
         >
@@ -215,7 +191,7 @@ function StateFairFinalMockups() {
             className="mb-6"
           >
             <div className="font-bold mb-1">Recognition rather than Recall</div>
-            <div className="w-4/5 mb-6">
+            <div className="lg:w-4/5 mb-6">
               The prices for seats are clearly displayed and color coded to
               match the seats on the seat map. The prices are no longer hidden
               behind a button.
@@ -230,7 +206,7 @@ function StateFairFinalMockups() {
               className="mb-6"
             >
               <div className={`font-bold mb-1`}>Error Prevention</div>
-              <div className="w-4/5 mb-6">
+              <div className="lg:w-4/5 mb-6">
                 The image size of the seats can cause the user to choose the
                 wrong seat. In the new design the rows are expanded when the
                 user presses on them which helps users to select the seat they
@@ -252,7 +228,7 @@ function StateFairFinalMockups() {
                 >
                   Visibility of System Status
                 </div>
-                <div className="w-4/5 mb-6">
+                <div className="lg:w-4/5 mb-6">
                   The new design allows the user to easily see when a seat is
                   selected with a red checkmark.
                 </div>
@@ -271,7 +247,7 @@ function StateFairFinalMockups() {
                   >
                     Visibility of System Status
                   </div>
-                  <div className="w-4/5">
+                  <div className="lg:w-4/5">
                     When seats have been selected the Add to Cart button is
                     activated by turning a deep red color.
                   </div>
