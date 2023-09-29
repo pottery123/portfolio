@@ -11,18 +11,18 @@ function NavBar() {
             className="rounded px-2 py-1 hover:bg-heroPurple font-Quicksand text-xl text-white "
             to="/"
           >
-            <span className="text-heroPink">S</span>Kane
+          <span className="text-heroPink mt-14">S</span>Kane
           </Link>
         </div>
         <div className="font-Quicksand mr-10 flex gap-4">
           <Link
-            className="rounded text-heroPink px-3 py-1 hover:bg-heroPurple font-Quicksand text-xl"
+            className="rounded text-heroPink   hover:bg-heroPurple font-Quicksand text-xl"
             to="/work"
           >
             Resume
           </Link>
           <Link
-            className="rounded text-heroPink px-2 py-1 hover:bg-heroPurple font-Quicksand text-xl"
+            className="rounded text-heroPink  hover:bg-heroPurple font-Quicksand text-xl"
             to="/contact-about"
           >
             About

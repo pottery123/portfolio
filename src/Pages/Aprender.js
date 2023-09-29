@@ -820,14 +820,14 @@ function Aprender() {
                 Well, I hoped to avoid those issues with the new mobile app I
                 named...
               </p>
-              <p className="font-Quicksand text-seven md:text-nine font-medium text-aprenderPink text-center my-5 md:my-32  mt-20">
+              <p className="font-Quicksand text-seven md:text-nine font-medium text-aprenderPink text-center my-5 md:my-32 mt-20">
                 Aprender
               </p>
               <div className="lg:m-32">
                 {load && (
                   <div>
                     <div className="lg:flex">
-                      <div className="font-Bhaijaan2 lg:text-2xl lg:m-auto lg:p-24 my-5 mx-5">
+                      <div className="font-Bhaijaan2 lg:text-2xl lg:m-auto lg:p-24 mx-5 my-5">
                         Sarah lives in the Rainier Vallely, one of the most
                         diverse zip codes in the United States. There is a new
                         corner shop that has opened up a few blocks away from

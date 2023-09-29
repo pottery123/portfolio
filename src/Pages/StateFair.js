@@ -654,8 +654,8 @@ function StateFair() {
               </div>
             </div>
 
-            <div className="flex justify-between mt-20">
-              <div className="">
+            <div className="lg:flex md:flex md:justify-between lg:justify-between md:mt-20 lg:mt-20 mt-32 ml-14">
+              <div className="mt-32">
                 <img
                   alt="test screen "
                   width={200}
@@ -673,7 +673,7 @@ function StateFair() {
                   </li>
                 </ul>
               </div>
-              <div>
+              <div className="mt-32">
                 <img
                   alt="test screen"
                   width={200}
@@ -692,7 +692,7 @@ function StateFair() {
                 </ul>
               </div>
 
-              <div>
+              <div className="mt-32">
                 <img
                   alt="test screen"
                   width={200}

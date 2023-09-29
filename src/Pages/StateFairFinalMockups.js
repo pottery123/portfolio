@@ -16,13 +16,14 @@ function StateFairFinalMockups() {
   const [showAppArrow8, setAppArrow8] = useState(false);
   return (
     <div className="m-10 ">
-      <div className="flex gap-10">
-        <img
-          className="md:w-[250px] lg:w-[250px]"
-          src={"images/state-fair-screen-image-1.png"}
-          alt="Aprender Screens"
-          onClick={() => {}}
-        ></img>
+      <div className=" md:flex lg:flex gap-10">
+        <div className="lg:w-[550px] mb-10">
+          <img
+            src={"images/state-fair-screen-image-1.png"}
+            alt="Aprender Screens"
+            onClick={() => {}}
+          ></img>
+        </div>
         <div>
           <div
             onClick={() => {
@@ -35,13 +36,13 @@ function StateFairFinalMockups() {
             className="mb-6"
           >
             <div
-              className={`md:font-bold lg:font-bold md:mb-1 lg:mb-1 hover:text-stateFairRed md:active:ease-in-out lg:active:ease-in-out md:active:scale-95 lg:active:scale-95 lg:active:duration-200 md:active:duration-200 ${
-                showAppArrow1 && "text-stateFairRed"
+              className={`md:font-bold lg:font-bold font-bold md:mb-1 lg:mb-1 hover:text-stateFairRed md:active:ease-in-out lg:active:ease-in-out md:active:scale-95 lg:active:scale-95 lg:active:duration-200 md:active:duration-200 ${
+                "text-stateFairRed"
               }`}
             >
               User Control and Freedom
             </div>
-            <div className="w-4/5">
+            <div className="md:w-4/5 lg:w-4/5">
               The ‘back to concerts’ button is in an easy to spot area.
             </div>
           </div>
@@ -58,7 +59,7 @@ function StateFairFinalMockups() {
           >
             <div
               className={`font-bold mb-1 ${
-                showAppArrow2 && "text-stateFairRed"
+                "text-stateFairRed"
               }`}
             >
               Consistency and Standards
@@ -80,7 +81,7 @@ function StateFairFinalMockups() {
           >
             <div
               className={`font-bold mb-1 ${
-                showAppArrow3 && "text-stateFairRed"
+               "text-stateFairRed"
               }`}
             >
               Visibility of System Status
@@ -101,9 +102,7 @@ function StateFairFinalMockups() {
             className="mb-6"
           >
             <div
-              className={`font-bold mt-8 ${
-                showAppArrow4 && "text-stateFairRed"
-              }`}
+              className="font-bold mt-8"
             >
               Match Between System and the Real World
             </div>
@@ -124,13 +123,11 @@ function StateFairFinalMockups() {
             className="mt-8"
           >
             <div
-              className={`font-bold mb-1 mt-9 ${
-                showAppArrow5 && "text-stateFairRed"
-              }`}
+              className="font-bold mb-1 mt-9"
             >
               Aesthetic and Minimalist Design
             </div>
-            <div className="w-4/5">
+            <div className="md:w-4/5 lg:w-4/5">
               Only information relevant to selecting sections is present. All
               prices for accessible and non-accessible seats are clearly
               displayed.
@@ -138,21 +135,21 @@ function StateFairFinalMockups() {
           </div>
         </div>
       </div>
-      <div className="flex mt-32 mb-32">
-        <div>
+      <div className="md:flex lg:flex mt-32 mb-32">
+        <div className="hidden lg:block md:block">
           <div
             onClick={() => {
               setAppArrow6((prev) => !prev);
             }}
           >
             <div
-              className={`font-bold mb-1 w-2/5 ${
-                showAppArrow6 && "text-stateFairRed"
-              }`}
+              className="font-bold mb-1 md:w-2/5 lg:w-2/5"
+                
+              
             >
               Error Prevention
             </div>
-            <div className="w-4/5">
+            <div className="md:w-4/5 lg:-4/5">
               The image size of the sections can cause the user to choose the
               wrong section. In the new design the sections are expanded when
               the user presses on them which can help them choose the section
@@ -173,8 +170,29 @@ function StateFairFinalMockups() {
             type="video/mp4"
           />
         </video>
+        <div className="lg:hidden md:hidden block">
+          <div
+            onClick={() => {
+              setAppArrow6((prev) => !prev);
+            }}
+          >
+            <div
+              className={`font-bold mb-1 md:w-2/5 lg:w-2/5 ${
+                showAppArrow6 && "text-stateFairRed"
+              }`}
+            >
+              Error Prevention
+            </div>
+            <div className="md:w-4/5 lg:-4/5">
+              The image size of the sections can cause the user to choose the
+              wrong section. In the new design the sections are expanded when
+              the user presses on them which can help them choose the section
+              they want.
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="flex gap-10">
+      <div className="md:flex lg:flex gap-10">
         <video
           muted
           autoPlay
@@ -186,8 +204,8 @@ function StateFairFinalMockups() {
           <source src={"images/trimVid.mov"} type="video/mp4" />
         </video>
 
-      <div className="">
-        <div
+        <div className="">
+          <div
             onClick={() => {
               setAppArrow7(true);
               setAppArrow11(false);
@@ -196,12 +214,7 @@ function StateFairFinalMockups() {
             }}
             className="mb-6"
           >
-            <div
-              className= "font-bold mb-1"
-      
-            >
-              Recognition rather than Recall
-            </div>
+            <div className="font-bold mb-1">Recognition rather than Recall</div>
             <div className="w-4/5 mb-6">
               The prices for seats are clearly displayed and color coded to
               match the seats on the seat map. The prices are no longer hidden
@@ -216,11 +229,7 @@ function StateFairFinalMockups() {
               }}
               className="mb-6"
             >
-              <div
-                className={`font-bold mb-1`}
-              >
-                Error Prevention
-              </div>
+              <div className={`font-bold mb-1`}>Error Prevention</div>
               <div className="w-4/5 mb-6">
                 The image size of the seats can cause the user to choose the
                 wrong seat. In the new design the rows are expanded when the
@@ -271,7 +280,7 @@ function StateFairFinalMockups() {
             </div>
           </div>
         </div>
-        </div>
+      </div>
     </div>
   );
 }

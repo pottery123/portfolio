@@ -15,7 +15,7 @@ function ContactAbout() {
 
       <div className="flex">
         <div className="text-five ml-20  text-slate-300 w-3/5 leading-loose -mt">
-          <div className="text-heroPink text-eight font-bold mt-32">Resume</div>
+          <div className="text-heroPink lg:text-eight lg:font-bold lg:mt-32 mt-32">Resume</div>
           <a download href="./Resume.pdf" className="text-heroPink text-base">
             <div className="flex gap-3">
             <span>Download Resume Here </span>{" "}
@@ -24,6 +24,22 @@ function ContactAbout() {
             </span>
             </div>
           </a>
+          <div className="text-xl mt-8">
+            <div className="font-bold">
+            Colby Instruments{" "}
+              <span className="font-light">Aug 2023 – Present</span>{" "}
+            </div>
+            <div className="text-black">
+              <div className="font-light italic text-aprenderPink">
+                Lead UX/UI Designer 
+              </div>
+              <ul className="list-disc">
+                <li className=" text-slate-300">
+                Collaborated with the president and engineers to design a digital UI for their high-precision programmable delay line instruments terminals.
+                </li>
+              </ul>
+            </div>
+          </div>
           <div className="text-xl mt-8">
             <div className="font-bold">
               Build2Lead,{" "}
