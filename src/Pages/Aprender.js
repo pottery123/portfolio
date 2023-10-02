@@ -64,7 +64,7 @@ function Aprender() {
             alt="Aprender Screens"
           ></img>
           <div className=" font-Quicksand font-semibold md:pt-52 text-white md:pl-10 p-8">
-            <div className="lg:pt-18 md:text-eight text-seven ">Aprender</div>
+            <div className="lg:pt-18 md:text-seven lg:text-eight text-seven ">Aprender</div>
             <p className="md:text-four md:font-normal font-normal tracking-wide sm:mr-10 mb-5 ">
               <span className="font-bold">Role:</span> UX/UI Designer,
               Interaction Designer, UX Researcher

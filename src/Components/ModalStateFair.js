@@ -189,7 +189,7 @@ function ModalStateFair({ showModal, setShowModal, img = [], object }) {
               onClick={() => arrayIndex()}
             >
               {object.text.length > 1 && (
-                <div className="text-center font-Quicksand text-sm text-white bg-stateFairYellow hover:bg-stateFairYellowDark px-2 py-2 rounded-full m-auto w-24 -mt-20">
+                <div className="text-center font-Quicksand text-sm text-white bg-stateFairYellow hover:bg-stateFairYellowDark px-2 py-2 rounded-full lg:m-auto w-24 lg:-mt-20 mt-10 mb-10">
                   Next
                 </div>
               )}
