@@ -17,7 +17,7 @@ function StateFairFinalMockups() {
   return (
     <div className=" ">
       <div className=" md:flex lg:flex gap-10">
-        <div className="lg:w-[550px] mb-10">
+        <div className="lg:w-[400px] mb-10">
           <img
             src={"images/state-fair-screen-image-1.png"}
             alt="Aprender Screens"
