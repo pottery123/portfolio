@@ -40,6 +40,7 @@ module.exports = {
         Poppins: "'Poppins', sans-serif;",
       },
       colors: {
+        somoGreen:"#00807D",
         somoBlue: "#212153",
         stateFairWhite: "#E9E2DB",
         aprenderPink: "#D45769", 

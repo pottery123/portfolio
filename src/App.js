@@ -10,6 +10,7 @@ const Somo = React.lazy(()=> import("./Pages/Somo"));
 const ContactAbout = React.lazy(()=> import("./Pages/ContactAbout"));
 const Work= React.lazy(()=> import("./Pages/Work"));
 const Connect = React.lazy(()=> import("./Pages/Connect"));
+const Test = React.lazy(()=> import("./Pages/Test"));
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/contact-about" element={<ContactAbout />}></Route>
         <Route path="/work" element={<Work />}></Route>
         <Route path="/connect" element={<Connect />}></Route>
+        <Route path="/test" element={<Test />}></Route>
       </Routes>
       </Suspense>
     </Router>
